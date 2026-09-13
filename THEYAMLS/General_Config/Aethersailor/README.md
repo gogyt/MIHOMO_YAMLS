@@ -8,13 +8,13 @@
 
 | 特性 | `Complete_YAML_Configuration_Template.yaml` | `Custom_Clash_Lite.yaml` | `Custom_Clash_GFW_Fallback.yaml` | `Custom_Clash_Full_Fallback.yaml` | `Custom_Clash_GFW.yaml` | `Custom_Clash.yaml` | `Custom_Clash_Selfhosted_Manual_Fallback.yaml` | `Custom_Clash_Full.yaml` | `Custom_Clash_DIY&Airport.yaml` | `Custom_Clash_Selfhosted_Provider_Fallback.yaml` | `Custom_Clash_Fallback.yaml` | `Custom_Clash_Lite_Fallback.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 44.0 KB | 11.2 KB | 3.1 KB | 37.1 KB | 3.1 KB | 17.4 KB | 45.8 KB | 37.3 KB | 17.9 KB | 45.4 KB | 43.2 KB | 20.5 KB |
+| **大小** | 44.0 KB | 11.2 KB | 3.1 KB | 38.8 KB | 3.1 KB | 17.4 KB | 45.8 KB | 39.0 KB | 17.9 KB | 45.4 KB | 43.2 KB | 20.5 KB |
 | **混合端口** | 7893 | - | - | - | - | - | - | - | - | - | - | - |
 | **面板地址** | 0.0.0.0:9090 | - | - | - | - | - | - | - | 127.0.0.1:9090 | - | - | - |
 | **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
 | **TUN** | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 |
-| **策略组** | **35** | **19** | **2** | **53** | **3** | **35** | **36** | **53** | **33** | **36** | **35** | **19** |
-| **规则数** | **47** | **26** | **5** | **55** | **5** | **47** | **47** | **55** | **51** | **47** | **47** | **26** |
+| **策略组** | **35** | **19** | **2** | **55** | **3** | **35** | **36** | **55** | **33** | **36** | **35** | **19** |
+| **规则数** | **47** | **26** | **5** | **58** | **5** | **47** | **47** | **58** | **51** | **47** | **47** | **26** |
 
 ## 📄 配置详情
 
@@ -91,10 +91,10 @@
 </details>
 
 #### 📝 Custom_Clash_Full_Fallback.yaml
-- **路径**: `Custom_Clash_Full_Fallback.yaml` | **大小**: 37.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Full_Fallback.yaml)
+- **路径**: `Custom_Clash_Full_Fallback.yaml` | **大小**: 38.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Full_Fallback.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
-<summary>🔍 策略组 (53个)</summary>
+<summary>🔍 策略组 (55个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -104,6 +104,8 @@
 | 🔧 🌐 社交媒体 | `fallback` |
 | 🔧 📞 Talkatone | `fallback` |
 | 🔧 🚀 GitHub | `fallback` |
+| 🔧 💻 开发者服务 | `fallback` |
+| 🔧 📚 学术资源 | `fallback` |
 | 🔧 🤖 ChatGPT | `fallback` |
 | 🔧 🤖 Copilot | `fallback` |
 | 🔧 🤖 国外AI服务 | `fallback` |
@@ -116,9 +118,7 @@
 | 🔧 🎥 PrimeVideo | `fallback` |
 | 🔧 🎥 AppleTV+ | `fallback` |
 | 🔧 🎥 Emby | `fallback` |
-| 🔧 🎻 Spotify | `fallback` |
-| 🔧 📺 Bahamut | `fallback` |
-| ... | 还有 33 个 |
+| ... | 还有 35 个 |
 </details>
 
 #### 📝 Custom_Clash_GFW.yaml
@@ -197,10 +197,10 @@
 </details>
 
 #### 📝 Custom_Clash_Full.yaml
-- **路径**: `Custom_Clash_Full.yaml` | **大小**: 37.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Full.yaml)
+- **路径**: `Custom_Clash_Full.yaml` | **大小**: 39.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Full.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
-<summary>🔍 策略组 (53个)</summary>
+<summary>🔍 策略组 (55个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -210,6 +210,8 @@
 | 👆 🌐 社交媒体 | `select` |
 | 👆 📞 Talkatone | `select` |
 | 👆 🚀 GitHub | `select` |
+| 👆 💻 开发者服务 | `select` |
+| 👆 📚 学术资源 | `select` |
 | 👆 🤖 ChatGPT | `select` |
 | 👆 🤖 Copilot | `select` |
 | 👆 🤖 国外AI服务 | `select` |
@@ -222,9 +224,7 @@
 | 👆 🎥 PrimeVideo | `select` |
 | 👆 🎥 AppleTV+ | `select` |
 | 👆 🎥 Emby | `select` |
-| 👆 🎻 Spotify | `select` |
-| 👆 📺 Bahamut | `select` |
-| ... | 还有 33 个 |
+| ... | 还有 35 个 |
 </details>
 
 #### 📝 Custom_Clash_DIY&Airport.yaml
