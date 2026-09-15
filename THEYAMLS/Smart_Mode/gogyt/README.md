@@ -14,7 +14,7 @@
 | **运行模式** | rule | rule |
 | **TUN** | ✅ | ✅ |
 | **策略组** | **79** | **79** |
-| **规则数** | **62** | **63** |
+| **规则数** | **63** | **64** |
 
 ## 📄 配置详情
 
@@ -42,10 +42,10 @@
 | 👆 国外电商 | `select` |
 | 👆 加密货币 | `select` |
 | 👆 社交媒体 | `select` |
-| 👆 国外娱乐 | `select` |
 | 👆 TikTok | `select` |
 | 👆 奈飞视频 | `select` |
 | 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
 | ... | 还有 59 个 |
 </details>
 
@@ -73,9 +73,9 @@
 | 👆 国外电商 | `select` |
 | 👆 加密货币 | `select` |
 | 👆 社交媒体 | `select` |
-| 👆 国外娱乐 | `select` |
 | 👆 TikTok | `select` |
 | 👆 奈飞视频 | `select` |
 | 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
 | ... | 还有 59 个 |
 </details>
