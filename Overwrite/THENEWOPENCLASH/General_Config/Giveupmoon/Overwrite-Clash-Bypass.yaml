@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Overwrite-Clash-Bypass.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Giveupmoon/Overwrite-Clash-Bypass.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -108,6 +108,7 @@
 #
 # proxy-groups:
 # - icon: https://raw.githubusercontent.com/Giveupmoon/Clash_Rules_Yaml/main/Icon/11111.png
+#   include-all: true
 #   name: 手动选择
 #   proxies:
 #   - 香港节点
@@ -118,8 +119,6 @@
 #   - 自动选择
 #   - 全球直连
 #   type: select
-#   use:
-#   - Sub-store
 # - filter: ^((?!(直连)).)*$
 #   icon: https://raw.githubusercontent.com/Giveupmoon/Clash_Rules_Yaml/main/Icon/HOMOMIX/Color/Large/Flight.png
 #   include-all: true
@@ -313,7 +312,7 @@
 #   name: 全球直连
 #   proxies:
 #   - DIRECT
-#   type: url-test
+#   type: select
 
 # ==========================================================
 # rule-providers（从源文件直接提取）

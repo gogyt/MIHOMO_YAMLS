@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Seven1_fallback_Rule-Set.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Rule-Set.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -133,7 +133,7 @@
 #   - 国内直连
 #   type: select
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Ai.png
-#   name: AI(国外)
+#   name: AI
 #   proxies: &id001
 #   - 一键代理
 #   - 香港-故转
@@ -207,6 +207,10 @@
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Apple.png
 #   name: Apple
 #   proxies: *id002
+#   type: select
+# - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Steam.png
+#   name: Steam
+#   proxies: *id001
 #   type: select
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/TikTok.png
 #   name: TikTok
@@ -527,6 +531,12 @@
 #     interval: 86400
 #     type: http
 #     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/disney.mrs
+#   games@cn_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.mrs
 #   geolocation-!cn:
 #     behavior: domain
 #     format: mrs
@@ -605,6 +615,12 @@
 #     interval: 86400
 #     type: http
 #     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs
+#   steam_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs
 #   telegram_domain:
 #     behavior: domain
 #     format: mrs
@@ -654,15 +670,18 @@
 # ==========================================================
 #
 # rules:
+# - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((RULE-SET,cn_domain),(RULE-SET,cn_ip,no-resolve)))))),REJECT
 # - RULE-SET,private_domain,国内直连
 # - RULE-SET,private_ip,国内直连,no-resolve
-# - RULE-SET,ai-!cn_domain,AI(国外)
+# - RULE-SET,games@cn_domain,国内直连
+# - RULE-SET,ai-!cn_domain,AI
 # - RULE-SET,youtube_domain,YouTube
 # - RULE-SET,google_domain,Google
 # - RULE-SET,github_domain,GitHub
 # - RULE-SET,onedrive_domain,OneDrive
 # - RULE-SET,microsoft_domain,Microsoft
 # - RULE-SET,apple_domain,Apple
+# - RULE-SET,steam_domain,Steam
 # - RULE-SET,tiktok_domain,TikTok
 # - RULE-SET,twitter_domain,Twitter(X)
 # - RULE-SET,telegram_domain,Telegram
@@ -690,17 +709,22 @@
 # ==========================================================
 #
 # dns:
+#   cache-algorithm: arc
 #   enable: true
 #   enhanced-mode: fake-ip
 #   fake-ip-filter:
 #   - +.lan
+#   - +.local
 #   - rule-set:add_direct_domain
 #   - rule-set:cn_domain
 #   fake-ip-filter-mode: blacklist
 #   fake-ip-range: 198.18.0.1/16
+#   fake-ip-range6: 2001:2::1/48
 #   ipv6: true
 #   listen: 0.0.0.0:7874
 #   nameserver:
 #   - 114.114.114.114
 #   - 223.5.5.5
 #   respect-rules: false
+#   use-hosts: true
+#   use-system-hosts: true

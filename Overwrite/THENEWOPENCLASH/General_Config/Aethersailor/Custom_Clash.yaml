@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Custom_Clash.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -316,6 +316,7 @@
 # - name: 📺 Bahamut
 #   proxies:
 #   - 🇼🇸 台湾节点
+#   - 🇭🇰 香港节点
 #   - 🚀 手动选择
 #   - 🎯 全球直连
 #   type: select
@@ -352,6 +353,7 @@
 #   proxies:
 #   - 🚀 手动选择
 #   - ♻️ 自动选择
+#   - 🎯 全球直连
 #   - 🇭🇰 香港节点
 #   - 🇺🇸 美国节点
 #   - 🇯🇵 日本节点
@@ -514,7 +516,7 @@
 # - name: 🎯 全球直连
 #   proxies:
 #   - DIRECT
-#   type: url-test
+#   type: select
 #   url: http://wifi.vivo.com.cn/generate_204
 
 # ==========================================================
@@ -528,51 +530,51 @@
 #   Custom_Direct_Domain:
 #     behavior: domain
 #     format: mrs
-#     interval: 28800
+#     interval: 1800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.mrs
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Domain.mrs
 #   Custom_Direct_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 28800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_IP.mrs
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_IP.mrs
 #   Custom_Direct_Port:
 #     behavior: classical
 #     format: yaml
 #     interval: 28800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_Port.yaml
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Direct_Classical_Port.yaml
 #   Custom_Proxy_Domain:
 #     behavior: domain
 #     format: mrs
 #     interval: 28800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.mrs
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_Domain.mrs
 #   Custom_Proxy_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 28800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_IP.mrs
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Proxy_IP.mrs
 #   Nonstandard_Port_Direct:
 #     behavior: classical
 #     format: yaml
 #     interval: 28800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Custom_Port_Direct.yaml
 #   Steam_CDN_Domain:
 #     behavior: domain
 #     format: mrs
 #     interval: 28800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_Domain.mrs
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_Domain.mrs
 #   Steam_CDN_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 28800
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_IP.mrs
+#     url: https://cdn.jsdelivr.net/gh/Aethersailor/Custom_OpenClash_Rules@main/rule/Steam_CDN_IP.mrs
 
 # ==========================================================
 # rules（从源文件直接提取）

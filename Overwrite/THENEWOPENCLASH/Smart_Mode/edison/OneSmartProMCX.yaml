@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - OneSmartProMCX.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/Smart_Mode/edison/OneSmartProMCX.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -390,6 +390,15 @@
 #   url: https://cp.cloudflare.com/generate_204
 #   uselightgbm: true
 # - empty-fallback: REJECT
+#   filter: (?i)家宽
+#   icon: https://img.icons8.com/fluency/256/home.png
+#   include-all: true
+#   interval: 60
+#   lazy: true
+#   name: 家宽-手选
+#   type: select
+#   url: https://cp.cloudflare.com/generate_204
+# - empty-fallback: REJECT
 #   filter: ^(?i)(?!.*免费).*(港|🇭🇰|Hong|HKG|\bHK\b|HK[-_]|HK\d+).*$
 #   icon: https://github.com/Koolson/Qure/raw/master/IconSet/Color/Hong_Kong.png
 #   include-all: true
@@ -432,15 +441,6 @@
 #   interval: 60
 #   lazy: true
 #   name: 美国-手选
-#   type: select
-#   url: https://cp.cloudflare.com/generate_204
-# - empty-fallback: REJECT
-#   filter: (?i)家宽
-#   icon: https://img.icons8.com/fluency/256/home.png
-#   include-all: true
-#   interval: 60
-#   lazy: true
-#   name: 家宽-手选
 #   type: select
 #   url: https://cp.cloudflare.com/generate_204
 # - empty-fallback: REJECT
@@ -985,8 +985,7 @@
 # ==========================================================
 #
 # rules:
-# - AND,(DST-PORT,443),(NETWORK,UDP),(NOT,((RULE-SET,China))),REJECT
-# - AND,(DST-PORT,443),(NETWORK,UDP),(NOT,((RULE-SET,China-IP))),REJECT
+# - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((RULE-SET,China))),(NOT,((RULE-SET,China-IP,no-resolve)))),REJECT
 # - RULE-SET,DNS-IP,REJECT,no-resolve
 # - RULE-SET,Category-DoH,REJECT
 # - RULE-SET,HTTPDNS-CN,REJECT

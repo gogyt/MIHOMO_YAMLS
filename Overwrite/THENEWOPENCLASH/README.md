@@ -47,7 +47,7 @@
 | 📁 **[General_Config/liuran001](./General_Config/liuran001/README.md)** | 1 个 |
 | 📁 **[General_Config/loneshu7](./General_Config/loneshu7/README.md)** | 1 个 |
 | 📁 **[General_Config/lvbibir](./General_Config/lvbibir/README.md)** | 1 个 |
-| 📁 **[General_Config/qichiyuhub](./General_Config/qichiyuhub/README.md)** | 1 个 |
+| 📁 **[General_Config/qichiyuhub](./General_Config/qichiyuhub/README.md)** | 2 个 |
 | 📁 **[General_Config/sev7enshare](./General_Config/sev7enshare/README.md)** | 4 个 |
 | 📁 **[General_Config/sfssup](./General_Config/sfssup/README.md)** | 1 个 |
 | 📁 **[General_Config/wanswu](./General_Config/wanswu/README.md)** | 1 个 |
@@ -61,6 +61,7 @@
 | 📁 **[Smart_Mode/HenryChiao](./Smart_Mode/HenryChiao/README.md)** | 4 个 |
 | 📁 **[Smart_Mode/echs-top](./Smart_Mode/echs-top/README.md)** | 1 个 |
 | 📁 **[Smart_Mode/edison](./Smart_Mode/edison/README.md)** | 1 个 |
+| 📁 **[Smart_Mode/gogyt](./Smart_Mode/gogyt/README.md)** | 2 个 |
 | 📁 **[Smart_Mode/liandu2024](./Smart_Mode/liandu2024/README.md)** | 3 个 |
 | 📁 **[Smart_Mode/qichiyuhub](./Smart_Mode/qichiyuhub/README.md)** | 1 个 |
 

@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - mihomo.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/ameyukisora/mihomo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -104,7 +104,7 @@
 # ==========================================================
 #
 # proxy-groups:
-# - filter: (港|HK|Hong Kong|日本|JP|Japan|🇭🇰|🇯🇵)
+# - filter: (港|HK|Hong Kong|日本|JP|Japan|🇭🇰|🇯🇵|SG)
 #   icon: https://raw.githubusercontent.com/amenorira/Clash-Rule/master/icon/start.png
 #   include-all-providers: true
 #   name: 节点选择
@@ -118,7 +118,7 @@
 #   proxies:
 #   - 节点选择
 #   type: select
-# - exclude-filter: (港|HK|Hong Kong|日本|JP|Japan|🇭🇰|🇯🇵)
+# - exclude-filter: (港|HK|Hong Kong|日本|JP|Japan|🇭🇰|🇯🇵|SG)
 #   icon: https://raw.githubusercontent.com/amenorira/Clash-Rule/master/icon/Global.png
 #   include-all-providers: true
 #   name: 其他节点
@@ -294,12 +294,15 @@
 #   default-nameserver:
 #   - 223.5.5.5
 #   - 119.29.29.29
+#   direct-nameserver:
+#   - system
 #   enable: true
 #   enhanced-mode: fake-ip
 #   fake-ip-filter:
 #   - rule-set:fakeip-filter
 #   nameserver:
-#   - 119.29.29.29
+#   - https://dns.alidns.com/dns-query
+#   - https://doh.pub/dns-query
 #   proxy-server-nameserver:
 #   - https://dns.alidns.com/dns-query
 #   - https://doh.pub/dns-query

@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Seven1_fallback_Geo.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Geo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -133,7 +133,7 @@
 #   - 国内直连
 #   type: select
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Ai.png
-#   name: AI(国外)
+#   name: AI
 #   proxies: &id001
 #   - 一键代理
 #   - 香港-故转
@@ -207,6 +207,10 @@
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Apple.png
 #   name: Apple
 #   proxies: *id002
+#   type: select
+# - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Steam.png
+#   name: Steam
+#   proxies: *id001
 #   type: select
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/TikTok.png
 #   name: TikTok
@@ -516,15 +520,18 @@
 # ==========================================================
 #
 # rules:
+# - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((GEOSITE,cn),(GEOIP,cn,no-resolve)))))),REJECT
 # - GEOSITE,private,国内直连
 # - GEOIP,private,国内直连,no-resolve
-# - GEOSITE,category-ai-!cn,AI(国外)
+# - GEOSITE,category-games@cn,国内直连
+# - GEOSITE,category-ai-!cn,AI
 # - GEOSITE,youtube,YouTube
 # - GEOSITE,google,Google
 # - GEOSITE,github,GitHub
 # - GEOSITE,onedrive,OneDrive
 # - GEOSITE,microsoft,Microsoft
 # - GEOSITE,apple,Apple
+# - GEOSITE,steam,Steam
 # - GEOSITE,tiktok,TikTok
 # - GEOSITE,twitter,Twitter(X)
 # - GEOSITE,telegram,Telegram
@@ -552,17 +559,22 @@
 # ==========================================================
 #
 # dns:
+#   cache-algorithm: arc
 #   enable: true
 #   enhanced-mode: fake-ip
 #   fake-ip-filter:
 #   - +.lan
+#   - +.local
 #   - rule-set:add_direct_domain
 #   - geosite:cn
 #   fake-ip-filter-mode: blacklist
 #   fake-ip-range: 198.18.0.1/16
+#   fake-ip-range6: 2001:2::1/48
 #   ipv6: true
 #   listen: 0.0.0.0:7874
 #   nameserver:
 #   - 114.114.114.114
 #   - 223.5.5.5
 #   respect-rules: false
+#   use-hosts: true
+#   use-system-hosts: true

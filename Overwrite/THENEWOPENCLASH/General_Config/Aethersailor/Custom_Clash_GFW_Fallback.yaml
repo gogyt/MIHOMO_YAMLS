@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Custom_Clash_GFW_Fallback.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_GFW_Fallback.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -122,7 +122,7 @@
 # - name: 🎯 全球直连
 #   proxies:
 #   - DIRECT
-#   type: url-test
+#   type: select
 #   url: http://wifi.vivo.com.cn/generate_204
 
 # ==========================================================

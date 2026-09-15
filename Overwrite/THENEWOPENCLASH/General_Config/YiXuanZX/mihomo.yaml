@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - mihomo.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/YiXuanZX/mihomo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -108,7 +108,7 @@
 # ==========================================================
 #
 # proxy-groups:
-# - filter: (?i)香港|hk
+# - filter: (?i)香港|hk|hongkong|hong kong
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Hong_Kong.png
 #   include-all: true
 #   interval: 600
@@ -117,7 +117,7 @@
 #   timeout: 3000
 #   type: select
 #   url: https://www.apple.com/library/test/success.html
-# - filter: (?i)新加坡|sg
+# - filter: (?i)新加坡|sg|singapore
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Singapore.png
 #   include-all: true
 #   interval: 600
@@ -126,7 +126,7 @@
 #   timeout: 3000
 #   type: select
 #   url: https://www.apple.com/library/test/success.html
-# - filter: (?i)日本|jp
+# - filter: (?i)日本|jp|japan
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Japan.png
 #   include-all: true
 #   interval: 600
@@ -135,7 +135,7 @@
 #   timeout: 3000
 #   type: select
 #   url: https://www.apple.com/library/test/success.html
-# - filter: (?i)美国|us
+# - filter: (?i)美国|us|unitedstates|united states
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/United_States.png
 #   include-all: true
 #   interval: 600
@@ -144,7 +144,8 @@
 #   timeout: 3000
 #   type: select
 #   url: https://www.apple.com/library/test/success.html
-# - exclude-filter: (?i)剩余|到期|香港|hk|新加坡|sg|日本|jp|美国|us
+# - exclude-filter: (?i)剩余|到期|香港|hk|hongkong|hong kong|新加坡|sg|singapore|日本|jp|japan|美国|us|unitedstates|united
+#     states
 #   icon: https://fastly.jsdelivr.net/gh/Koolson/Qure/IconSet/Color/Server.png
 #   include-all: true
 #   interval: 600

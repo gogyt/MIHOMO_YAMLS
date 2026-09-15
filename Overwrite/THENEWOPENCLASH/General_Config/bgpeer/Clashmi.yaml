@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Clashmi.yaml
-# 生成日期：2026-08-10
+# 生成日期：2026-09-15
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/bgpeer/Clashmi.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -140,6 +140,23 @@
 #   icon: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/icons/main/color/douyin_1.png
 #   include-all: true
 #   name: 🎷抖音
+#   proxies: &id002
+#   - 🎯直连
+#   - 🌍全球加速
+#   - 🔗链式出口
+#   - ♻️全部随机
+#   - 🇭🇰香港随机
+#   - 🇹🇼台湾随机
+#   - 🇯🇵日本随机
+#   - 🇸🇬新加坡随机
+#   - 🇰🇷韩国随机
+#   - 🇺🇸美国随机
+#   type: select
+# - exclude-type: direct
+#   filter: .*
+#   icon: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/icons/main/color/tiktok_1.png
+#   include-all: true
+#   name: 🎬TikTok
 #   proxies: &id001
 #   - 🌍全球加速
 #   - 🔗链式出口
@@ -151,13 +168,6 @@
 #   - 🇰🇷韩国随机
 #   - 🇺🇸美国随机
 #   - 🎯直连
-#   type: select
-# - exclude-type: direct
-#   filter: .*
-#   icon: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/icons/main/color/tiktok_1.png
-#   include-all: true
-#   name: 🎬TikTok
-#   proxies: *id001
 #   type: select
 # - exclude-type: direct
 #   filter: .*
@@ -234,17 +244,7 @@
 #   icon: https://gh-proxy.com/https://raw.githubusercontent.com/bgpeer/icons/main/color/microsoft.png
 #   include-all: true
 #   name: 😊微软服务
-#   proxies: &id002
-#   - 🎯直连
-#   - 🌍全球加速
-#   - 🔗链式出口
-#   - ♻️全部随机
-#   - 🇭🇰香港随机
-#   - 🇹🇼台湾随机
-#   - 🇯🇵日本随机
-#   - 🇸🇬新加坡随机
-#   - 🇰🇷韩国随机
-#   - 🇺🇸美国随机
+#   proxies: *id002
 #   type: select
 # - exclude-type: direct
 #   filter: .*
@@ -676,8 +676,6 @@
 #   default-nameserver:
 #   - 223.5.5.5
 #   - 119.29.29.29
-#   - 114.114.114.114
-#   - 180.76.76.76
 #   direct-nameserver:
 #   - system
 #   direct-nameserver-follow-policy: true
@@ -704,24 +702,23 @@
 #   ipv6: true
 #   listen: 0.0.0.0:1053
 #   nameserver:
-#   - https://dns.alidns.com/dns-query
-#   - https://1.1.1.1/dns-query
-#   - https://doh.pub/dns-query
-#   - https://dns.google/dns-query
-#   - https://dns.quad9.net/dns-query
-#   - https://dns.adguard.com/dns-query
-#   - tls://cloudflare-dns.com:853
-#   - tls://dns.google:853
+#   - https://223.5.5.5/dns-query#🎯直连
+#   - https://doh.pub/dns-query#🎯直连
+#   - https://1.1.1.1/dns-query#🌍全球加速
+#   - https://8.8.8.8/dns-query#🌐Google服务
+#   - https://9.9.9.9/dns-query#🌍全球加速
+#   - tls://1.1.1.1:853#🌍全球加速
+#   - tls://8.8.8.8:853#🌐Google服务
 #   nameserver-policy:
 #     rule-set:Alibaba: &id002
-#     - https://dns.alidns.com/dns-query
-#     - https://doh.pub/dns-query
+#     - https://223.5.5.5/dns-query#🎯直连
+#     - https://doh.pub/dns-query#🎯直连
 #     rule-set:Apple: &id001
-#     - https://1.1.1.1/dns-query
-#     - https://dns.google/dns-query
-#     - https://dns.quad9.net/dns-query
-#     - tls://cloudflare-dns.com:853
-#     - tls://dns.google:853
+#     - https://1.1.1.1/dns-query#🌍全球加速
+#     - https://8.8.8.8/dns-query#🌐Google服务
+#     - https://9.9.9.9/dns-query#🌍全球加速
+#     - tls://1.1.1.1:853#🌍全球加速
+#     - tls://8.8.8.8:853#🌐Google服务
 #     rule-set:Claude-zj: *id001
 #     rule-set:Cryptocurrency: *id002
 #     rule-set:Facebook-zj: *id001
@@ -743,7 +740,8 @@
 #     rule-set:gfw: *id001
 #     rule-set:greatfire: *id001
 #     rule-set:icloud: *id001
-#     rule-set:private: *id002
+#     rule-set:private:
+#     - system
 #     rule-set:reject:
 #     - https://dns.adguard.com/dns-query
 #     rule-set:twitter: *id001
@@ -751,13 +749,8 @@
 #   prefer-h3: true
 #   proxy-server-nameserver:
 #   - https://1.1.1.1/dns-query
-#   - https://dns.google/dns-query
-#   - https://cloudflare-dns.com/dns-query
-#   - https://dns.quad9.net/dns-query
-#   - https://dns.adguard.com/dns-query
-#   - https://public.dns.iij.jp/dns-query
-#   - tls://cloudflare-dns.com:853
-#   - tls://dns.google:853
+#   - https://8.8.8.8/dns-query
+#   - https://9.9.9.9/dns-query
 #   respect-rules: true
 #   use-hosts: true
 #   use-system-hosts: true
