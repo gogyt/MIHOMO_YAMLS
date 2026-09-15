@@ -27,7 +27,6 @@ https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/cfg/yaml/Custom_
 https://github.com/Aethersailor/Custom_OpenClash_Rules/raw/main/cfg/yaml/Custom_Clash_Selfhosted_Provider_Fallback.yaml|THEYAMLS/General_Config/Aethersailor/Custom_Clash_Selfhosted_Provider_Fallback.yaml
 
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/Rule.yaml|THEYAMLS/General_Config/gogyt/Rule.yaml
-https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/RulePlus.yaml|THEYAMLS/General_Config/gogyt/RulePlus.yaml
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/RulePro.yaml|THEYAMLS/General_Config/gogyt/RulePro.yaml
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/RuleBeta.yaml|THEYAMLS/General_Config/gogyt/RuleBeta.yaml
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/RuleLite.yaml|THEYAMLS/General_Config/gogyt/RuleLite.yaml
