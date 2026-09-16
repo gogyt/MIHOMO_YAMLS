@@ -22,7 +22,7 @@
 
 | 👤 作者（文件夹名） | 📦 配置清单 | 📝 描述 | 🔗 溯源 |
 | :--- | :--- | :--- | :--- |
-| **gogyt** | 📄 [`Rule.yaml`](General_Config/gogyt/Rule.yaml)<br>📄 [`RulePro.yaml`](General_Config/gogyt/RulePro.yaml)<br>📄 [`RuleBeta.yaml`](General_Config/gogyt/RuleBeta.yaml)<br>📄 [`RuleLite.yaml`](General_Config/gogyt/RuleLite.yaml)<br>📄 [`RuleLitePro.yaml`](General_Config/gogyt/RuleLitePro.yaml) | 社区精选配置 | [Mihomo](https://github.com/gogyt/Mihomo) |
+| **gogyt** | 📄 [`Rule.yaml`](General_Config/gogyt/Rule.yaml)<br>📄 [`RulePro.yaml`](General_Config/gogyt/RulePro.yaml)<br>📄 [`RuleBeta.yaml`](General_Config/gogyt/RuleBeta.yaml)<br>📄 [`RuleLite.yaml`](General_Config/gogyt/RuleLite.yaml)<br>📄 [`RuleLitePro.yaml`](General_Config/gogyt/RuleLitePro.yaml) | 社区精选配置 | [Yaml](https://github.com/gogyt/Mihomo/tree/main/yaml) |
 | **JohnsonRan** | 📄 [`AIB.yaml`](General_Config/JohnsonRan/AIB.yaml)<br>📄 [`AIO.yaml`](General_Config/JohnsonRan/AIO.yaml) | 社区精选配置 | [CRules](https://github.com/JohnsonRan/CRules) |
 | **HenryChiao** | 📄 [`MihomoAIO.yaml`](General_Config/HenryChiao/MihomoAIO.yaml)<br>📄 [`MihomoProMax.yaml`](General_Config/HenryChiao/MihomoProMax.yaml)<br>📄 [`MihomoProPlus.yaml`](General_Config/HenryChiao/MihomoProPlus.yaml) | 社区精选配置 | [MIHOMO_AIO](https://github.com/HenryChiao/MIHOMO_AIO) |
 | **iKeLee** | 📄 [`Clash_Sample.yaml`](General_Config/iKeLee/Clash_Sample.yaml)<br>📄 [`backup.yaml`](General_Config/iKeLee/backup.yaml) | Clash_Sample.yaml 来自下方仓库；backup.yaml 为备份文件 | [ProxyResource](https://github.com/luestr/ProxyResource) |
