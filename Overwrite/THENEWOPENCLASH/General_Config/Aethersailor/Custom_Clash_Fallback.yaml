@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Custom_Clash_Fallback.yaml
-# 生成日期：2026-09-15
+# 生成日期：2026-09-16
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Fallback.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -88,11 +88,8 @@
 #     header: null
 #     health-check:
 #       enable: true
-#       expected-status: 204
 #       interval: 300
-#       lazy: false
-#       timeout: 5000
-#       url: https://cp.cloudflare.com/generate_204
+#       url: https://www.gstatic.com/generate_204
 #     interval: 3600
 #     override:
 #       udp: true
@@ -117,9 +114,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🚀 故障转移
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -129,16 +124,15 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - interval: 300
 #   name: ♻️ 自动选择
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -148,9 +142,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 💬 即时通讯
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -160,9 +152,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -172,9 +163,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🌐 社交媒体
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -184,14 +173,11 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+# - interval: 300
 #   name: 🚀 GitHub
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -202,18 +188,15 @@
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇭🇰|港|\bHK(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌|🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🤖 ChatGPT
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -223,9 +206,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -234,9 +216,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🤖 AI服务
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -246,9 +226,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -258,9 +237,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎶 TikTok
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -270,9 +247,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -281,9 +257,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 📹 YouTube
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -293,9 +267,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -304,9 +277,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎥 Netflix
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -316,9 +287,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -327,9 +297,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎥 DisneyPlus
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -339,9 +307,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -350,9 +317,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎥 HBO
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -362,9 +327,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -373,9 +337,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎥 PrimeVideo
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -385,9 +347,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -396,9 +357,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎥 AppleTV+
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -408,9 +367,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -419,9 +377,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎥 Emby
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -431,9 +387,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -442,9 +397,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🎻 Spotify
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -454,24 +407,20 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 📺 Bahamut
 #   proxies:
 #   - 🇼🇸 台湾节点
 #   - 🇭🇰 香港节点
 #   - 🚀 故障转移
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -481,9 +430,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🌎 国外媒体
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -493,9 +440,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -505,9 +451,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🛒 国外电商
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -517,9 +461,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -529,9 +472,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 📢 谷歌FCM
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -542,9 +483,8 @@
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -554,9 +494,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🇬 谷歌服务
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -566,9 +504,8 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -578,6 +515,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🍎 苹果服务
 #   proxies:
 #   - 🎯 全球直连
@@ -589,6 +527,7 @@
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -598,6 +537,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: Ⓜ️ 微软服务
 #   proxies:
 #   - 🎯 全球直连
@@ -609,6 +549,7 @@
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -618,6 +559,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎮 游戏平台
 #   proxies:
 #   - 🎯 全球直连
@@ -629,6 +571,7 @@
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -638,6 +581,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎮 Steam
 #   proxies:
 #   - 🎯 全球直连
@@ -649,6 +593,7 @@
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -658,6 +603,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🚀 测速工具
 #   proxies:
 #   - 🎯 全球直连
@@ -669,6 +615,7 @@
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -678,9 +625,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
-#   expected-status: 204
 #   interval: 300
-#   lazy: false
 #   name: 🐟 漏网之鱼
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -690,23 +635,24 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - name: 🔀 非标端口
+# - interval: 300
+#   name: 🔀 非标端口
 #   proxies:
 #   - 🐟 漏网之鱼
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 # - filter: (?i)(🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG
 #     KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌)
 #   interval: 300
 #   name: 🇭🇰 香港节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_
@@ -715,7 +661,7 @@
 #   name: 🇺🇸 美国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI)
@@ -723,7 +669,7 @@
 #   name: 🇯🇵 日本节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN)
@@ -731,7 +677,7 @@
 #   name: 🇸🇬 新加坡节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC)
@@ -739,7 +685,7 @@
 #   name: 🇼🇸 台湾节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
@@ -747,14 +693,15 @@
 #   name: 🇰🇷 韩国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - name: 🎯 全球直连
+# - interval: 300
+#   name: 🎯 全球直连
 #   proxies:
 #   - DIRECT
 #   type: select
-#   url: http://wifi.vivo.com.cn/generate_204
+#   url: https://www.gstatic.com/generate_204
 
 # ==========================================================
 # rule-providers（从源文件直接提取）

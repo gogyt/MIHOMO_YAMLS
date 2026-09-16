@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Complete_YAML_Configuration_Template.yaml
-# 生成日期：2026-09-15
+# 生成日期：2026-09-16
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Aethersailor/Complete_YAML_Configuration_Template.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -88,11 +88,8 @@
 #     header: null
 #     health-check:
 #       enable: true
-#       expected-status: 204
 #       interval: 300
-#       lazy: false
-#       timeout: 5000
-#       url: https://cp.cloudflare.com/generate_204
+#       url: https://www.gstatic.com/generate_204
 #     interval: 3600
 #     override:
 #       udp: true
@@ -117,6 +114,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🚀 手动选择
 #   proxies:
 #   - ♻️ 自动选择
@@ -127,16 +125,18 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - interval: 300
 #   name: ♻️ 自动选择
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - name: 💬 即时通讯
+# - interval: 300
+#   name: 💬 即时通讯
 #   proxies:
 #   - 🚀 手动选择
 #   - ♻️ 自动选择
@@ -148,6 +148,7 @@
 #   - 🇰🇷 韩国节点
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
 #     Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌|🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -155,6 +156,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🌐 社交媒体
 #   proxies:
 #   - 🚀 手动选择
@@ -167,9 +169,11 @@
 #   - 🇰🇷 韩国节点
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - name: 🚀 GitHub
+# - interval: 300
+#   name: 🚀 GitHub
 #   proxies:
 #   - 🚀 手动选择
 #   - ♻️ 自动选择
@@ -181,12 +185,14 @@
 #   - 🇰🇷 韩国节点
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌|🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🤖 ChatGPT
 #   proxies:
 #   - 🚀 手动选择
@@ -198,6 +204,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
@@ -206,6 +213,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🤖 AI服务
 #   proxies:
 #   - 🚀 手动选择
@@ -217,6 +225,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -226,6 +235,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎶 TikTok
 #   proxies:
 #   - 🚀 手动选择
@@ -237,6 +247,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
@@ -245,6 +256,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 📹 YouTube
 #   proxies:
 #   - 🚀 手动选择
@@ -256,6 +268,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
@@ -264,6 +277,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎥 Netflix
 #   proxies:
 #   - 🚀 手动选择
@@ -275,6 +289,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
@@ -283,6 +298,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎥 DisneyPlus
 #   proxies:
 #   - 🚀 手动选择
@@ -294,6 +310,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
@@ -302,6 +319,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎥 HBO
 #   proxies:
 #   - 🚀 手动选择
@@ -313,6 +331,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
@@ -321,6 +340,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎥 PrimeVideo
 #   proxies:
 #   - 🚀 手动选择
@@ -332,6 +352,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇭🇰|港|\bHK(?:[-_
@@ -340,6 +361,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎥 AppleTV+
 #   proxies:
 #   - 🚀 手动选择
@@ -352,6 +374,7 @@
 #   - 🇰🇷 韩国节点
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -361,6 +384,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎥 Emby
 #   proxies:
 #   - 🚀 手动选择
@@ -373,6 +397,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -382,6 +407,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎻 Spotify
 #   proxies:
 #   - 🚀 手动选择
@@ -394,9 +420,11 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC)
+#   interval: 300
 #   name: 📺 Bahamut
 #   proxies:
 #   - 🇼🇸 台湾节点
@@ -404,6 +432,7 @@
 #   - 🚀 手动选择
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -413,6 +442,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🌎 国外媒体
 #   proxies:
 #   - 🚀 手动选择
@@ -424,6 +454,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -433,6 +464,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🛒 国外电商
 #   proxies:
 #   - 🚀 手动选择
@@ -445,9 +477,11 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - name: 📢 谷歌FCM
+# - interval: 300
+#   name: 📢 谷歌FCM
 #   proxies:
 #   - 🚀 手动选择
 #   - ♻️ 自动选择
@@ -459,6 +493,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
 #     Kong|HongKong|hongkong|HONG KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌|🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|United States|UnitedStates|UNITED STATES|USA|America|AMERICA|JFK|EWR|IAD|ATL|ORD|MIA|NYC|LAX|SFO|SEA|DFW|SJC|🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_
@@ -466,6 +501,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🇬 谷歌服务
 #   proxies:
 #   - 🚀 手动选择
@@ -477,6 +513,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -486,6 +523,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🍎 苹果服务
 #   proxies:
 #   - 🎯 全球直连
@@ -498,6 +536,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -507,6 +546,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: Ⓜ️ 微软服务
 #   proxies:
 #   - 🎯 全球直连
@@ -519,6 +559,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -528,6 +569,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎮 游戏平台
 #   proxies:
 #   - 🎯 全球直连
@@ -540,6 +582,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -549,6 +592,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🎮 Steam
 #   proxies:
 #   - 🎯 全球直连
@@ -561,6 +605,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -570,6 +615,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🚀 测速工具
 #   proxies:
 #   - 🎯 全球直连
@@ -582,6 +628,7 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - exclude-filter: (?i)(?:🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong
@@ -591,6 +638,7 @@
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN|🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_
 #     ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC|🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_
 #     ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
+#   interval: 300
 #   name: 🐟 漏网之鱼
 #   proxies:
 #   - 🚀 手动选择
@@ -603,20 +651,23 @@
 #   - 🇼🇸 台湾节点
 #   - 🇰🇷 韩国节点
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - name: 🔀 非标端口
+# - interval: 300
+#   name: 🔀 非标端口
 #   proxies:
 #   - 🐟 漏网之鱼
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 # - filter: (?i)(🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG
 #     KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌)
 #   interval: 300
 #   name: 🇭🇰 香港节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_
@@ -625,7 +676,7 @@
 #   name: 🇺🇸 美国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI)
@@ -633,7 +684,7 @@
 #   name: 🇯🇵 日本节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN)
@@ -641,7 +692,7 @@
 #   name: 🇸🇬 新加坡节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC)
@@ -649,7 +700,7 @@
 #   name: 🇼🇸 台湾节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
@@ -657,19 +708,16 @@
 #   name: 🇰🇷 韩国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+# - interval: 300
 #   name: 🎯 全球直连
 #   proxies:
 #   - DIRECT
-#   timeout: 5000
 #   tolerance: 50
 #   type: select
-#   url: http://wifi.vivo.com.cn/generate_204
+#   url: https://www.gstatic.com/generate_204
 
 # ==========================================================
 # rule-providers（从源文件直接提取）

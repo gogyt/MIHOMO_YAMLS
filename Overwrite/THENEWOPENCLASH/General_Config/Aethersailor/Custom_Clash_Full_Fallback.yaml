@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Custom_Clash_Full_Fallback.yaml
-# 生成日期：2026-09-15
+# 生成日期：2026-09-16
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Full_Fallback.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -88,11 +88,8 @@
 #     header: null
 #     health-check:
 #       enable: true
-#       expected-status: 204
 #       interval: 300
-#       lazy: false
-#       timeout: 5000
-#       url: https://cp.cloudflare.com/generate_204
+#       url: https://www.gstatic.com/generate_204
 #     interval: 3600
 #     override:
 #       udp: true
@@ -110,9 +107,7 @@
 # ==========================================================
 #
 # proxy-groups:
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+# - interval: 300
 #   name: 🚀 故障转移
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -132,19 +127,16 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 # - interval: 300
 #   name: ♻️ 自动选择
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+# - interval: 300
 #   name: 💬 即时通讯
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -164,12 +156,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🌐 社交媒体
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -189,12 +178,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 📞 Talkatone
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -214,12 +200,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🚀 GitHub
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -240,12 +223,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 💻 开发者服务
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -266,12 +246,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 📚 学术资源
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -292,12 +269,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🤖 ChatGPT
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -317,12 +291,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🤖 Copilot
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -342,12 +313,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🤖 国外AI服务
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -367,10 +335,10 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - name: 🤖 国内AI服务
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 🤖 国内AI服务
 #   proxies:
 #   - 🎯 全球直连
 #   - 🚀 故障转移
@@ -392,9 +360,8 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   type: select
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎶 TikTok
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -414,12 +381,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 📹 YouTube
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -439,12 +403,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎥 Netflix
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -464,12 +425,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎥 DisneyPlus
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -489,12 +447,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎥 HBO
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -514,12 +469,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎥 PrimeVideo
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -539,12 +491,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎥 AppleTV+
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -564,12 +513,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎥 Emby
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -589,12 +535,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🎻 Spotify
 #   proxies:
 #   - 🇸🇬 新加坡节点
@@ -614,24 +557,18 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 📺 Bahamut
 #   proxies:
 #   - 🇼🇸 台湾节点
 #   - 🇭🇰 香港节点
 #   - 🚀 故障转移
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🌎 国外媒体
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -651,12 +588,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🛒 国外电商
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -676,12 +610,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🪙 加密货币
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -701,12 +632,9 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 📢 谷歌FCM
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -727,12 +655,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🇬 谷歌服务
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -752,10 +677,10 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - name: 🍎 苹果服务
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 🍎 苹果服务
 #   proxies:
 #   - 🎯 全球直连
 #   - 🇭🇰 香港节点
@@ -776,7 +701,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   type: select
-# - name: Ⓜ️ 微软服务
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: Ⓜ️ 微软服务
 #   proxies:
 #   - 🎯 全球直连
 #   - 🇭🇰 香港节点
@@ -797,7 +724,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   type: select
-# - name: 💾 OneDrive
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 💾 OneDrive
 #   proxies:
 #   - 🎯 全球直连
 #   - 🇭🇰 香港节点
@@ -818,7 +747,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   type: select
-# - name: 💳 PayPal
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 💳 PayPal
 #   proxies:
 #   - 🎯 全球直连
 #   - 🇭🇰 香港节点
@@ -839,7 +770,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   type: select
-# - name: 🎮 游戏平台
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 🎮 游戏平台
 #   proxies:
 #   - 🎯 全球直连
 #   - 🇭🇰 香港节点
@@ -860,7 +793,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   type: select
-# - name: 🎮 Steam
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 🎮 Steam
 #   proxies:
 #   - 🎯 全球直连
 #   - 🇭🇰 香港节点
@@ -881,9 +816,8 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   type: select
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: ⏬ PT站点
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -904,10 +838,10 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   - 🎯 全球直连
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - name: 🚀 测速工具
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 🚀 测速工具
 #   proxies:
 #   - 🎯 全球直连
 #   - 🇭🇰 香港节点
@@ -928,7 +862,9 @@
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
 #   type: select
-# - name: 🌍 国外域名
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 🌍 国外域名
 #   proxies:
 #   - 🎯 全球直连
 #   - 🚀 故障转移
@@ -950,9 +886,8 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   type: select
-# - expected-status: 204
-#   interval: 300
-#   lazy: false
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
 #   name: 🐟 漏网之鱼
 #   proxies:
 #   - 🇭🇰 香港节点
@@ -972,21 +907,22 @@
 #   - 🏠 家宽节点
 #   - 🐢 低倍率节点
 #   - ♻️ 自动选择
-#   timeout: 5000
 #   type: fallback
-#   url: https://cp.cloudflare.com/generate_204
-# - name: 🔀 非标端口
+#   url: https://www.gstatic.com/generate_204
+# - interval: 300
+#   name: 🔀 非标端口
 #   proxies:
 #   - 🐟 漏网之鱼
 #   - 🎯 全球直连
 #   type: select
+#   url: https://www.gstatic.com/generate_204
 # - filter: (?i)(🇭🇰|港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG
 #     KONG|HONGKONG|深港|HKG|九龙|Kowloon|新界|沙田|荃湾|葵涌)
 #   interval: 300
 #   name: 🇭🇰 香港节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇺🇸|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|纽约|纽纽|亚特兰大|迈阿密|华盛顿|\bUS(?:[-_
@@ -995,7 +931,7 @@
 #   name: 🇺🇸 美国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇯🇵|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|(?<!尼|-)日|\bJP(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Japan|JAPAN|JPN|NRT|HND|KIX|TYO|OSA|关西|Kansai|KANSAI)
@@ -1003,7 +939,7 @@
 #   name: 🇯🇵 日本节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇸🇬|新加坡|坡|狮城|\bSG(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Singapore|SINGAPORE|SIN)
@@ -1011,7 +947,7 @@
 #   name: 🇸🇬 新加坡节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇹🇼|🇼🇸|台|新北|彰化|\bTW(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Taiwan|TAIWAN|TWN|TPE|ROC)
@@ -1019,7 +955,7 @@
 #   name: 🇼🇸 台湾节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇰🇷|\bKR(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Korea|KOREA|KOR|首尔|韩|韓|春川|Chuncheon|ICN)
@@ -1027,7 +963,7 @@
 #   name: 🇰🇷 韩国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇨🇦|加拿大|\bCA(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|Canada|CANADA|CAN|渥太华|温哥华|卡尔加里|蒙特利尔|Montreal|YVR|YYZ|YUL)
@@ -1035,7 +971,7 @@
 #   name: 🇨🇦 加拿大节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇬🇧|英国|Britain|United Kingdom|UNITED KINGDOM|England|伦敦|曼彻斯特|Manchester|\bUK(?:[-_
@@ -1044,7 +980,7 @@
 #   name: 🇬🇧 英国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇫🇷|法国|\bFR(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|France|FRANCE|FRA|巴黎|马赛|Marseille|CDG|MRS)
@@ -1052,7 +988,7 @@
 #   name: 🇫🇷 法国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇩🇪|德国|Germany|GERMANY|\bDE(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|DEU|柏林|法兰克福|慕尼黑|Munich|MUC)
@@ -1060,7 +996,7 @@
 #   name: 🇩🇪 德国节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇳🇱|荷兰|Netherlands|NETHERLANDS|\bNL(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|NLD|阿姆斯特丹|AMS)
@@ -1068,7 +1004,7 @@
 #   name: 🇳🇱 荷兰节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇹🇷|土耳其|Turkey|TURKEY|Türkiye|\bTR(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|TUR|IST|ANK)
@@ -1076,7 +1012,7 @@
 #   name: 🇹🇷 土耳其节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(🇷🇺|(?<!白)俄罗斯|(?<!白)俄|莫斯科|圣彼得堡|新西伯利亚|海参崴|符拉迪沃斯托克|哈巴罗夫斯克|伯力|\bRU(?:[-_
@@ -1085,7 +1021,7 @@
 #   name: 🇷🇺 俄罗斯节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(^(?!.*(港|\bHK(?:[-_ ]?\d+(?:[-_ ]?[A-Za-z]{2,})?)?\b|hk|Hong Kong|HongKong|hongkong|HONG
@@ -1107,7 +1043,7 @@
 #   name: 🌐 其他地区
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(家宽|家庭宽带|住宅|Residential)
@@ -1115,7 +1051,7 @@
 #   name: 🏠 家宽节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
 # - filter: (?i)(低倍率|低倍|(?<![\d\.])0?\.\d+(?![0-9])(?:x|倍)?|倍率[:： ]?0?\.\d+)
@@ -1123,14 +1059,15 @@
 #   name: 🐢 低倍率节点
 #   tolerance: 50
 #   type: url-test
-#   url: https://cp.cloudflare.com/generate_204
+#   url: https://www.gstatic.com/generate_204
 #   use:
 #   - provider1
-# - name: 🎯 全球直连
+# - interval: 300
+#   name: 🎯 全球直连
 #   proxies:
 #   - DIRECT
 #   type: select
-#   url: http://wifi.vivo.com.cn/generate_204
+#   url: https://www.gstatic.com/generate_204
 
 # ==========================================================
 # rule-providers（从源文件直接提取）

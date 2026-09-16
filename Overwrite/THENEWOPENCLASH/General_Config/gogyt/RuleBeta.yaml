@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - RuleBeta.yaml
-# 生成日期：2026-09-15
+# 生成日期：2026-09-16
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/gogyt/RuleBeta.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -127,10 +127,10 @@
 #   - 欧洲策略
 #   - 其他策略
 #   - 故转低倍
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 直接连接
 #   type: select
 # - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Static.png
@@ -148,10 +148,10 @@
 #   - 欧洲策略
 #   - 其他策略
 #   - 故转低倍
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   type: select
 # - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/GitHub.png
 #   name: Github
@@ -167,10 +167,10 @@
 #   - 欧洲策略
 #   - 其他策略
 #   - 故转低倍
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 默认直连
 #   - 直接连接
 #   type: select
@@ -226,10 +226,6 @@
 #   name: 社交媒体
 #   proxies: *id001
 #   type: select
-# - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/ForeignMedia.png
-#   name: 国外娱乐
-#   proxies: *id001
-#   type: select
 # - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/TikTok.png
 #   name: TikTok
 #   proxies: *id001
@@ -254,8 +250,11 @@
 #   name: Spotify
 #   proxies: *id001
 #   type: select
-# - default-selected: 默认直连
-#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Docker.png
+# - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/ForeignMedia.png
+#   name: 国外娱乐
+#   proxies: *id001
+#   type: select
+# - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Docker.png
 #   name: Docker
 #   proxies: &id002
 #   - 直接连接
@@ -271,17 +270,16 @@
 #   - 欧洲策略
 #   - 其他策略
 #   - 故转低倍
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   type: select
 # - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/OneDrive.png
 #   name: OneDrive
 #   proxies: *id002
 #   type: select
-# - default-selected: 默认直连
-#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Bing.png
+# - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Bing.png
 #   name: Bing(Copilot)
 #   proxies: *id002
 #   type: select
@@ -315,7 +313,7 @@
 #   - 默认直连
 #   - 台湾策略
 #   type: select
-# - icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Bypass.png
+# - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Bypass.png
 #   name: 非标端口
 #   proxies:
 #   - 直接连接
@@ -348,12 +346,15 @@
 #   proxies:
 #   - '[全] 狮城轮询'
 #   - '[全] 狮城散列'
+#   - '[全] 狮城粘性'
 #   - '[全] 狮城自动'
 #   - '[主] 狮城轮询'
 #   - '[主] 狮城散列'
+#   - '[主] 狮城粘性'
 #   - '[主] 狮城自动'
 #   - '[备] 狮城轮询'
 #   - '[备] 狮城散列'
+#   - '[备] 狮城粘性'
 #   - '[备] 狮城自动'
 #   type: select
 # - filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
@@ -363,12 +364,15 @@
 #   proxies:
 #   - '[全] 香港轮询'
 #   - '[全] 香港散列'
+#   - '[全] 香港粘性'
 #   - '[全] 香港自动'
 #   - '[主] 香港轮询'
 #   - '[主] 香港散列'
+#   - '[主] 香港粘性'
 #   - '[主] 香港自动'
 #   - '[备] 香港轮询'
 #   - '[备] 香港散列'
+#   - '[备] 香港粘性'
 #   - '[备] 香港自动'
 #   type: select
 # - filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
@@ -378,12 +382,15 @@
 #   proxies:
 #   - '[全] 日本轮询'
 #   - '[全] 日本散列'
+#   - '[全] 日本粘性'
 #   - '[全] 日本自动'
 #   - '[主] 日本轮询'
 #   - '[主] 日本散列'
+#   - '[主] 日本粘性'
 #   - '[主] 日本自动'
 #   - '[备] 日本轮询'
 #   - '[备] 日本散列'
+#   - '[备] 日本粘性'
 #   - '[备] 日本自动'
 #   type: select
 # - filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
@@ -393,12 +400,15 @@
 #   proxies:
 #   - '[全] 美国轮询'
 #   - '[全] 美国散列'
+#   - '[全] 美国粘性'
 #   - '[全] 美国自动'
 #   - '[主] 美国轮询'
 #   - '[主] 美国散列'
+#   - '[主] 美国粘性'
 #   - '[主] 美国自动'
 #   - '[备] 美国轮询'
 #   - '[备] 美国散列'
+#   - '[备] 美国粘性'
 #   - '[备] 美国自动'
 #   type: select
 # - filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
@@ -408,12 +418,15 @@
 #   proxies:
 #   - '[全] 台湾轮询'
 #   - '[全] 台湾散列'
+#   - '[全] 台湾粘性'
 #   - '[全] 台湾自动'
 #   - '[主] 台湾轮询'
 #   - '[主] 台湾散列'
+#   - '[主] 台湾粘性'
 #   - '[主] 台湾自动'
 #   - '[备] 台湾轮询'
 #   - '[备] 台湾散列'
+#   - '[备] 台湾粘性'
 #   - '[备] 台湾自动'
 #   type: select
 # - filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
@@ -423,12 +436,15 @@
 #   proxies:
 #   - '[全] 欧洲轮询'
 #   - '[全] 欧洲散列'
+#   - '[全] 欧洲粘性'
 #   - '[全] 欧洲自动'
 #   - '[主] 欧洲轮询'
 #   - '[主] 欧洲散列'
+#   - '[主] 欧洲粘性'
 #   - '[主] 欧洲自动'
 #   - '[备] 欧洲轮询'
 #   - '[备] 欧洲散列'
+#   - '[备] 欧洲粘性'
 #   - '[备] 欧洲自动'
 #   type: select
 # - filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
@@ -438,28 +454,16 @@
 #   proxies:
 #   - '[全] 韩国轮询'
 #   - '[全] 韩国散列'
+#   - '[全] 韩国粘性'
 #   - '[全] 韩国自动'
 #   - '[主] 韩国轮询'
 #   - '[主] 韩国散列'
+#   - '[主] 韩国粘性'
 #   - '[主] 韩国自动'
 #   - '[备] 韩国轮询'
 #   - '[备] 韩国散列'
+#   - '[备] 韩国粘性'
 #   - '[备] 韩国自动'
-#   type: select
-# - filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
-#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Other.png
-#   include-all: true
-#   name: 其他策略
-#   proxies:
-#   - '[全] 其他轮询'
-#   - '[全] 其他散列'
-#   - '[全] 其他自动'
-#   - '[主] 其他轮询'
-#   - '[主] 其他散列'
-#   - '[主] 其他自动'
-#   - '[备] 其他轮询'
-#   - '[备] 其他散列'
-#   - '[备] 其他自动'
 #   type: select
 # - filter: ^(?=.*(?i)(低倍率|低倍|(?<![\d\.])0?\.\d+(?![0-9])(?:x|倍)?|倍率[:： ]?0?\.\d+)).*$
 #   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Snail.png
@@ -468,13 +472,34 @@
 #   proxies:
 #   - '[全] 低倍轮询'
 #   - '[全] 低倍散列'
+#   - '[全] 低倍粘性'
 #   - '[全] 低倍自动'
 #   - '[主] 低倍轮询'
 #   - '[主] 低倍散列'
+#   - '[主] 低倍粘性'
 #   - '[主] 低倍自动'
 #   - '[备] 低倍轮询'
 #   - '[备] 低倍散列'
+#   - '[备] 低倍粘性'
 #   - '[备] 低倍自动'
+#   type: select
+# - filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Other.png
+#   include-all: true
+#   name: 其他策略
+#   proxies:
+#   - '[全] 其他轮询'
+#   - '[全] 其他散列'
+#   - '[全] 其他粘性'
+#   - '[全] 其他自动'
+#   - '[主] 其他轮询'
+#   - '[主] 其他散列'
+#   - '[主] 其他粘性'
+#   - '[主] 其他自动'
+#   - '[备] 其他轮询'
+#   - '[备] 其他散列'
+#   - '[备] 其他粘性'
+#   - '[备] 其他自动'
 #   type: select
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
@@ -1217,6 +1242,375 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
 #   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 香港粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 台湾粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 狮城粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 日本粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 韩国粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 美国粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 欧洲粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 其他粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(低倍率|低倍|(?<![\d\.])0?\.\d+(?![0-9])(?:x|倍)?|倍率[:： ]?0?\.\d+)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   include-all: true
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[全] 低倍粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 香港粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 台湾粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 狮城粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 日本粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 韩国粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 美国粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 欧洲粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 其他粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(低倍率|低倍|(?<![\d\.])0?\.\d+(?![0-9])(?:x|倍)?|倍率[:： ]?0?\.\d+)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[主] 低倍粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport1
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 香港粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 台湾粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 狮城粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 日本粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 韩国粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 美国粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 欧洲粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 其他粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(低倍率|低倍|(?<![\d\.])0?\.\d+(?![0-9])(?:x|倍)?|倍率[:： ]?0?\.\d+)).*$
+#   hidden: true
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Pinboard.png
+#   interval: 200
+#   lazy: true
+#   max-failed-times: 2
+#   name: '[备] 低倍粘性'
+#   strategy: round-robin
+#   timeout: 3000
+#   type: load-balance
+#   url: https://www.google.com/generate_204
+#   use:
+#   - Airport2
+# - empty-fallback: REJECT
+#   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
+#   hidden: true
 #   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   include-all: true
 #   interval: 200
@@ -1591,10 +1985,10 @@
 #   max-failed-times: 2
 #   name: 故转手动
 #   proxies:
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 狮城策略
 #   - 美国策略
 #   - 香港策略
@@ -1624,10 +2018,10 @@
 #   - 韩国策略
 #   - 欧洲策略
 #   - 其他策略
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 低倍策略
 #   - 直接连接
 #   timeout: 3000
@@ -1649,10 +2043,10 @@
 #   - 韩国策略
 #   - 欧洲策略
 #   - 其他策略
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 低倍策略
 #   - 直接连接
 #   timeout: 3000
@@ -1674,10 +2068,10 @@
 #   - 韩国策略
 #   - 欧洲策略
 #   - 其他策略
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 低倍策略
 #   - 直接连接
 #   timeout: 3000
@@ -1699,10 +2093,10 @@
 #   - 韩国策略
 #   - 欧洲策略
 #   - 其他策略
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 低倍策略
 #   - 直接连接
 #   timeout: 3000
@@ -1724,10 +2118,10 @@
 #   - 韩国策略
 #   - 欧洲策略
 #   - 其他策略
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 低倍策略
 #   - 直接连接
 #   timeout: 3000
@@ -1750,10 +2144,10 @@
 #   - 台湾策略
 #   - 韩国策略
 #   - 其他策略
-#   - 手选(一)
-#   - 手选(二)
-#   - 手选(三)
-#   - 手选(四)
+#   - 全球手动¹
+#   - 全球手动²
+#   - 全球手动³
+#   - 全球手动⁴
 #   - 直接连接
 #   timeout: 3000
 #   type: fallback
@@ -1761,106 +2155,133 @@
 # - filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
 #   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Select.png
 #   include-all: true
-#   name: 手选(一)
+#   name: 全球手动¹
 #   proxies: &id003
 #   - '[全] 狮城轮询'
 #   - '[全] 狮城散列'
+#   - '[全] 狮城粘性'
 #   - '[全] 狮城自动'
 #   - '[主] 狮城轮询'
 #   - '[主] 狮城散列'
+#   - '[主] 狮城粘性'
 #   - '[主] 狮城自动'
 #   - '[备] 狮城轮询'
 #   - '[备] 狮城散列'
+#   - '[备] 狮城粘性'
 #   - '[备] 狮城自动'
 #   - '[全] 香港轮询'
 #   - '[全] 香港散列'
+#   - '[全] 香港粘性'
 #   - '[全] 香港自动'
 #   - '[主] 香港轮询'
 #   - '[主] 香港散列'
+#   - '[主] 香港粘性'
 #   - '[主] 香港自动'
 #   - '[备] 香港轮询'
 #   - '[备] 香港散列'
+#   - '[备] 香港粘性'
 #   - '[备] 香港自动'
 #   - '[全] 日本轮询'
 #   - '[全] 日本散列'
+#   - '[全] 日本粘性'
 #   - '[全] 日本自动'
 #   - '[主] 日本轮询'
 #   - '[主] 日本散列'
+#   - '[主] 日本粘性'
 #   - '[主] 日本自动'
 #   - '[备] 日本轮询'
 #   - '[备] 日本散列'
+#   - '[备] 日本粘性'
 #   - '[备] 日本自动'
 #   - '[全] 美国轮询'
 #   - '[全] 美国散列'
+#   - '[全] 美国粘性'
 #   - '[全] 美国自动'
 #   - '[主] 美国轮询'
 #   - '[主] 美国散列'
+#   - '[主] 美国粘性'
 #   - '[主] 美国自动'
 #   - '[备] 美国轮询'
 #   - '[备] 美国散列'
+#   - '[备] 美国粘性'
 #   - '[备] 美国自动'
 #   - '[全] 台湾轮询'
 #   - '[全] 台湾散列'
+#   - '[全] 台湾粘性'
 #   - '[全] 台湾自动'
 #   - '[主] 台湾轮询'
 #   - '[主] 台湾散列'
+#   - '[主] 台湾粘性'
 #   - '[主] 台湾自动'
 #   - '[备] 台湾轮询'
 #   - '[备] 台湾散列'
+#   - '[备] 台湾粘性'
 #   - '[备] 台湾自动'
 #   - '[全] 欧洲轮询'
 #   - '[全] 欧洲散列'
+#   - '[全] 欧洲粘性'
 #   - '[全] 欧洲自动'
 #   - '[主] 欧洲轮询'
 #   - '[主] 欧洲散列'
+#   - '[主] 欧洲粘性'
 #   - '[主] 欧洲自动'
 #   - '[备] 欧洲轮询'
 #   - '[备] 欧洲散列'
+#   - '[备] 欧洲粘性'
 #   - '[备] 欧洲自动'
 #   - '[全] 韩国轮询'
 #   - '[全] 韩国散列'
+#   - '[全] 韩国粘性'
 #   - '[全] 韩国自动'
 #   - '[主] 韩国轮询'
 #   - '[主] 韩国散列'
+#   - '[主] 韩国粘性'
 #   - '[主] 韩国自动'
 #   - '[备] 韩国轮询'
 #   - '[备] 韩国散列'
+#   - '[备] 韩国粘性'
 #   - '[备] 韩国自动'
 #   - '[全] 其他轮询'
 #   - '[全] 其他散列'
+#   - '[全] 其他粘性'
 #   - '[全] 其他自动'
 #   - '[主] 其他轮询'
 #   - '[主] 其他散列'
+#   - '[主] 其他粘性'
 #   - '[主] 其他自动'
 #   - '[备] 其他轮询'
 #   - '[备] 其他散列'
+#   - '[备] 其他粘性'
 #   - '[备] 其他自动'
 #   - '[全] 低倍轮询'
 #   - '[全] 低倍散列'
+#   - '[全] 低倍粘性'
 #   - '[全] 低倍自动'
 #   - '[主] 低倍轮询'
 #   - '[主] 低倍散列'
+#   - '[主] 低倍粘性'
 #   - '[主] 低倍自动'
 #   - '[备] 低倍轮询'
 #   - '[备] 低倍散列'
+#   - '[备] 低倍粘性'
 #   - '[备] 低倍自动'
 #   type: select
 # - filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
 #   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Choose_1.png
 #   include-all: true
-#   name: 手选(二)
+#   name: 全球手动²
 #   proxies: *id003
 #   type: select
 # - filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
 #   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Select_1.png
 #   include-all: true
-#   name: 手选(三)
+#   name: 全球手动³
 #   proxies: *id003
 #   type: select
 # - filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
 #   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Select_2.png
 #   include-all: true
-#   name: 手选(四)
+#   name: 全球手动⁴
 #   proxies: *id003
 #   type: select
 
@@ -2291,6 +2712,7 @@
 # - RULE-SET,apple@cn,直接连接
 # - RULE-SET,bing@cn,直接连接
 # - RULE-SET,microsoft@cn,直接连接
+# - RULE-SET,docker,Docker
 # - RULE-SET,onedrive,OneDrive
 # - RULE-SET,bing,Bing(Copilot)
 # - RULE-SET,github,Github

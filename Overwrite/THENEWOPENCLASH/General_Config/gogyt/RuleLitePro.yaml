@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - RuleLitePro.yaml
-# 生成日期：2026-09-15
+# 生成日期：2026-09-16
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/gogyt/RuleLitePro.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -114,7 +114,7 @@
 # ==========================================================
 #
 # proxy-groups:
-# - icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Proxy.png
+# - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Proxy.png
 #   name: 默认代理
 #   proxies:
 #   - 故障转移
@@ -129,7 +129,7 @@
 #   - 全球手动
 #   - 直接连接
 #   type: select
-# - icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Static.png
+# - icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Static.png
 #   name: 默认直连
 #   proxies:
 #   - 直接连接
@@ -145,8 +145,9 @@
 #   - 其他策略
 #   - 全球手动
 #   type: select
-# - filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Final.png
+# - default-selected: 默认直连
+#   filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Final.png
 #   include-all: true
 #   name: 漏网之鱼
 #   proxies: &id001
@@ -164,14 +165,15 @@
 #   - 其他策略
 #   - 全球手动
 #   type: select
-# - filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Speedtest.png
+# - default-selected: 默认直连
+#   filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Speedtest.png
 #   include-all: true
 #   name: 网络测试
 #   proxies: *id001
 #   type: select
 # - filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Singapore.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Singapore.png
 #   include-all: true
 #   name: 狮城策略
 #   proxies:
@@ -183,7 +185,7 @@
 #   - '[备] 狮城自动'
 #   type: select
 # - filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Hong_Kong.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Hong_Kong.png
 #   include-all: true
 #   name: 香港策略
 #   proxies:
@@ -195,7 +197,7 @@
 #   - '[备] 香港自动'
 #   type: select
 # - filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Japan.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Japan.png
 #   include-all: true
 #   name: 日本策略
 #   proxies:
@@ -207,7 +209,7 @@
 #   - '[备] 日本自动'
 #   type: select
 # - filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/United_States.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/United_States.png
 #   include-all: true
 #   name: 美国策略
 #   proxies:
@@ -219,7 +221,7 @@
 #   - '[备] 美国自动'
 #   type: select
 # - filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Taiwan.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Taiwan.png
 #   include-all: true
 #   name: 台湾策略
 #   proxies:
@@ -231,7 +233,7 @@
 #   - '[备] 台湾自动'
 #   type: select
 # - filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/European_Union.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/European_Union.png
 #   include-all: true
 #   name: 欧洲策略
 #   proxies:
@@ -243,7 +245,7 @@
 #   - '[备] 欧洲自动'
 #   type: select
 # - filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Korea.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Korea.png
 #   include-all: true
 #   name: 韩国策略
 #   proxies:
@@ -269,7 +271,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -283,7 +285,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -297,7 +299,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -311,7 +313,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -325,7 +327,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -339,7 +341,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -353,7 +355,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -367,7 +369,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -381,7 +383,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -395,7 +397,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -409,7 +411,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -423,7 +425,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -437,7 +439,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -451,7 +453,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -465,7 +467,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -479,7 +481,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin_1.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin_1.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -493,7 +495,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -507,7 +509,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -521,7 +523,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -535,7 +537,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -549,7 +551,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -563,7 +565,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -577,7 +579,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -591,7 +593,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -605,7 +607,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -619,7 +621,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -633,7 +635,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -647,7 +649,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -661,7 +663,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -675,7 +677,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -689,7 +691,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -703,7 +705,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Round_Robin.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Round_Robin.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -717,7 +719,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -731,7 +733,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -745,7 +747,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -759,7 +761,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -773,7 +775,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -787,7 +789,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -801,7 +803,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -815,7 +817,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -829,7 +831,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(港|🇭🇰|HK|Hong|HKG)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -843,7 +845,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(台|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -857,7 +859,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(坡|🇸🇬|SG|Sing|SIN|XSP)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -871,7 +873,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(日|🇯🇵|JP|Japan|NRT|HND|KIX|CTS|FUK)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -885,7 +887,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(韩|🇰🇷|韓|首尔|南朝鲜|KR|KOR|Korea|South)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -899,7 +901,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(美|🇺🇸|US|USA|JFK|SJC|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD))(?!.*(Plus|Australia)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -913,7 +915,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?=.*(?i)(奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|🇬🇧|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU)).*$
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -927,7 +929,7 @@
 # - empty-fallback: REJECT
 #   filter: ^(?!.*(DIRECT|直接连接|美|港|坡|台|新|日|韩|奥|比|保|克罗地亚|塞|捷|丹|爱沙|芬|法|德|希|匈|爱尔|意|拉|立|卢|马其它|荷|波|葡|罗|斯洛伐|斯洛文|西|瑞|英|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Auto.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Auto.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -939,7 +941,7 @@
 #   use:
 #   - Airport2
 # - filter: ^(?!.*(DIRECT|直接连接|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/World_Map.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/World_Map.png
 #   include-all: true
 #   name: 全球手动
 #   proxies:
@@ -994,7 +996,7 @@
 #   type: select
 # - empty-fallback: REJECT
 #   hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Back.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Back.png
 #   interval: 200
 #   lazy: true
 #   max-failed-times: 2
@@ -1014,7 +1016,7 @@
 #   type: fallback
 #   url: https://www.google.com/generate_204
 # - hidden: true
-#   icon: https://testingcf.jsdelivr.net/gh/Koolson/Qure@master/IconSet/Color/Direct.png
+#   icon: https://testingcf.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Direct.png
 #   name: 直接连接
 #   proxies:
 #   - DIRECT
@@ -1069,73 +1071,73 @@
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-game-platforms-download.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/category-game-platforms-download.mrs
 #   category-games:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-games.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/category-games.mrs
 #   category-games-cn:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-games-cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/category-games-cn.mrs
 #   category-games@cn:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-games@cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/category-games@cn.mrs
 #   category-pt:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-pt.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/category-pt.mrs
 #   category-public-tracker:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-public-tracker.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/category-public-tracker.mrs
 #   category-speedtest:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-speedtest.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/category-speedtest.mrs
 #   cloudflare_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cloudflare.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/cloudflare.mrs
 #   cloudfront_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cloudfront.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/cloudfront.mrs
 #   cn:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/cn.mrs
 #   cn_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/cn.mrs
 #   facebook_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/facebook.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/facebook.mrs
 #   fakeip-filter:
 #     behavior: domain
 #     format: mrs
@@ -1147,61 +1149,61 @@
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/fastly.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/fastly.mrs
 #   geolocation-!cn:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-!cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/geolocation-!cn.mrs
 #   geolocation-cn:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/geolocation-cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/geolocation-cn.mrs
 #   gfw:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/gfw.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/gfw.mrs
 #   github:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/github.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/github.mrs
 #   google-cn:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google-cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/google-cn.mrs
 #   google_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/google.mrs
 #   microsoft:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/microsoft.mrs
 #   microsoft@cn:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft@cn.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/microsoft@cn.mrs
 #   netflix_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/netflix.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/netflix.mrs
 #   non_standard_port:
 #     behavior: classical
 #     format: yaml
@@ -1213,31 +1215,31 @@
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/private.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/private.mrs
 #   private_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/private.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/private.mrs
 #   telegram_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/telegram.mrs
 #   test-ipv6:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/test-ipv6.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geosite/test-ipv6.mrs
 #   twitter_IP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://testingcf.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/twitter.mrs
+#     url: https://testingcf.jsdelivr.net/gh/gogyt/Mihomo@main/geo/geoip/twitter.mrs
 
 # ==========================================================
 # rules（从源文件直接提取）

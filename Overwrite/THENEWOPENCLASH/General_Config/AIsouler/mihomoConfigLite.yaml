@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - mihomoConfigLite.yaml
-# 生成日期：2026-09-15
+# 生成日期：2026-09-16
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/AIsouler/mihomoConfigLite.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -690,10 +690,10 @@
 #
 # dns:
 #   cache-algorithm: arc
-#   default-nameserver: &id002
-#   - https://223.5.5.5/dns-query#DIRECT
-#   - https://1.12.12.12/dns-query#DIRECT
-#   - https://114.114.114.114/dns-query#DIRECT
+#   default-nameserver:
+#   - 114.114.114.114#DIRECT
+#   - tls://223.5.5.5#DIRECT
+#   - https://1.12.12.12#DIRECT
 #   direct-nameserver: &id001
 #   - system
 #   - 223.5.5.5#DIRECT
@@ -712,6 +712,9 @@
 #   - https://dns.google/dns-query#默认代理
 #   nameserver-policy:
 #     rule-set:cn: *id001
-#   proxy-server-nameserver: *id002
+#   proxy-server-nameserver:
+#   - 114.114.114.114#DIRECT
+#   - tls://223.5.5.5#DIRECT
+#   - https://doh.pub/dns-query#DIRECT
 #   use-hosts: true
 #   use-system-hosts: true
