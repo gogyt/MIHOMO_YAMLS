@@ -22,7 +22,7 @@
 
 | 👤 作者（文件夹名） | 📦 配置清单 | 📝 描述 | 🔗 溯源 |
 | :--- | :--- | :--- | :--- |
-| **gogyt** | 📄 [`Rule.yaml`](General_Config/gogyt/Rule.yaml)<br>📄 [`RulePro.yaml`](General_Config/gogyt/RulePro.yaml)<br>📄 [`RuleBeta.yaml`](General_Config/gogyt/RuleBeta.yaml)<br>📄 [`RuleLite.yaml`](General_Config/gogyt/RuleLite.yaml)<br>📄 [`RuleLitePro.yaml`](General_Config/gogyt/RuleLitePro.yaml)<br>📄 [`RuleSmart.yaml`](General_Config/gogyt/RuleSmart.yaml) | ☑️Fake-IP黑/白名单<br>☑️标准&精简&重度分流规则<br>☑️支持仅内核裸跑<br>☑️自定义故障转移<br>☑️自定义出站机场 | [Yaml](https://github.com/gogyt/Mihomo/tree/main/yaml) |
+| **gogyt** | 📄 [`Rule.yaml`](General_Config/gogyt/Rule.yaml)<br>📄 [`RulePro.yaml`](General_Config/gogyt/RulePro.yaml)<br>📄 [`RuleBeta.yaml`](General_Config/gogyt/RuleBeta.yaml)<br>📄 [`RuleLite.yaml`](General_Config/gogyt/RuleLite.yaml)<br>📄 [`RuleLitePro.yaml`](General_Config/gogyt/RuleLitePro.yaml)| ☑️Fake-IP黑/白名单<br>☑️标准&精简&重度分流规则<br>☑️支持仅内核裸跑<br>☑️自定义故障转移<br>☑️自定义出站机场 | [Yaml](https://github.com/gogyt/Mihomo/tree/main/yaml) |
 | **JohnsonRan** | 📄 [`AIB.yaml`](General_Config/JohnsonRan/AIB.yaml)<br>📄 [`AIO.yaml`](General_Config/JohnsonRan/AIO.yaml) | 社区精选配置 | [CRules](https://github.com/JohnsonRan/CRules) |
 | **HenryChiao** | 📄 [`MihomoAIO.yaml`](General_Config/HenryChiao/MihomoAIO.yaml)<br>📄 [`MihomoProMax.yaml`](General_Config/HenryChiao/MihomoProMax.yaml)<br>📄 [`MihomoProPlus.yaml`](General_Config/HenryChiao/MihomoProPlus.yaml) | 社区精选配置 | [MIHOMO_AIO](https://github.com/HenryChiao/MIHOMO_AIO) |
 | **iKeLee** | 📄 [`Clash_Sample.yaml`](General_Config/iKeLee/Clash_Sample.yaml)<br>📄 [`backup.yaml`](General_Config/iKeLee/backup.yaml) | Clash_Sample.yaml 来自下方仓库；backup.yaml 为备份文件 | [ProxyResource](https://github.com/luestr/ProxyResource) |
@@ -65,6 +65,7 @@
 
 | 👤 作者（文件夹名） | 📦 配置清单 | 📝 描述 | 🔗 溯源 |
 | :--- | :--- | :--- | :--- |
+| **gogyt** | 📄 [`RuleSmart.yaml`](General_Config/gogyt/RuleSmart.yaml)<br>📄 [`GeoSmart.yaml`](General_Config/gogyt/GeoSmart.yaml) | ☑️重度分流规则<br>☑️自定义故障转移<br>☑️自定义出站机场 | [Yaml](https://github.com/gogyt/Mihomo/tree/main/yaml) |
 | **HenryChiao** | 📄 [`MihomoSmartAIO.yaml`](Smart_Mode/HenryChiao/MihomoSmartAIO.yaml)<br>📄 [`MihomoSmartProMax.yaml`](Smart_Mode/HenryChiao/MihomoSmartProMax.yaml)<br>📄 [`MihomoSmartProPlus.yaml`](Smart_Mode/HenryChiao/MihomoSmartProPlus.yaml)<br>📄 [`THESmart.yaml`](Smart_Mode/HenryChiao/THESmart.yaml) | 社区精选配置；THESmart.yaml 取自 `CONFIG/Test_Final/mihomo-final-v6.yaml` | [MIHOMO_AIO](https://github.com/HenryChiao/MIHOMO_AIO) |
 | **666OS** | 📄 [`OneSmart_Config.yaml`](Smart_Mode/666OS/OneSmart_Config.yaml)<br>📄 [`OneSmart_Lite_Config.yaml`](Smart_Mode/666OS/OneSmart_Lite_Config.yaml) | 社区精选配置（源文件分别为 legacy/OneSmartPro.yaml、legacy/OneSmart.yaml） | [YYDS](https://github.com/666OS/YYDS) |
 | **liandu2024** | 📄 [`clash-all-fallback-smart.yaml`](Smart_Mode/liandu2024/clash-all-fallback-smart.yaml)<br>📄 [`clash-all-smart.yaml`](Smart_Mode/liandu2024/clash-all-smart.yaml)<br>📄 [`clash-fallback-smart-std.yaml`](Smart_Mode/liandu2024/clash-fallback-smart-std.yaml) | 社区精选配置 | [little](https://github.com/liandu2024/little) |
