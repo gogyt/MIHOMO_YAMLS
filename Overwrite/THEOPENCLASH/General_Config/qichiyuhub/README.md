@@ -5,6 +5,7 @@
 | 配置文件 (.conf) | 需要填写的订阅源 (Provider) | 操作 |
 | :--- | :--- | :--- |
 | **config.conf** | `$EN_KEY1`: Airport1 | [查看源码](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THEOPENCLASH/General_Config/qichiyuhub/config.conf) |
+| **mihomo.conf** | `$EN_KEY1`: HH | [查看源码](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THEOPENCLASH/General_Config/qichiyuhub/mihomo.conf) |
 | **proxychain.conf** | `$EN_KEY1`: Airport1 | [查看源码](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THEOPENCLASH/General_Config/qichiyuhub/proxychain.conf) |
 
 ---
