@@ -6,20 +6,20 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `GeoLitePro.yaml` | `Rule.yaml` | `GeoPro.yaml` | `RuleBeta.yaml` | `RuleLite.yaml` | `GeoLite.yaml` | `Geo.yaml` | `RuleLitePro.yaml` | `RulePro.yaml` |
+| 特性 | `RuleLitePro.yaml` | `GeoPro.yaml` | `RuleLite.yaml` | `GeoLitePro.yaml` | `RuleBeta.yaml` | `Rule.yaml` | `Geo.yaml` | `RulePro.yaml` | `GeoLite.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 36.8 KB | 44.4 KB | 51.5 KB | 65.7 KB | 34.9 KB | 31.1 KB | 37.7 KB | 40.7 KB | 59.5 KB |
+| **大小** | 42.3 KB | 51.8 KB | 37.9 KB | 38.5 KB | 66.2 KB | 47.4 KB | 40.8 KB | 59.9 KB | 34.0 KB |
 | **混合端口** | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule |
 | **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **策略组** | **63** | **67** | **124** | **165** | **47** | **47** | **67** | **63** | **124** |
-| **规则数** | **32** | **53** | **63** | **64** | **33** | **32** | **52** | **33** | **64** |
+| **策略组** | **63** | **124** | **47** | **63** | **165** | **67** | **67** | **124** | **47** |
+| **规则数** | **33** | **63** | **33** | **32** | **64** | **53** | **52** | **64** | **32** |
 
 ## 📄 配置详情
 
-#### 📝 GeoLitePro.yaml
-- **路径**: `GeoLitePro.yaml` | **大小**: 36.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoLitePro.yaml)
+#### 📝 RuleLitePro.yaml
+- **路径**: `RuleLitePro.yaml` | **大小**: 42.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLitePro.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (63个)</summary>
@@ -49,39 +49,8 @@
 | ... | 还有 43 个 |
 </details>
 
-#### 📝 Rule.yaml
-- **路径**: `Rule.yaml` | **大小**: 44.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/Rule.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (67个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 默认代理 | `select` |
-| 👆 默认直连 | `select` |
-| 👆 Github | `select` |
-| 👆 油管视频 | `select` |
-| 👆 谷歌服务 | `select` |
-| 👆 AI服务 | `select` |
-| 👆 国外电商 | `select` |
-| 👆 加密货币 | `select` |
-| 👆 即时通讯 | `select` |
-| 👆 社交媒体 | `select` |
-| 👆 TikTok | `select` |
-| 👆 奈飞视频 | `select` |
-| 👆 迪士尼+ | `select` |
-| 👆 HBO | `select` |
-| 👆 Prime Video | `select` |
-| 👆 Spotify | `select` |
-| 👆 国外娱乐 | `select` |
-| 👆 Bing(Copilot) | `select` |
-| 👆 微软服务 | `select` |
-| 👆 苹果服务 | `select` |
-| ... | 还有 47 个 |
-</details>
-
 #### 📝 GeoPro.yaml
-- **路径**: `GeoPro.yaml` | **大小**: 51.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoPro.yaml)
+- **路径**: `GeoPro.yaml` | **大小**: 51.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoPro.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (124个)</summary>
@@ -111,8 +80,70 @@
 | ... | 还有 104 个 |
 </details>
 
+#### 📝 RuleLite.yaml
+- **路径**: `RuleLite.yaml` | **大小**: 37.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLite.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (47个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 狮城策略 | `select` |
+| 👆 香港策略 | `select` |
+| 👆 日本策略 | `select` |
+| 👆 美国策略 | `select` |
+| 👆 台湾策略 | `select` |
+| 👆 欧洲策略 | `select` |
+| 👆 韩国策略 | `select` |
+| 👆 其他策略 | `select` |
+| ⚖️ 香港散列 | `load-balance` |
+| ⚖️ 台湾散列 | `load-balance` |
+| ⚖️ 狮城散列 | `load-balance` |
+| ⚖️ 日本散列 | `load-balance` |
+| ⚖️ 韩国散列 | `load-balance` |
+| ⚖️ 美国散列 | `load-balance` |
+| ⚖️ 欧洲散列 | `load-balance` |
+| ... | 还有 27 个 |
+</details>
+
+#### 📝 GeoLitePro.yaml
+- **路径**: `GeoLitePro.yaml` | **大小**: 38.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoLitePro.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (63个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 狮城策略 | `select` |
+| 👆 香港策略 | `select` |
+| 👆 日本策略 | `select` |
+| 👆 美国策略 | `select` |
+| 👆 台湾策略 | `select` |
+| 👆 欧洲策略 | `select` |
+| 👆 韩国策略 | `select` |
+| 👆 其他策略 | `select` |
+| ⚖️ [主] 香港散列 | `load-balance` |
+| ⚖️ [主] 台湾散列 | `load-balance` |
+| ⚖️ [主] 狮城散列 | `load-balance` |
+| ⚖️ [主] 日本散列 | `load-balance` |
+| ⚖️ [主] 韩国散列 | `load-balance` |
+| ⚖️ [主] 美国散列 | `load-balance` |
+| ⚖️ [主] 欧洲散列 | `load-balance` |
+| ... | 还有 43 个 |
+</details>
+
 #### 📝 RuleBeta.yaml
-- **路径**: `RuleBeta.yaml` | **大小**: 65.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleBeta.yaml)
+- **路径**: `RuleBeta.yaml` | **大小**: 66.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleBeta.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (165个)</summary>
@@ -142,70 +173,8 @@
 | ... | 还有 145 个 |
 </details>
 
-#### 📝 RuleLite.yaml
-- **路径**: `RuleLite.yaml` | **大小**: 34.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLite.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (47个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 默认代理 | `select` |
-| 👆 默认直连 | `select` |
-| 👆 漏网之鱼 | `select` |
-| 👆 网络测试 | `select` |
-| 👆 直接连接 | `select` |
-| 👆 狮城策略 | `select` |
-| 👆 香港策略 | `select` |
-| 👆 日本策略 | `select` |
-| 👆 美国策略 | `select` |
-| 👆 台湾策略 | `select` |
-| 👆 欧洲策略 | `select` |
-| 👆 韩国策略 | `select` |
-| 👆 其他策略 | `select` |
-| ⚖️ 香港散列 | `load-balance` |
-| ⚖️ 台湾散列 | `load-balance` |
-| ⚖️ 狮城散列 | `load-balance` |
-| ⚖️ 日本散列 | `load-balance` |
-| ⚖️ 韩国散列 | `load-balance` |
-| ⚖️ 美国散列 | `load-balance` |
-| ⚖️ 欧洲散列 | `load-balance` |
-| ... | 还有 27 个 |
-</details>
-
-#### 📝 GeoLite.yaml
-- **路径**: `GeoLite.yaml` | **大小**: 31.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoLite.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (47个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 默认代理 | `select` |
-| 👆 默认直连 | `select` |
-| 👆 漏网之鱼 | `select` |
-| 👆 网络测试 | `select` |
-| 👆 直接连接 | `select` |
-| 👆 狮城策略 | `select` |
-| 👆 香港策略 | `select` |
-| 👆 日本策略 | `select` |
-| 👆 美国策略 | `select` |
-| 👆 台湾策略 | `select` |
-| 👆 欧洲策略 | `select` |
-| 👆 韩国策略 | `select` |
-| 👆 其他策略 | `select` |
-| ⚖️ 香港散列 | `load-balance` |
-| ⚖️ 台湾散列 | `load-balance` |
-| ⚖️ 狮城散列 | `load-balance` |
-| ⚖️ 日本散列 | `load-balance` |
-| ⚖️ 韩国散列 | `load-balance` |
-| ⚖️ 美国散列 | `load-balance` |
-| ⚖️ 欧洲散列 | `load-balance` |
-| ... | 还有 27 个 |
-</details>
-
-#### 📝 Geo.yaml
-- **路径**: `Geo.yaml` | **大小**: 37.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/Geo.yaml)
+#### 📝 Rule.yaml
+- **路径**: `Rule.yaml` | **大小**: 47.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/Rule.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (67个)</summary>
@@ -235,39 +204,39 @@
 | ... | 还有 47 个 |
 </details>
 
-#### 📝 RuleLitePro.yaml
-- **路径**: `RuleLitePro.yaml` | **大小**: 40.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLitePro.yaml)
+#### 📝 Geo.yaml
+- **路径**: `Geo.yaml` | **大小**: 40.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/Geo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (63个)</summary>
+<summary>🔍 策略组 (67个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
 | 👆 默认代理 | `select` |
 | 👆 默认直连 | `select` |
-| 👆 漏网之鱼 | `select` |
-| 👆 网络测试 | `select` |
-| 👆 直接连接 | `select` |
-| 👆 狮城策略 | `select` |
-| 👆 香港策略 | `select` |
-| 👆 日本策略 | `select` |
-| 👆 美国策略 | `select` |
-| 👆 台湾策略 | `select` |
-| 👆 欧洲策略 | `select` |
-| 👆 韩国策略 | `select` |
-| 👆 其他策略 | `select` |
-| ⚖️ [主] 香港散列 | `load-balance` |
-| ⚖️ [主] 台湾散列 | `load-balance` |
-| ⚖️ [主] 狮城散列 | `load-balance` |
-| ⚖️ [主] 日本散列 | `load-balance` |
-| ⚖️ [主] 韩国散列 | `load-balance` |
-| ⚖️ [主] 美国散列 | `load-balance` |
-| ⚖️ [主] 欧洲散列 | `load-balance` |
-| ... | 还有 43 个 |
+| 👆 Github | `select` |
+| 👆 油管视频 | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 AI服务 | `select` |
+| 👆 国外电商 | `select` |
+| 👆 加密货币 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 TikTok | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
+| 👆 Prime Video | `select` |
+| 👆 Spotify | `select` |
+| 👆 国外娱乐 | `select` |
+| 👆 Bing(Copilot) | `select` |
+| 👆 微软服务 | `select` |
+| 👆 苹果服务 | `select` |
+| ... | 还有 47 个 |
 </details>
 
 #### 📝 RulePro.yaml
-- **路径**: `RulePro.yaml` | **大小**: 59.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RulePro.yaml)
+- **路径**: `RulePro.yaml` | **大小**: 59.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RulePro.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (124个)</summary>
@@ -295,4 +264,35 @@
 | 👆 迪士尼+ | `select` |
 | 👆 HBO | `select` |
 | ... | 还有 104 个 |
+</details>
+
+#### 📝 GeoLite.yaml
+- **路径**: `GeoLite.yaml` | **大小**: 34.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoLite.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (47个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 狮城策略 | `select` |
+| 👆 香港策略 | `select` |
+| 👆 日本策略 | `select` |
+| 👆 美国策略 | `select` |
+| 👆 台湾策略 | `select` |
+| 👆 欧洲策略 | `select` |
+| 👆 韩国策略 | `select` |
+| 👆 其他策略 | `select` |
+| ⚖️ 香港散列 | `load-balance` |
+| ⚖️ 台湾散列 | `load-balance` |
+| ⚖️ 狮城散列 | `load-balance` |
+| ⚖️ 日本散列 | `load-balance` |
+| ⚖️ 韩国散列 | `load-balance` |
+| ⚖️ 美国散列 | `load-balance` |
+| ⚖️ 欧洲散列 | `load-balance` |
+| ... | 还有 27 个 |
 </details>
