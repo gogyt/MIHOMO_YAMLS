@@ -8,7 +8,7 @@
 
 | 特性 | `RuleLitePro.yaml` | `GeoPro.yaml` | `RuleLite.yaml` | `GeoLitePro.yaml` | `RuleBeta.yaml` | `Rule.yaml` | `Geo.yaml` | `RulePro.yaml` | `GeoLite.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 42.3 KB | 51.8 KB | 37.9 KB | 38.5 KB | 66.2 KB | 47.4 KB | 40.8 KB | 59.9 KB | 34.0 KB |
+| **大小** | 42.4 KB | 51.7 KB | 37.9 KB | 38.5 KB | 66.2 KB | 47.4 KB | 40.8 KB | 59.8 KB | 34.0 KB |
 | **混合端口** | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule |
@@ -19,7 +19,7 @@
 ## 📄 配置详情
 
 #### 📝 RuleLitePro.yaml
-- **路径**: `RuleLitePro.yaml` | **大小**: 42.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLitePro.yaml)
+- **路径**: `RuleLitePro.yaml` | **大小**: 42.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLitePro.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (63个)</summary>
@@ -50,7 +50,7 @@
 </details>
 
 #### 📝 GeoPro.yaml
-- **路径**: `GeoPro.yaml` | **大小**: 51.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoPro.yaml)
+- **路径**: `GeoPro.yaml` | **大小**: 51.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoPro.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (124个)</summary>
@@ -236,7 +236,7 @@
 </details>
 
 #### 📝 RulePro.yaml
-- **路径**: `RulePro.yaml` | **大小**: 59.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RulePro.yaml)
+- **路径**: `RulePro.yaml` | **大小**: 59.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RulePro.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (124个)</summary>

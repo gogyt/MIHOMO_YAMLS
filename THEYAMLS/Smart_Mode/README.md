@@ -8,12 +8,12 @@
 
 | 特性 | `clash-all-fallback-smart.yaml` | `clash-fallback-smart-std.yaml` | `clash-all-smart.yaml` | `smart.yaml` | `THESmart.yaml` | `MihomoSmartProMax.yaml` | `MihomoSmartAIO.yaml` | `MihomoSmartProPlus.yaml` | `RuleSmart.yaml` | `GeoSmart.yaml` | `OneSmartPro.yaml` | `OneSmart.yaml` | `OneSmartProMCX.yaml` | `mihomo_smart.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 18.2 KB | 17.7 KB | 15.1 KB | 13.7 KB | 37.3 KB | 23.6 KB | 30.2 KB | 24.1 KB | 51.8 KB | 43.7 KB | 20.1 KB | 12.4 KB | 39.0 KB | 15.1 KB |
+| **大小** | 18.2 KB | 17.7 KB | 15.1 KB | 13.7 KB | 37.3 KB | 23.6 KB | 30.2 KB | 24.1 KB | 52.2 KB | 44.0 KB | 20.1 KB | 12.4 KB | 39.0 KB | 15.1 KB |
 | **混合端口** | 7893 | 7893 | 7893 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 0 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | - |
 | **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
 | **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ |
-| **策略组** | **57** | **36** | **38** | **28** | **66** | **41** | **69** | **41** | **79** | **79** | **31** | **16** | **40** | **35** |
+| **策略组** | **57** | **36** | **38** | **28** | **66** | **41** | **69** | **41** | **87** | **87** | **31** | **16** | **40** | **35** |
 | **规则数** | **48** | **42** | **43** | **28** | **49** | **45** | **52** | **44** | **64** | **63** | **35** | **20** | **90** | **17** |
 
 ## 📄 配置详情
@@ -276,10 +276,10 @@
 ### 👤 gogyt
 
 #### 📝 RuleSmart.yaml
-- **路径**: `gogyt/RuleSmart.yaml` | **大小**: 51.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
+- **路径**: `gogyt/RuleSmart.yaml` | **大小**: 52.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (79个)</summary>
+<summary>🔍 策略组 (87个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -303,14 +303,14 @@
 | 👆 奈飞视频 | `select` |
 | 👆 迪士尼+ | `select` |
 | 👆 HBO | `select` |
-| ... | 还有 59 个 |
+| ... | 还有 67 个 |
 </details>
 
 #### 📝 GeoSmart.yaml
-- **路径**: `gogyt/GeoSmart.yaml` | **大小**: 43.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
+- **路径**: `gogyt/GeoSmart.yaml` | **大小**: 44.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (79个)</summary>
+<summary>🔍 策略组 (87个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -334,7 +334,7 @@
 | 👆 奈飞视频 | `select` |
 | 👆 迪士尼+ | `select` |
 | 👆 HBO | `select` |
-| ... | 还有 59 个 |
+| ... | 还有 67 个 |
 </details>
 
 ---
