@@ -2,19 +2,19 @@
 
 [🔙 返回主页](../../README.md)
 
-> 🤖 自动技术分析 | 14 个配置文件
+> 🤖 自动技术分析 | 16 个配置文件
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `clash-all-fallback-smart.yaml` | `clash-fallback-smart-std.yaml` | `clash-all-smart.yaml` | `smart.yaml` | `THESmart.yaml` | `MihomoSmartProMax.yaml` | `MihomoSmartAIO.yaml` | `MihomoSmartProPlus.yaml` | `RuleSmart.yaml` | `GeoSmart.yaml` | `OneSmartPro.yaml` | `OneSmart.yaml` | `OneSmartProMCX.yaml` | `mihomo_smart.yaml` |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 18.2 KB | 17.7 KB | 15.1 KB | 13.7 KB | 37.3 KB | 23.6 KB | 30.2 KB | 24.1 KB | 52.2 KB | 44.0 KB | 20.1 KB | 12.4 KB | 39.0 KB | 15.1 KB |
-| **混合端口** | 7893 | 7893 | 7893 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 0 |
-| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | - |
-| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
-| **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ |
-| **策略组** | **57** | **36** | **38** | **28** | **66** | **41** | **69** | **41** | **87** | **87** | **31** | **16** | **40** | **35** |
-| **规则数** | **48** | **42** | **43** | **28** | **49** | **45** | **52** | **44** | **64** | **63** | **35** | **20** | **90** | **17** |
+| 特性 | `clash-all-fallback-smart.yaml` | `clash-fallback-smart-std.yaml` | `clash-all-smart.yaml` | `Seven1_fallback_Rule-Set_Smart.yaml` | `Seven1_fallback_Geo_Smart.yaml` | `smart.yaml` | `THESmart.yaml` | `MihomoSmartProMax.yaml` | `MihomoSmartAIO.yaml` | `MihomoSmartProPlus.yaml` | `RuleSmart.yaml` | `GeoSmart.yaml` | `OneSmartPro.yaml` | `OneSmart.yaml` | `OneSmartProMCX.yaml` | `mihomo_smart.yaml` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **大小** | 18.2 KB | 17.7 KB | 15.1 KB | 25.5 KB | 22.4 KB | 13.7 KB | 37.3 KB | 23.6 KB | 30.2 KB | 24.1 KB | 53.6 KB | 44.7 KB | 20.1 KB | 12.4 KB | 38.8 KB | 15.1 KB |
+| **混合端口** | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 0 |
+| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | - |
+| **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
+| **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ |
+| **策略组** | **57** | **36** | **38** | **41** | **41** | **28** | **66** | **41** | **69** | **41** | **87** | **87** | **31** | **16** | **40** | **35** |
+| **规则数** | **48** | **42** | **43** | **29** | **29** | **28** | **49** | **45** | **52** | **44** | **64** | **63** | **35** | **20** | **86** | **17** |
 
 ## 📄 配置详情
 
@@ -205,6 +205,71 @@
 </details>
 
 ---
+### 👤 Seven1echo
+
+#### 📝 Seven1_fallback_Rule-Set_Smart.yaml
+- **路径**: `Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml` | **大小**: 25.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (41个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 AI | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Apple | `select` |
+| 👆 Steam | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter(X) | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 国内直连 | `select` |
+| 🔧 香港-故转 | `fallback` |
+| ... | 还有 21 个 |
+</details>
+
+#### 📝 Seven1_fallback_Geo_Smart.yaml
+- **路径**: `Seven1echo/Seven1_fallback_Geo_Smart.yaml` | **大小**: 22.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Geo_Smart.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (41个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 AI | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Apple | `select` |
+| 👆 Steam | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter(X) | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 国内直连 | `select` |
+| 🔧 香港-故转 | `fallback` |
+| ... | 还有 21 个 |
+</details>
+
+---
 ### 👤 echs-top
 
 #### 📝 mihomo_smart.yaml
@@ -242,7 +307,7 @@
 ### 👤 edison
 
 #### 📝 OneSmartProMCX.yaml
-- **路径**: `edison/OneSmartProMCX.yaml` | **大小**: 39.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/edison/OneSmartProMCX.yaml)
+- **路径**: `edison/OneSmartProMCX.yaml` | **大小**: 38.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/edison/OneSmartProMCX.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (40个)</summary>
@@ -276,7 +341,7 @@
 ### 👤 gogyt
 
 #### 📝 RuleSmart.yaml
-- **路径**: `gogyt/RuleSmart.yaml` | **大小**: 52.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
+- **路径**: `gogyt/RuleSmart.yaml` | **大小**: 53.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (87个)</summary>
@@ -307,7 +372,7 @@
 </details>
 
 #### 📝 GeoSmart.yaml
-- **路径**: `gogyt/GeoSmart.yaml` | **大小**: 44.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
+- **路径**: `gogyt/GeoSmart.yaml` | **大小**: 44.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (87个)</summary>

@@ -47,6 +47,7 @@
 | 📁 **[Official_Examples/Metacubex](./Official_Examples/Metacubex/README.md)** | 2 个 | [点击浏览详细列表](./Official_Examples/Metacubex/README.md) |
 | 📁 **[Smart_Mode/666OS](./Smart_Mode/666OS/README.md)** | 2 个 | [点击浏览详细列表](./Smart_Mode/666OS/README.md) |
 | 📁 **[Smart_Mode/HenryChiao](./Smart_Mode/HenryChiao/README.md)** | 4 个 | [点击浏览详细列表](./Smart_Mode/HenryChiao/README.md) |
+| 📁 **[Smart_Mode/Seven1echo](./Smart_Mode/Seven1echo/README.md)** | 2 个 | [点击浏览详细列表](./Smart_Mode/Seven1echo/README.md) |
 | 📁 **[Smart_Mode/echs-top](./Smart_Mode/echs-top/README.md)** | 1 个 | [点击浏览详细列表](./Smart_Mode/echs-top/README.md) |
 | 📁 **[Smart_Mode/edison](./Smart_Mode/edison/README.md)** | 1 个 | [点击浏览详细列表](./Smart_Mode/edison/README.md) |
 | 📁 **[Smart_Mode/gogyt](./Smart_Mode/gogyt/README.md)** | 2 个 | [点击浏览详细列表](./Smart_Mode/gogyt/README.md) |
