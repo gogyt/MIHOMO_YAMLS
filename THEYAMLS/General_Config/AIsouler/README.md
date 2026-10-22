@@ -8,18 +8,18 @@
 
 | 特性 | `mihomoconfig.yaml` | `mihomoConfigLite.yaml` |
 | :--- | :--- | :--- |
-| **大小** | 27.9 KB | 18.0 KB |
+| **大小** | 28.0 KB | 18.0 KB |
 | **混合端口** | 7890 | 7890 |
 | **面板地址** | 127.0.0.1:9090 | 127.0.0.1:9090 |
 | **运行模式** | rule | rule |
 | **TUN** | ✅ | ✅ |
 | **策略组** | **44** | **26** |
-| **规则数** | **58** | **22** |
+| **规则数** | **59** | **23** |
 
 ## 📄 配置详情
 
 #### 📝 mihomoconfig.yaml
-- **路径**: `mihomoconfig.yaml` | **大小**: 27.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml)
+- **路径**: `mihomoconfig.yaml` | **大小**: 28.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (44个)</summary>
