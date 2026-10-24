@@ -38,6 +38,9 @@ https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/GeoLitePro.y
 
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Yaml/Overwrite-Clash-Bypass.yaml|THEYAMLS/General_Config/Giveupmoon/Overwrite-Clash-Bypass.yaml
 https://raw.githubusercontent.com/Giveupmoon/OpenClash_Overwrite/refs/heads/main/Yaml/Overwrite-Clash.yaml|THEYAMLS/General_Config/Giveupmoon/Overwrite-Clash.yaml
+https://github.com/Giveupmoon/Clash_Rules_Yaml/raw/main/My-config.yaml|THEYAMLS/General_Config/Giveupmoon/My-config.yaml
+https://github.com/Giveupmoon/Clash_Rules_Yaml/raw/main/Start-json.yaml|THEYAMLS/General_Config/Giveupmoon/Start-json.yaml
+https://github.com/Giveupmoon/Clash_Rules_Yaml/raw/main/Start.yaml|THEYAMLS/General_Config/Giveupmoon/Start.yaml
 
 https://github.com/yiteei/Share/raw/dotfiles/.config/mihomo/config.yaml|THEYAMLS/General_Config/Yiteei/config.yaml
 https://raw.githubusercontent.com/yiteei/Share/refs/heads/Proxy/config/redir-host.yaml|THEYAMLS/General_Config/Yiteei/redir-host_config.yaml
