@@ -2,7 +2,7 @@ name: Update Configs
 
 on:
   schedule:
-    # 每月 1,4,7,10,13,16,19,22,25,28 日运行（每3天运行一次）
+    # 每月 1,4,7,10,13,16,19,22,25,28 日北京时间5:30左右运行（每3天运行一次）
     - cron: '30 05 1,4,7,10,13,16,19,22,25,28 * *'
       timezone: 'Asia/Shanghai'
   workflow_dispatch:
