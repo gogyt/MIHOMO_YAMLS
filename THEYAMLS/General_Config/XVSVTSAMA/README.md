@@ -7,10 +7,10 @@
 ## 📄 配置详情
 
 #### 📝 mihomo.yaml
-- **路径**: `mihomo.yaml` | **大小**: 26.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/XVSVTSAMA/mihomo.yaml)
+- **路径**: `mihomo.yaml` | **大小**: 37.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/XVSVTSAMA/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (13个)</summary>
+<summary>🔍 策略组 (25个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -26,5 +26,13 @@
 | 👆 ✖️ Twitter | `select` |
 | 👆 🤖 AI大模型 | `select` |
 | 👆 🎵 TikTok | `select` |
-| 👆 FCM | `select` |
+| 👆 💳 金融支付 | `select` |
+| 👆 🔎 Google | `select` |
+| 👆 ♾️ Meta | `select` |
+| 👆 🎧 Spotify | `select` |
+| 👆 🎬 Emby | `select` |
+| 👆 💬 Discord | `select` |
+| 👆 👽 Reddit | `select` |
+| 👆 🎥 Netflix | `select` |
+| ... | 还有 5 个 |
 </details>

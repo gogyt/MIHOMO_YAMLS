@@ -6,15 +6,15 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `Seven1_fallback_Geo_Smart.yaml` | `Seven1_fallback_Rule-Set_Smart.yaml` | `mihomo_smart.yaml` | `clash-all-smart.yaml` | `clash-all-fallback-smart.yaml` | `clash-fallback-smart-std.yaml` | `OneSmartPro.yaml` | `OneSmart.yaml` | `OneSmartProMCX.yaml` | `RuleSmart.yaml` | `GeoSmart.yaml` | `smart.yaml` | `MihomoSmartProMax.yaml` | `THESmart.yaml` | `MihomoSmartAIO.yaml` | `MihomoSmartProPlus.yaml` |
+| 特性 | `clash-all-fallback-smart.yaml` | `clash-fallback-smart-std.yaml` | `clash-all-smart.yaml` | `Seven1_fallback_Rule-Set_Smart.yaml` | `Seven1_fallback_Geo_Smart.yaml` | `smart.yaml` | `THESmart.yaml` | `MihomoSmartProMax.yaml` | `MihomoSmartAIO.yaml` | `MihomoSmartProPlus.yaml` | `RuleSmart.yaml` | `GeoSmart.yaml` | `OneSmartPro.yaml` | `OneSmart.yaml` | `OneSmartProMCX.yaml` | `mihomo_smart.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 22.4 KB | 25.0 KB | 15.1 KB | 15.1 KB | 18.2 KB | 17.7 KB | 20.1 KB | 12.4 KB | 37.5 KB | 53.5 KB | 45.6 KB | 13.7 KB | 23.6 KB | 37.3 KB | 30.2 KB | 24.1 KB |
-| **混合端口** | 7893 | 7893 | 0 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | 7893 | 7893 | 7893 | 7893 |
-| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 |
+| **大小** | 18.2 KB | 17.7 KB | 15.1 KB | 25.0 KB | 22.4 KB | 13.7 KB | 37.3 KB | 23.6 KB | 30.2 KB | 24.1 KB | 52.7 KB | 45.2 KB | 20.1 KB | 12.4 KB | 37.7 KB | 15.1 KB |
+| **混合端口** | 7893 | 7893 | 7893 | 7893 | 7893 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 0 |
+| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | - |
 | **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
-| **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | 🚫 | 🚫 |
-| **策略组** | **41** | **41** | **35** | **38** | **57** | **36** | **31** | **16** | **40** | **87** | **87** | **28** | **41** | **66** | **69** | **41** |
-| **规则数** | **28** | **28** | **17** | **43** | **48** | **42** | **35** | **20** | **79** | **62** | **61** | **28** | **45** | **49** | **52** | **44** |
+| **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ |
+| **策略组** | **57** | **36** | **38** | **41** | **41** | **28** | **66** | **41** | **69** | **41** | **87** | **87** | **31** | **16** | **44** | **35** |
+| **规则数** | **48** | **42** | **43** | **28** | **28** | **28** | **49** | **45** | **52** | **44** | **62** | **61** | **35** | **20** | **79** | **17** |
 
 ## 📄 配置详情
 
@@ -80,37 +80,6 @@
 ---
 ### 👤 HenryChiao
 
-#### 📝 MihomoSmartProMax.yaml
-- **路径**: `HenryChiao/MihomoSmartProMax.yaml` | **大小**: 23.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/HenryChiao/MihomoSmartProMax.yaml)
-- **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (41个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 默认代理 | `select` |
-| 🔧 故障转移 | `fallback` |
-| 👆 国外流量 | `select` |
-| 👆 国内流量 | `select` |
-| 👆 兜底流量 | `select` |
-| 👆 直接连接 | `select` |
-| 👆 网络测试 | `select` |
-| 👆 UKwifi | `select` |
-| 👆 抖快书定位 | `select` |
-| 👆 Emby服 | `select` |
-| 👆 油管视频 | `select` |
-| 👆 奈飞视频 | `select` |
-| 👆 国际媒体 | `select` |
-| 👆 新闻媒体 | `select` |
-| 👆 电报消息 | `select` |
-| 👆 推特社交 | `select` |
-| 👆 社交平台 | `select` |
-| 👆 人工智能 | `select` |
-| 👆 货币平台 | `select` |
-| 👆 游戏平台 | `select` |
-| ... | 还有 21 个 |
-</details>
-
 #### 📝 THESmart.yaml
 - **路径**: `HenryChiao/THESmart.yaml` | **大小**: 37.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/HenryChiao/THESmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
@@ -140,6 +109,37 @@
 | 👆 电报消息 | `select` |
 | 👆 推特社交 | `select` |
 | ... | 还有 46 个 |
+</details>
+
+#### 📝 MihomoSmartProMax.yaml
+- **路径**: `HenryChiao/MihomoSmartProMax.yaml` | **大小**: 23.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/HenryChiao/MihomoSmartProMax.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (41个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 🔧 故障转移 | `fallback` |
+| 👆 国外流量 | `select` |
+| 👆 国内流量 | `select` |
+| 👆 兜底流量 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 UKwifi | `select` |
+| 👆 抖快书定位 | `select` |
+| 👆 Emby服 | `select` |
+| 👆 油管视频 | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 国际媒体 | `select` |
+| 👆 新闻媒体 | `select` |
+| 👆 电报消息 | `select` |
+| 👆 推特社交 | `select` |
+| 👆 社交平台 | `select` |
+| 👆 人工智能 | `select` |
+| 👆 货币平台 | `select` |
+| 👆 游戏平台 | `select` |
+| ... | 还有 21 个 |
 </details>
 
 #### 📝 MihomoSmartAIO.yaml
@@ -207,8 +207,8 @@
 ---
 ### 👤 Seven1echo
 
-#### 📝 Seven1_fallback_Geo_Smart.yaml
-- **路径**: `Seven1echo/Seven1_fallback_Geo_Smart.yaml` | **大小**: 22.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Geo_Smart.yaml)
+#### 📝 Seven1_fallback_Rule-Set_Smart.yaml
+- **路径**: `Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml` | **大小**: 25.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (41个)</summary>
@@ -238,8 +238,8 @@
 | ... | 还有 21 个 |
 </details>
 
-#### 📝 Seven1_fallback_Rule-Set_Smart.yaml
-- **路径**: `Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml` | **大小**: 25.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml)
+#### 📝 Seven1_fallback_Geo_Smart.yaml
+- **路径**: `Seven1echo/Seven1_fallback_Geo_Smart.yaml` | **大小**: 22.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Geo_Smart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (41个)</summary>
@@ -307,10 +307,10 @@
 ### 👤 edison
 
 #### 📝 OneSmartProMCX.yaml
-- **路径**: `edison/OneSmartProMCX.yaml` | **大小**: 37.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/edison/OneSmartProMCX.yaml)
+- **路径**: `edison/OneSmartProMCX.yaml` | **大小**: 37.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/edison/OneSmartProMCX.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (40个)</summary>
+<summary>🔍 策略组 (44个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -323,25 +323,25 @@
 | 👆 Microsoft | `select` |
 | 👆 Bing | `select` |
 | 👆 Speedtest | `select` |
+| 👆 YouTube | `select` |
 | 👆 TikTok | `select` |
 | 👆 Emby | `select` |
 | 👆 PayPal | `select` |
 | 👆 Crypto | `select` |
+| 👆 G&A-Push | `select` |
 | 👆 Apple | `select` |
-| 👆 漏网之鱼 | `select` |
 | 👆 Tracker | `select` |
+| 👆 漏网之鱼 | `select` |
 | 👆 国内直连 | `select` |
 | 🔧 香港-故转 | `fallback` |
-| 🔧 台湾-故转 | `fallback` |
-| 🔧 日本-故转 | `fallback` |
-| ... | 还有 20 个 |
+| ... | 还有 24 个 |
 </details>
 
 ---
 ### 👤 gogyt
 
 #### 📝 RuleSmart.yaml
-- **路径**: `gogyt/RuleSmart.yaml` | **大小**: 53.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
+- **路径**: `gogyt/RuleSmart.yaml` | **大小**: 52.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (87个)</summary>
@@ -372,7 +372,7 @@
 </details>
 
 #### 📝 GeoSmart.yaml
-- **路径**: `gogyt/GeoSmart.yaml` | **大小**: 45.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
+- **路径**: `gogyt/GeoSmart.yaml` | **大小**: 45.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (87个)</summary>
@@ -404,37 +404,6 @@
 
 ---
 ### 👤 liandu2024
-
-#### 📝 clash-all-smart.yaml
-- **路径**: `liandu2024/clash-all-smart.yaml` | **大小**: 15.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/liandu2024/clash-all-smart.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (38个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 ChatGPT | `select` |
-| 👆 Claude | `select` |
-| 👆 Meta AI | `select` |
-| 👆 Perplexity | `select` |
-| 👆 GitHub | `select` |
-| 👆 Telegram | `select` |
-| 👆 Twitter(X) | `select` |
-| 👆 WhatsApp | `select` |
-| 👆 Facebook | `select` |
-| 👆 YouTube | `select` |
-| 👆 TikTok | `select` |
-| 👆 Disney | `select` |
-| 👆 Netflix | `select` |
-| 👆 HBO | `select` |
-| 👆 Spotify | `select` |
-| 👆 Amazon | `select` |
-| 👆 Apple | `select` |
-| 👆 Microsoft | `select` |
-| 👆 Google | `select` |
-| 👆 Nvidia | `select` |
-| ... | 还有 18 个 |
-</details>
 
 #### 📝 clash-all-fallback-smart.yaml
 - **路径**: `liandu2024/clash-all-fallback-smart.yaml` | **大小**: 18.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/liandu2024/clash-all-fallback-smart.yaml)
@@ -496,6 +465,37 @@
 | 🔧 香港-故转 | `fallback` |
 | 👆 香港-手选 | `select` |
 | ... | 还有 16 个 |
+</details>
+
+#### 📝 clash-all-smart.yaml
+- **路径**: `liandu2024/clash-all-smart.yaml` | **大小**: 15.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/liandu2024/clash-all-smart.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (38个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 ChatGPT | `select` |
+| 👆 Claude | `select` |
+| 👆 Meta AI | `select` |
+| 👆 Perplexity | `select` |
+| 👆 GitHub | `select` |
+| 👆 Telegram | `select` |
+| 👆 Twitter(X) | `select` |
+| 👆 WhatsApp | `select` |
+| 👆 Facebook | `select` |
+| 👆 YouTube | `select` |
+| 👆 TikTok | `select` |
+| 👆 Disney | `select` |
+| 👆 Netflix | `select` |
+| 👆 HBO | `select` |
+| 👆 Spotify | `select` |
+| 👆 Amazon | `select` |
+| 👆 Apple | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Google | `select` |
+| 👆 Nvidia | `select` |
+| ... | 还有 18 个 |
 </details>
 
 ---

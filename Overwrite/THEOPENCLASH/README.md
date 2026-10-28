@@ -12,7 +12,7 @@
 | 📁 **[General_Config/Aethersailor](./General_Config/Aethersailor/README.md)** | 12 个 | [点击浏览详细列表](./General_Config/Aethersailor/README.md) |
 | 📁 **[General_Config/Ayanami0-configs](./General_Config/Ayanami0-configs/README.md)** | 2 个 | [点击浏览详细列表](./General_Config/Ayanami0-configs/README.md) |
 | 📁 **[General_Config/ClashConnectRules](./General_Config/ClashConnectRules/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/ClashConnectRules/README.md) |
-| 📁 **[General_Config/Giveupmoon](./General_Config/Giveupmoon/README.md)** | 2 个 | [点击浏览详细列表](./General_Config/Giveupmoon/README.md) |
+| 📁 **[General_Config/Giveupmoon](./General_Config/Giveupmoon/README.md)** | 5 个 | [点击浏览详细列表](./General_Config/Giveupmoon/README.md) |
 | 📁 **[General_Config/HenryChiao](./General_Config/HenryChiao/README.md)** | 3 个 | [点击浏览详细列表](./General_Config/HenryChiao/README.md) |
 | 📁 **[General_Config/Kerronex](./General_Config/Kerronex/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/Kerronex/README.md) |
 | 📁 **[General_Config/Lanlan13-14](./General_Config/Lanlan13-14/README.md)** | 3 个 | [点击浏览详细列表](./General_Config/Lanlan13-14/README.md) |
@@ -23,6 +23,7 @@
 | 📁 **[General_Config/Seven1echo](./General_Config/Seven1echo/README.md)** | 2 个 | [点击浏览详细列表](./General_Config/Seven1echo/README.md) |
 | 📁 **[General_Config/Sgraqwq](./General_Config/Sgraqwq/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/Sgraqwq/README.md) |
 | 📁 **[General_Config/Tangerinell](./General_Config/Tangerinell/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/Tangerinell/README.md) |
+| 📁 **[General_Config/XVSVTSAMA](./General_Config/XVSVTSAMA/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/XVSVTSAMA/README.md) |
 | 📁 **[General_Config/YiXuanZX](./General_Config/YiXuanZX/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/YiXuanZX/README.md) |
 | 📁 **[General_Config/ameyukisora](./General_Config/ameyukisora/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/ameyukisora/README.md) |
 | 📁 **[General_Config/bgpeer](./General_Config/bgpeer/README.md)** | 1 个 | [点击浏览详细列表](./General_Config/bgpeer/README.md) |
