@@ -33,6 +33,7 @@ https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/RuleLite.yam
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/RuleLitePro.yaml|THEYAMLS/General_Config/gogyt/RuleLitePro.yaml
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/Geo.yaml|THEYAMLS/General_Config/gogyt/Geo.yaml
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/GeoPro.yaml|THEYAMLS/General_Config/gogyt/GeoPro.yaml
+https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/GeoBeta.yaml|THEYAMLS/General_Config/gogyt/GeoBeta.yaml
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/GeoLite.yaml|THEYAMLS/General_Config/gogyt/GeoLite.yaml
 https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/GeoLitePro.yaml|THEYAMLS/General_Config/gogyt/GeoLitePro.yaml
 
