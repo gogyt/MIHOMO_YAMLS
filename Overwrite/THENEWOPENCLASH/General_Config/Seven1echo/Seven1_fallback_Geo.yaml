@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Seven1_fallback_Geo.yaml
-# 生成日期：2026-09-16
+# 生成日期：2026-11-01
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Geo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -216,8 +216,8 @@
 #   name: TikTok
 #   proxies: *id001
 #   type: select
-# - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Twitter.png
-#   name: Twitter(X)
+# - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/X.png
+#   name: X
 #   proxies: *id001
 #   type: select
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Telegram.png
@@ -495,18 +495,18 @@
 # ==========================================================
 #
 # rule-providers:
-#   add_direct_domain:
+#   add_cn_domain:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
 #     url: https://raw.githubusercontent.com/Seven1echo/Yaml/refs/heads/main/rules/Seven1_Direct_Domain.mrs
-#   cn_ip:
+#   bps_cn_ip:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs
+#     url: https://raw.githubusercontent.com/Seven1echo/Yaml/refs/heads/main/rules/Seven1_Bypass_China.mrs
 
 # ==========================================================
 # rules（从源文件直接提取）
@@ -520,7 +520,7 @@
 # ==========================================================
 #
 # rules:
-# - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((GEOSITE,cn),(GEOIP,cn,no-resolve)))))),REJECT
+# - AND,((GEOSITE,geolocation-!cn),(DST-PORT,443),(NETWORK,UDP)),REJECT
 # - GEOSITE,private,国内直连
 # - GEOIP,private,国内直连,no-resolve
 # - GEOSITE,category-games@cn,国内直连
@@ -533,21 +533,20 @@
 # - GEOSITE,apple,Apple
 # - GEOSITE,steam,Steam
 # - GEOSITE,tiktok,TikTok
-# - GEOSITE,twitter,Twitter(X)
+# - GEOSITE,x,X
 # - GEOSITE,telegram,Telegram
 # - GEOSITE,netflix,Netflix
 # - GEOSITE,disney,Disney
 # - GEOSITE,spotify,Spotify
 # - GEOSITE,paypal,PayPal
 # - GEOSITE,category-speedtest,Speedtest
+# - GEOSITE,geolocation-!cn,一键代理
 # - GEOIP,google,Google,no-resolve
 # - GEOIP,telegram,Telegram,no-resolve
-# - GEOIP,twitter,Twitter(X),no-resolve
 # - GEOIP,netflix,Netflix,no-resolve
-# - GEOSITE,geolocation-!cn,一键代理
-# - RULE-SET,add_direct_domain,国内直连
 # - GEOSITE,cn,国内直连
-# - GEOIP,cn,国内直连,no-resolve
+# - RULE-SET,add_cn_domain,国内直连
+# - RULE-SET,bps_cn_ip,国内直连,no-resolve
 # - MATCH,漏网之鱼
 
 # ==========================================================
@@ -565,13 +564,12 @@
 #   fake-ip-filter:
 #   - +.lan
 #   - +.local
-#   - rule-set:add_direct_domain
 #   - geosite:cn
+#   - rule-set:add_cn_domain
 #   fake-ip-filter-mode: blacklist
 #   fake-ip-range: 198.18.0.1/16
 #   fake-ip-range6: 2001:2::1/48
 #   ipv6: true
-#   listen: 0.0.0.0:7874
 #   nameserver:
 #   - 114.114.114.114
 #   - 223.5.5.5

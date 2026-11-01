@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - mihomo.yaml
-# 生成日期：2026-09-16
+# 生成日期：2026-11-01
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/loneshu7/mihomo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -875,7 +875,7 @@
 #   type: load-balance
 #   url: https://www.gstatic.com/generate_204
 #   use: &id002
-#   - A-Kuromis
+#   - 机场1
 # - disable-udp: false
 #   expected-status: 204
 #   filter: ^(?=.*((?i)(新加坡|🇸🇬)))(?!.*((?i)(🔗))).*$

@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - base-clash-ruleset.yaml
-# 生成日期：2026-09-16
+# 生成日期：2026-11-01
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Pililink/base-clash-ruleset.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -83,6 +83,17 @@
 # ==========================================================
 #
 # proxy-providers:
+#   AI出口:
+#     health-check:
+#       enable: true
+#       interval: 600
+#       url: https://www.gstatic.com/generate_204
+#     interval: 3600
+#     override:
+#       dialer-proxy: 🔗 AI前置节点
+#     path: ./proxy_provider/air1-ai.yaml
+#     type: http
+#     url: ''
 #   机场1:
 #     health-check:
 #       enable: true
@@ -115,10 +126,12 @@
 #   - 🇮🇳 印度节点
 #   - 🇷🇺 俄罗斯节点
 #   - 🌏 其他地区
+#   - 🛫 AI出口节点
 #   - 🎯 全球直连
 #   type: select
 # - name: 🤖 人工智能
 #   proxies:
+#   - 🛫 AI出口节点
 #   - 🇺🇸 美国节点
 #   - 🇭🇰 香港节点
 #   - 🇯🇵 日本节点
@@ -131,6 +144,46 @@
 #   - 🇷🇺 俄罗斯节点
 #   - 🌏 其他地区
 #   - 🚀 节点选择
+#   type: select
+# - name: 🧠 Claude
+#   proxies:
+#   - 🛫 AI出口节点
+#   - 🇺🇸 美国节点
+#   - 🇭🇰 香港节点
+#   - 🇯🇵 日本节点
+#   - 🇰🇷 韩国节点
+#   - 🇸🇬 新加坡节点
+#   - 🇹🇼 台湾节点
+#   - 🇪🇺 欧洲节点
+#   - 🇹🇷 土耳其节点
+#   - 🇮🇳 印度节点
+#   - 🇷🇺 俄罗斯节点
+#   - 🌏 其他地区
+#   - 🚀 节点选择
+#   type: select
+# - interval: 300
+#   lazy: true
+#   max-failed-times: 2
+#   name: 🛫 AI出口节点
+#   timeout: 5000
+#   type: fallback
+#   url: https://www.google.com/generate_204
+#   use:
+#   - AI出口
+# - name: 🔗 AI前置节点
+#   proxies:
+#   - 🇺🇸 美国节点
+#   - 🇭🇰 香港节点
+#   - 🇯🇵 日本节点
+#   - 🇰🇷 韩国节点
+#   - 🇸🇬 新加坡节点
+#   - 🇹🇼 台湾节点
+#   - 🇪🇺 欧洲节点
+#   - 🇹🇷 土耳其节点
+#   - 🇮🇳 印度节点
+#   - 🇷🇺 俄罗斯节点
+#   - 🌏 其他地区
+#   - 🎯 全球直连
 #   type: select
 # - name: 📲 电报消息
 #   proxies:
@@ -172,81 +225,99 @@
 #   - DIRECT
 #   type: select
 # - filter: 香港|HK|HKG|(?i)HongKong
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇭🇰 香港节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 日本|JP|(?i)Japan
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇯🇵 日本节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 韩国|韩|KR|(?i)Korea
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇰🇷 韩国节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 新加坡|坡|SG|(?i)Singapore
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇸🇬 新加坡节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 美国|美|US|(?i)States
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇺🇸 美国节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 台湾|台|TW|(?i)Taiwan
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇹🇼 台湾节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 英国|UK|西班牙|ES|意大利|IT|荷兰|NL|德国|DE
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇪🇺 欧洲节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 土耳其|TR|(?i)Turkey
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇹🇷 土耳其节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 印度|IN|(?i)India
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇮🇳 印度节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - filter: 俄罗斯|RU|(?i)Russia
-#   include-all-providers: true
 #   interval: 120
 #   name: 🇷🇺 俄罗斯节点
 #   tolerance: 50
 #   type: url-test
 #   url: https://www.gstatic.com/generate_204
+#   use:
+#   - 机场1
 # - exclude-filter: 香港|HK|HKG|HongKong|日本|JP|Japan|韩国|韩|KR|Korea|新加坡|坡|SG|Singapore|美国|美|US|States|台湾|台|TW|Taiwan|英国|UK|西班牙|ES|意大利|IT|荷兰|NL|德国|DE|土耳其|TR|Turkey|印度|IN|India|俄罗斯|RU|Russia
-#   include-all-providers: true
 #   name: 🌏 其他地区
+#   type: select
+#   use:
+#   - 机场1
+# - name: 🕹️ PSN 服务
+#   proxies:
+#   - REJECT
+#   - DIRECT
+#   - 🎮 游戏服务
 #   type: select
 # - name: 🎮 游戏服务
 #   proxies:
+#   - 🎯 全球直连
 #   - 🚀 节点选择
 #   - 🇭🇰 香港节点
 #   - 🇯🇵 日本节点
@@ -259,7 +330,6 @@
 #   - 🇮🇳 印度节点
 #   - 🇷🇺 俄罗斯节点
 #   - 🌏 其他地区
-#   - 🎯 全球直连
 #   type: select
 # - name: 🪜 代理域名
 #   proxies:
@@ -409,6 +479,27 @@
 #     path: ./rule_provider/acl4ssr-download.yaml
 #     type: http
 #     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Download.yaml
+#   game-2k:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-2kgames-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/2KGames/2KGames_No_Resolve.yaml
+#   game-battle:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-battle-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Battle/Battle_No_Resolve.yaml
+#   game-blizzard:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-blizzard-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Blizzard/Blizzard_No_Resolve.yaml
 #   game-download:
 #     behavior: classical
 #     format: yaml
@@ -416,13 +507,41 @@
 #     path: ./rule_provider/acl4ssr-game-download.yaml
 #     type: http
 #     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/GameDownload.yaml
+#   game-ea:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-ea-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/EA/EA_No_Resolve.yaml
 #   game-epic:
 #     behavior: classical
 #     format: yaml
-#     interval: 7200
-#     path: ./rule_provider/acl4ssr-game-epic.yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-epic.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Epic.yaml
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Epic/Epic.yaml
+#   game-garena:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-garena-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Garena/Garena_No_Resolve.yaml
+#   game-gog:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-gog-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Gog/Gog_No_Resolve.yaml
+#   game-hoyoverse:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-hoyoverse-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/HoYoverse/HoYoverse_No_Resolve.yaml
 #   game-nintendo:
 #     behavior: classical
 #     format: yaml
@@ -437,20 +556,48 @@
 #     path: ./rule_provider/acl4ssr-game-origin.yaml
 #     type: http
 #     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Origin.yaml
-#   game-sony:
+#   game-riot:
 #     behavior: classical
 #     format: yaml
-#     interval: 7200
-#     path: ./rule_provider/acl4ssr-game-sony.yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-riot-no-resolve.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Sony.yaml
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Riot/Riot_No_Resolve.yaml
+#   game-rockstar:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-rockstar-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Rockstar/Rockstar_No_Resolve.yaml
 #   game-steam:
 #     behavior: classical
 #     format: yaml
-#     interval: 7200
-#     path: ./rule_provider/acl4ssr-game-steam.yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-steam.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Steam.yaml
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Steam/Steam.yaml
+#   game-supercell:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-supercell-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Supercell/Supercell_No_Resolve.yaml
+#   game-ubi:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-ubi-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/UBI/UBI_No_Resolve.yaml
+#   game-ubisoft:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-ubisoft-no-resolve.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Ubisoft/Ubisoft_No_Resolve.yaml
 #   game-xbox:
 #     behavior: classical
 #     format: yaml
@@ -461,10 +608,10 @@
 #   google:
 #     behavior: classical
 #     format: yaml
-#     interval: 7200
-#     path: ./rule_provider/acl4ssr-google.yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-google-no-resolve.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Google.yaml
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Google/Google_No_Resolve.yaml
 #   google-cn:
 #     behavior: classical
 #     format: yaml
@@ -475,10 +622,10 @@
 #   microsoft:
 #     behavior: classical
 #     format: yaml
-#     interval: 7200
-#     path: ./rule_provider/acl4ssr-microsoft.yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-microsoft.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Microsoft.yaml
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Microsoft/Microsoft.yaml
 #   myai:
 #     behavior: classical
 #     format: text
@@ -486,6 +633,13 @@
 #     path: ./rule_provider/myai.list
 #     type: http
 #     url: https://raw.githubusercontent.com/Pililink/AirRules/refs/heads/main/clash/ruleset/ai.list
+#   myclaude:
+#     behavior: classical
+#     format: text
+#     interval: 7200
+#     path: ./rule_provider/myclaude.list
+#     type: http
+#     url: https://raw.githubusercontent.com/Pililink/AirRules/refs/heads/main/clash/ruleset/claude.list
 #   myignore:
 #     behavior: classical
 #     format: text
@@ -500,6 +654,20 @@
 #     path: ./rule_provider/myproxy.list
 #     type: http
 #     url: https://raw.githubusercontent.com/Pililink/AirRules/refs/heads/main/clash/ruleset/proxy.list
+#   mypsn:
+#     behavior: classical
+#     format: text
+#     interval: 7200
+#     path: ./rule_provider/mypsn.list
+#     type: http
+#     url: https://raw.githubusercontent.com/Pililink/AirRules/refs/heads/main/clash/ruleset/psn.list
+#   myspeedtest:
+#     behavior: classical
+#     format: text
+#     interval: 7200
+#     path: ./rule_provider/myspeedtest.list
+#     type: http
+#     url: https://raw.githubusercontent.com/Pililink/AirRules/refs/heads/main/clash/ruleset/speedtest.list
 #   private:
 #     behavior: classical
 #     format: yaml
@@ -522,12 +690,19 @@
 #     type: http
 #     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/BanProgramAD.yaml
 #   proxy:
+#     behavior: domain
+#     format: yaml
+#     interval: 86400
+#     path: ./rule_provider/loyalsoldier-proxy.yaml
+#     type: http
+#     url: https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/proxy.txt
+#   speedtest:
 #     behavior: classical
 #     format: yaml
-#     interval: 7200
-#     path: ./rule_provider/acl4ssr-proxy-gfwlist.yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-speedtest-no-resolve.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/ProxyGFWlist.yaml
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Speedtest/Speedtest_No_Resolve.yaml
 #   steam-cn:
 #     behavior: classical
 #     format: yaml
@@ -538,10 +713,10 @@
 #   telegram:
 #     behavior: classical
 #     format: yaml
-#     interval: 7200
-#     path: ./rule_provider/acl4ssr-telegram.yaml
+#     interval: 86400
+#     path: ./rule_provider/blackmatrix7-telegram-no-resolve.yaml
 #     type: http
-#     url: https://raw.githubusercontent.com/ACL4SSR/ACL4SSR/master/Clash/Providers/Ruleset/Telegram.yaml
+#     url: https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rule/Clash/Telegram/Telegram_No_Resolve.yaml
 #   unban:
 #     behavior: classical
 #     format: yaml
@@ -567,6 +742,7 @@
 # - IP-CIDR,192.168.100.0/24,🏠 家庭网络,no-resolve
 # - IP-CIDR,100.64.0.0/10,🏠 家庭网络,no-resolve
 # - RULE-SET,myignore,DIRECT
+# - RULE-SET,myclaude,🧠 Claude
 # - RULE-SET,myai,🤖 人工智能
 # - RULE-SET,myproxy,🪜 代理域名
 # - RULE-SET,private,🔒 私有网络
@@ -582,8 +758,10 @@
 # - RULE-SET,download,🎯 全球直连
 # - RULE-SET,google-cn,🎯 全球直连
 # - RULE-SET,steam-cn,🎯 全球直连
+# - RULE-SET,mypsn,🕹️ PSN 服务
 # - RULE-SET,cn,🇨🇳 直连域名
 # - RULE-SET,ai,🤖 人工智能
+# - RULE-SET,game-xbox,🎮 游戏服务
 # - RULE-SET,microsoft,🪟 微软服务
 # - RULE-SET,apple,🍎 苹果服务
 # - RULE-SET,google,🇬 谷歌服务
@@ -591,10 +769,24 @@
 # - RULE-SET,game-download,🎮 游戏服务
 # - RULE-SET,game-epic,🎮 游戏服务
 # - RULE-SET,game-origin,🎮 游戏服务
-# - RULE-SET,game-sony,🎮 游戏服务
 # - RULE-SET,game-steam,🎮 游戏服务
 # - RULE-SET,game-nintendo,🎮 游戏服务
-# - RULE-SET,game-xbox,🎮 游戏服务
+# - RULE-SET,game-blizzard,🎮 游戏服务
+# - RULE-SET,game-battle,🎮 游戏服务
+# - RULE-SET,game-ea,🎮 游戏服务
+# - RULE-SET,game-riot,🎮 游戏服务
+# - RULE-SET,game-ubisoft,🎮 游戏服务
+# - RULE-SET,game-ubi,🎮 游戏服务
+# - RULE-SET,game-rockstar,🎮 游戏服务
+# - RULE-SET,game-hoyoverse,🎮 游戏服务
+# - RULE-SET,game-garena,🎮 游戏服务
+# - RULE-SET,game-gog,🎮 游戏服务
+# - RULE-SET,game-2k,🎮 游戏服务
+# - RULE-SET,game-supercell,🎮 游戏服务
+# - RULE-SET,speedtest,📈 网络测试
+# - RULE-SET,myspeedtest,📈 网络测试
 # - RULE-SET,proxy,🪜 代理域名
+# - GEOSITE,cn,🇨🇳 直连域名
 # - RULE-SET,cnip,🇨🇳 直连 IP,no-resolve
+# - GEOIP,CN,🇨🇳 直连 IP,no-resolve
 # - MATCH,🐟 漏网之鱼

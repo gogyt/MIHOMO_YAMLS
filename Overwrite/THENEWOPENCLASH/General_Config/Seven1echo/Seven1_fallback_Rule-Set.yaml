@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - Seven1_fallback_Rule-Set.yaml
-# 生成日期：2026-09-16
+# 生成日期：2026-11-01
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Rule-Set.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -216,8 +216,8 @@
 #   name: TikTok
 #   proxies: *id001
 #   type: select
-# - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Twitter.png
-#   name: Twitter(X)
+# - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/X.png
+#   name: X
 #   proxies: *id001
 #   type: select
 # - icon: https://github.com/Seven1echo/Yaml/raw/main/icons/Telegram.png
@@ -495,7 +495,7 @@
 # ==========================================================
 #
 # rule-providers:
-#   add_direct_domain:
+#   add_cn_domain:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
@@ -513,18 +513,24 @@
 #     interval: 86400
 #     type: http
 #     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/apple.mrs
+#   bps_cn_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://raw.githubusercontent.com/Seven1echo/Yaml/refs/heads/main/rules/Seven1_Bypass_China.mrs
+#   cn!_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs
 #   cn_domain:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
 #     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/cn.mrs
-#   cn_ip:
-#     behavior: ipcidr
-#     format: mrs
-#     interval: 86400
-#     type: http
-#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/cn.mrs
 #   disney_domain:
 #     behavior: domain
 #     format: mrs
@@ -537,12 +543,6 @@
 #     interval: 86400
 #     type: http
 #     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-games@cn.mrs
-#   geolocation-!cn:
-#     behavior: domain
-#     format: mrs
-#     interval: 86400
-#     type: http
-#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/geolocation-!cn.mrs
 #   github_domain:
 #     behavior: domain
 #     format: mrs
@@ -639,18 +639,12 @@
 #     interval: 86400
 #     type: http
 #     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/tiktok.mrs
-#   twitter_domain:
+#   x_domain:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     type: http
-#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs
-#   twitter_ip:
-#     behavior: ipcidr
-#     format: mrs
-#     interval: 86400
-#     type: http
-#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs
+#     url: https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/x.mrs
 #   youtube_domain:
 #     behavior: domain
 #     format: mrs
@@ -670,7 +664,7 @@
 # ==========================================================
 #
 # rules:
-# - AND,((NETWORK,UDP),(DST-PORT,443),(NOT,((OR,((RULE-SET,cn_domain),(RULE-SET,cn_ip,no-resolve)))))),REJECT
+# - AND,((RULE-SET,cn!_domain),(DST-PORT,443),(NETWORK,UDP)),REJECT
 # - RULE-SET,private_domain,国内直连
 # - RULE-SET,private_ip,国内直连,no-resolve
 # - RULE-SET,games@cn_domain,国内直连
@@ -683,21 +677,20 @@
 # - RULE-SET,apple_domain,Apple
 # - RULE-SET,steam_domain,Steam
 # - RULE-SET,tiktok_domain,TikTok
-# - RULE-SET,twitter_domain,Twitter(X)
+# - RULE-SET,x_domain,X
 # - RULE-SET,telegram_domain,Telegram
 # - RULE-SET,netflix_domain,Netflix
 # - RULE-SET,disney_domain,Disney
 # - RULE-SET,spotify_domain,Spotify
 # - RULE-SET,paypal_domain,PayPal
 # - RULE-SET,speedtest_domain,Speedtest
+# - RULE-SET,cn!_domain,一键代理
 # - RULE-SET,google_ip,Google,no-resolve
 # - RULE-SET,telegram_ip,Telegram,no-resolve
-# - RULE-SET,twitter_ip,Twitter(X),no-resolve
 # - RULE-SET,netflix_ip,Netflix,no-resolve
-# - RULE-SET,geolocation-!cn,一键代理
-# - RULE-SET,add_direct_domain,国内直连
 # - RULE-SET,cn_domain,国内直连
-# - RULE-SET,cn_ip,国内直连,no-resolve
+# - RULE-SET,add_cn_domain,国内直连
+# - RULE-SET,bps_cn_ip,国内直连,no-resolve
 # - MATCH,漏网之鱼
 
 # ==========================================================
@@ -715,13 +708,12 @@
 #   fake-ip-filter:
 #   - +.lan
 #   - +.local
-#   - rule-set:add_direct_domain
 #   - rule-set:cn_domain
+#   - rule-set:add_cn_domain
 #   fake-ip-filter-mode: blacklist
 #   fake-ip-range: 198.18.0.1/16
 #   fake-ip-range6: 2001:2::1/48
 #   ipv6: true
-#   listen: 0.0.0.0:7874
 #   nameserver:
 #   - 114.114.114.114
 #   - 223.5.5.5

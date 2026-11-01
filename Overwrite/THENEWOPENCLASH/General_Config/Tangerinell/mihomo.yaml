@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - mihomo.yaml
-# 生成日期：2026-09-16
+# 生成日期：2026-11-01
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Tangerinell/mihomo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -227,8 +227,8 @@
 #   - 🇫🇷故障转移
 #   - 🇩🇪故障转移
 #   - 🇨🇳故障转移
-#   - 🧩回退其他
-#   - 📋回退全部
+#   - 🧩故转其他
+#   - 📋故转全部
 #   - 🇸🇬自动选择
 #   - 🇺🇸自动选择
 #   - 🇭🇰自动选择
@@ -328,8 +328,8 @@
 #   - 🇫🇷故障转移
 #   - 🇩🇪故障转移
 #   - 🇨🇳故障转移
-#   - 🧩回退其他
-#   - 📋回退全部
+#   - 🧩故转其他
+#   - 📋故转全部
 #   - 🇸🇬自动选择
 #   - 🇺🇸自动选择
 #   - 🇭🇰自动选择
@@ -402,8 +402,8 @@
 #   - 🇫🇷故障转移
 #   - 🇩🇪故障转移
 #   - 🇨🇳故障转移
-#   - 🧩回退其他
-#   - 📋回退全部
+#   - 🧩故转其他
+#   - 📋故转全部
 #   - 🇸🇬自动选择
 #   - 🇺🇸自动选择
 #   - 🇭🇰自动选择
@@ -441,7 +441,8 @@
 #   name: 🌐其他
 #   proxies: *id001
 #   type: select
-# - disable-udp: false
+# - default-selected: ⛔阻断
+#   disable-udp: false
 #   filter: ^(?!.*(🔗|🔀规则))
 #   hidden: false
 #   icon: https://raw.githubusercontent.com/Tangerinell/mihomo_rules_profile/master/icon/Server.png
@@ -482,8 +483,8 @@
 #   - 🇫🇷故障转移
 #   - 🇩🇪故障转移
 #   - 🇨🇳故障转移
-#   - 🧩回退其他
-#   - 📋回退全部
+#   - 🧩故转其他
+#   - 📋故转全部
 #   - 🇸🇬自动选择
 #   - 🇺🇸自动选择
 #   - 🇭🇰自动选择
@@ -700,8 +701,8 @@
 #   - 🇫🇷故障转移
 #   - 🇩🇪故障转移
 #   - 🇨🇳故障转移
-#   - 🧩回退其他
-#   - 📋回退全部
+#   - 🧩故转其他
+#   - 📋故转全部
 #   - 🇸🇬自动选择
 #   - 🇺🇸自动选择
 #   - 🇭🇰自动选择
@@ -976,8 +977,8 @@
 #   - 🇬🇧故障转移
 #   - 🇫🇷故障转移
 #   - 🇩🇪故障转移
-#   - 🧩回退其他
-#   - 📋回退全部
+#   - 🧩故转其他
+#   - 📋故转全部
 #   - 🇸🇬自动选择
 #   - 🇺🇸自动选择
 #   - 🇭🇰自动选择
@@ -1228,7 +1229,7 @@
 #   include-all: true
 #   interval: 300
 #   lazy: true
-#   name: 🧩回退其他
+#   name: 🧩故转其他
 #   timeout: 5000
 #   type: fallback
 #   url: https://www.gstatic.com/generate_204
@@ -1239,7 +1240,7 @@
 #   include-all: true
 #   interval: 300
 #   lazy: true
-#   name: 📋回退全部
+#   name: 📋故转全部
 #   timeout: 5000
 #   type: fallback
 #   url: https://www.gstatic.com/generate_204

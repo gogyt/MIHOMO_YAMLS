@@ -1,0 +1,641 @@
+# OpenClash 覆写模块 - mihomo.yaml
+# 生成日期：2026-11-01
+# 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/qichiyuhub/mihomo.yaml
+# 格式：新版 OpenClash [YAML] 块覆写
+#
+# 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
+# 所有内容默认注释，不影响现有配置；取消注释对应段落即可启用该覆写。
+# ==========================================================
+# [YAML] 是新版 OpenClash 覆写模块的识别标记
+# 此行本身不可注释，内容写在此标记之后
+# 注释状态不生效；取消注释后重载覆写模块即可生效
+# ==========================================================
+[YAML]
+
+# ==========================================================
+# 操作符速查
+# ----------------------------------------------------------
+#  key       默认合并：Hash 递归合并，其他类型直接覆盖原值
+#  key!      强制覆盖：整个值全部替换，不做任何合并
+#  key+      数组后置追加：在数组末尾加入新元素
+#  +key      数组前置插入：在数组开头插入（规则越靠前越优先匹配）
+#  key-      数组差集删除：从数组移除指定元素；非数组则删除该键
+#  key*      批量条件更新：配合 where/set，按条件匹配后批量修改
+# ==========================================================
+
+# ==========================================================
+# 示例：追加自定义 rule-provider 并在规则末尾加入对应规则
+# 取消注释后，Steam 流量将走 Proxy 策略组
+# ----------------------------------------------------------
+# +rule-providers:
+#   Steam:
+#     type: http
+#     behavior: domain
+#     format: mrs
+#     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"
+#     interval: 86400
+# +rules:
+#   - RULE-SET,Steam,Proxy
+# ==========================================================
+
+# ==========================================================
+# 示例：在规则列表最前面插入高优先级规则（最先匹配）
+# ----------------------------------------------------------
+# +rules:
+#   - DOMAIN-SUFFIX,example.com,DIRECT
+#   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+# ==========================================================
+
+# ==========================================================
+# 示例：强制替换整个 rules 数组（原有规则全部丢弃）
+# ----------------------------------------------------------
+# rules!:
+#   - DOMAIN-SUFFIX,example.com,DIRECT
+#   - MATCH,PROXY
+# ==========================================================
+
+# ==========================================================
+# 示例：修改 dns 配置中的部分字段，其余字段保持不变
+# ----------------------------------------------------------
+# dns:
+#   enable: true
+#   cache-algorithm: lru
+# ==========================================================
+
+# ==========================================================
+# 示例：给所有 url-test 类型的策略组在 proxies 末尾追加节点
+# ----------------------------------------------------------
+# proxy-groups*:
+#   where:
+#     type: url-test
+#   set:
+#     proxies+:
+#       - '节点名称'
+# ==========================================================
+
+# ==========================================================
+# proxy-providers（从源文件直接提取）
+# ----------------------------------------------------------
+# 以下内容原样复制自源 YAML 的 proxy-providers 块。
+# 使用方法：
+#   1. 将需要替换的 provider 的 url: 改为你自己的订阅链接
+#   2. 删除这整块前面的 # 号，保存后重载覆写模块即可
+# ==========================================================
+#
+# proxy-providers:
+#   HH:
+#     exclude-filter: 官网|剩余|流量|套餐|订阅|直连|到期时间|Expire Date|Traffic|ExpireDate
+#     health-check:
+#       enable: true
+#       interval: 300
+#       url: https://www.gstatic.com/generate_204
+#     interval: 0
+#     proxy: 直连
+#     type: http
+#     url: 订阅URL
+
+# ==========================================================
+# proxy-groups（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始策略组配置，默认注释不启用。
+# 如需覆写策略组，可取消注释后修改，或参考上方示例使用 proxy-groups* 条件更新。
+# 直接取消注释将强制替换整个 proxy-groups（等同于 proxy-groups! 操作）。
+# ==========================================================
+#
+# proxy-groups:
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/select.png
+#   name: 默认代理
+#   proxies: &id001
+#   - 香港故转
+#   - 日本故转
+#   - 台湾故转
+#   - 狮城故转
+#   - 美国故转
+#   - 香港手动
+#   - 日本手动
+#   - 台湾手动
+#   - 狮城手动
+#   - 美国手动
+#   - 香港自动
+#   - 日本自动
+#   - 台湾自动
+#   - 狮城自动
+#   - 美国自动
+#   - 全部自动
+#   - 全部手动
+#   - 直连
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/ai.png
+#   name: AI
+#   proxies: &id002
+#   - 美国故转
+#   - 香港故转
+#   - 日本故转
+#   - 台湾故转
+#   - 狮城故转
+#   - 香港手动
+#   - 日本手动
+#   - 台湾手动
+#   - 狮城手动
+#   - 美国手动
+#   - 香港自动
+#   - 日本自动
+#   - 台湾自动
+#   - 狮城自动
+#   - 美国自动
+#   - 全部自动
+#   - 全部手动
+#   - 直连
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/youtube.png
+#   name: YouTube
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/google.png
+#   name: Google
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/github.png
+#   name: GitHub
+#   proxies: &id003
+#   - 日本故转
+#   - 香港故转
+#   - 台湾故转
+#   - 狮城故转
+#   - 美国故转
+#   - 香港手动
+#   - 日本手动
+#   - 台湾手动
+#   - 狮城手动
+#   - 美国手动
+#   - 香港自动
+#   - 日本自动
+#   - 台湾自动
+#   - 狮城自动
+#   - 美国自动
+#   - 全部自动
+#   - 全部手动
+#   - 直连
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/telegram.png
+#   name: Telegram
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/douyin.png
+#   name: TikTok
+#   proxies: *id002
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/netflix.png
+#   name: NETFLIX
+#   proxies: *id002
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/wallet.png
+#   name: Wallet
+#   proxies: *id002
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/steam.png
+#   name: Steam
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/microsoft.png
+#   name: Microsoft
+#   proxies: *id003
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/onedrive.png
+#   name: OneDrive
+#   proxies: *id003
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/apple.png
+#   name: Apple
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/final.png
+#   name: 漏网之鱼
+#   proxies: &id004
+#   - 默认代理
+#   - 香港故转
+#   - 日本故转
+#   - 台湾故转
+#   - 狮城故转
+#   - 美国故转
+#   - 香港手动
+#   - 日本手动
+#   - 台湾手动
+#   - 狮城手动
+#   - 美国手动
+#   - 香港自动
+#   - 日本自动
+#   - 台湾自动
+#   - 狮城自动
+#   - 美国自动
+#   - 全部自动
+#   - 全部手动
+#   - 直连
+#   type: select
+# - filter: (?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/flag/corner/hongkong.png
+#   include-all: true
+#   name: 香港手动
+#   type: select
+# - filter: (?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/flag/corner/japan.png
+#   include-all: true
+#   name: 日本手动
+#   type: select
+# - filter: (?=.*(台|TW|(?i)Taiwan))^((?!(港|韩|新|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/flag/corner/taiwan.png
+#   include-all: true
+#   name: 台湾手动
+#   type: select
+# - filter: (?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(港|台|日|韩|ZJ)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/flag/corner/singapore.png
+#   include-all: true
+#   name: 狮城手动
+#   type: select
+# - filter: (?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/flag/corner/usa.png
+#   include-all: true
+#   name: 美国手动
+#   type: select
+# - filter: (?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/failover.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 香港故转
+#   type: fallback
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/failover.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 日本故转
+#   type: fallback
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(台|TW|(?i)Taiwan))^((?!(港|韩|新|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/failover.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 台湾故转
+#   type: fallback
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(港|台|日|韩|ZJ)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/failover.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 狮城故转
+#   type: fallback
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/failover.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 美国故转
+#   type: fallback
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(港|HK|(?i)Hong))^((?!(台|日|韩|新|深|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/auto.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 香港自动
+#   tolerance: 50
+#   type: url-test
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(日|JP|(?i)Japan))^((?!(港|台|韩|新|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/auto.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 日本自动
+#   tolerance: 50
+#   type: url-test
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(台|TW|(?i)Taiwan))^((?!(港|韩|新|美)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/auto.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 台湾自动
+#   tolerance: 50
+#   type: url-test
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(新加坡|坡|狮城|SG|Singapore))^((?!(港|台|日|韩|ZJ)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/auto.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 狮城自动
+#   tolerance: 50
+#   type: url-test
+#   url: https://www.gstatic.com/generate_204
+# - filter: (?=.*(美|US|(?i)States|America))^((?!(港|台|日|韩|新)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/auto.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 美国自动
+#   tolerance: 50
+#   type: url-test
+#   url: https://www.gstatic.com/generate_204
+# - filter: ^((?!(官网|剩余|流量|套餐|订阅|到期时间|直连|GB|Expire Date|Traffic|ExpireDate)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/all.png
+#   include-all: true
+#   name: 全部手动
+#   type: select
+# - filter: ^((?!(官网|剩余|流量|套餐|订阅|到期时间|直连|GB|Expire Date|Traffic|ExpireDate)).)*$
+#   icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/auto.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   name: 全部自动
+#   tolerance: 50
+#   type: url-test
+#   url: https://www.gstatic.com/generate_204
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/auto.png
+#   interval: 3600
+#   lazy: true
+#   name: 延迟辅助
+#   proxies:
+#   - 直连
+#   - DIRECT
+#   type: url-test
+#   url: http://connect.rom.miui.com/generate_204
+# - icon: https://raw.githubusercontent.com/s0lnce/mofish-icon/refs/heads/main/mihomo/pure/corner/all.png
+#   name: GLOBAL
+#   proxies: *id004
+#   type: select
+
+# ==========================================================
+# rule-providers（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始规则集配置，默认注释不启用。
+# 如需追加新的 rule-provider，参考上方示例一使用 +rule-providers: 操作符。
+# ==========================================================
+#
+# rule-providers:
+#   ai_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-ai-!cn.mrs
+#   apple_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple.mrs
+#   apple_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo-lite/geoip/apple.mrs
+#   applecn_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/apple@cn.mrs
+#   binance_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/binance.mrs
+#   cn!_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/geolocation-!cn.mrs
+#   cn_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/cn.mrs
+#   cn_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/cn.mrs
+#   fakeipfilter_!cn:
+#     behavior: domain
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-!cn.list
+#   fakeipfilter_cn:
+#     behavior: domain
+#     format: text
+#     interval: 86400
+#     type: http
+#     url: https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/rules/fakeipfilter-cn.list
+#   github_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/github.mrs
+#   google_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/google.mrs
+#   google_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/google.mrs
+#   microsoft_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft.mrs
+#   microsoftcn_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/microsoft@cn.mrs
+#   netflix_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/netflix.mrs
+#   netflix_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/netflix.mrs
+#   okx_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/okx.mrs
+#   onedrive_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/onedrive.mrs
+#   paypal_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/paypal.mrs
+#   private_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/private.mrs
+#   private_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/private.mrs
+#   steam_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam.mrs
+#   steamcn_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/steam@cn.mrs
+#   telegram_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/telegram.mrs
+#   telegram_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geoip/telegram.mrs
+#   tiktok_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/tiktok.mrs
+#   usd_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/category-cryptocurrency.mrs
+#   youtube_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     type: http
+#     url: https://github.com/MetaCubeX/meta-rules-dat/raw/refs/heads/meta/geo/geosite/youtube.mrs
+
+# ==========================================================
+# rules（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始规则列表，默认注释不启用。
+# 常用操作：
+#   +rules: [...]   在规则列表开头插入（优先匹配）
+#   rules+: [...]   在规则列表末尾追加
+#   rules!: [...]   强制替换整个规则列表（丢弃原有规则）
+# 参考上方示例，通常不需要取消注释整个 rules，而是用 +rules/rules+ 追加即可。
+# ==========================================================
+#
+# rules:
+# - AND,((RULE-SET,cn!_domain),(DST-PORT,443),(NETWORK,UDP)),REJECT
+# - RULE-SET,private_ip,直连,no-resolve
+# - RULE-SET,private_domain,直连
+# - RULE-SET,ai_domain,AI
+# - RULE-SET,youtube_domain,YouTube
+# - RULE-SET,google_domain,Google
+# - RULE-SET,github_domain,GitHub
+# - RULE-SET,onedrive_domain,OneDrive
+# - RULE-SET,microsoftcn_domain,直连
+# - RULE-SET,microsoft_domain,Microsoft
+# - RULE-SET,applecn_domain,直连
+# - RULE-SET,apple_domain,Apple
+# - RULE-SET,telegram_domain,Telegram
+# - RULE-SET,tiktok_domain,TikTok
+# - RULE-SET,netflix_domain,NETFLIX
+# - RULE-SET,paypal_domain,Wallet
+# - RULE-SET,binance_domain,Wallet
+# - RULE-SET,okx_domain,Wallet
+# - RULE-SET,usd_domain,Wallet
+# - RULE-SET,steamcn_domain,直连
+# - RULE-SET,steam_domain,Steam
+# - RULE-SET,cn!_domain,默认代理
+# - RULE-SET,google_ip,Google
+# - RULE-SET,apple_ip,Apple
+# - RULE-SET,telegram_ip,Telegram
+# - RULE-SET,netflix_ip,NETFLIX
+# - RULE-SET,cn_ip,直连
+# - MATCH,漏网之鱼
+
+# ==========================================================
+# dns（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始 DNS 配置，默认注释不启用。
+# 如只需修改部分字段，直接写需要修改的键值即可（默认合并，不影响其他字段）。
+# 如需完整替换 DNS 配置，使用 dns!: 操作符。
+# ==========================================================
+#
+# dns:
+#   cache-algorithm: arc
+#   default-nameserver:
+#   - https://223.5.5.5/dns-query
+#   direct-nameserver:
+#   - https://dns.alidns.com/dns-query
+#   - https://doh.pub/dns-query
+#   enable: true
+#   enhanced-mode: fake-ip
+#   fake-ip-filter:
+#   - rule-set:fakeipfilter_cn
+#   - rule-set:fakeipfilter_!cn
+#   - rule-set:private_domain
+#   - rule-set:cn_domain
+#   - rule-set:microsoftcn_domain
+#   - rule-set:applecn_domain
+#   - rule-set:steamcn_domain
+#   fake-ip-filter-mode: blacklist
+#   fake-ip-range: 198.18.0.0/16
+#   fake-ip-ttl: 1
+#   fallback:
+#   - https://8.8.8.8/dns-query#默认代理
+#   fallback-filter:
+#     geoip: true
+#     geoip-code: CN
+#   ipv6: false
+#   nameserver:
+#   - https://8.8.8.8/dns-query#默认代理&ecs=223.5.5.0/24
+#   nameserver-policy:
+#     rule-set:cn_domain,private_domain,fakeipfilter_cn,steamcn_domain,microsoftcn_domain,applecn_domain:
+#     - https://dns.alidns.com/dns-query#disable-qtype-65=true
+#     - https://doh.pub/dns-query#disable-qtype-65=true
+#     rule-set:fakeipfilter_!cn:
+#     - https://8.8.8.8/dns-query#默认代理&disable-qtype-65=true
+#   proxy-server-nameserver:
+#   - https://dns.alidns.com/dns-query
+#   - https://doh.pub/dns-query

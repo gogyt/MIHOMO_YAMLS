@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - config.yaml
-# 生成日期：2026-09-16
+# 生成日期：2026-11-01
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/wanswu/config.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -88,8 +88,8 @@
 #     health-check:
 #       enable: true
 #       interval: 300
-#       url: https://www.gstatic.com/generate_204
-#     interval: 600
+#       url: http://www.gstatic.com/generate_204
+#     interval: 43200
 #     override:
 #       additional-prefix: 备-6-
 #       udp: true
@@ -105,14 +105,14 @@
 #     health-check:
 #       enable: true
 #       interval: 300
-#       url: https://www.gstatic.com/generate_204
-#     interval: 600
+#       url: http://www.gstatic.com/generate_204
+#     interval: 43200
 #     override:
 #       additional-prefix: 主-
 #       udp: true
 #     path: ./proxy_provider/main.yaml
 #     type: http
-#     url: https://anyland.club/#/register?code=R7vdKxbE
+#     url: https://www.sibker.com/register?invite_code=IuA1vdgT
 
 # ==========================================================
 # proxy-groups（从源文件直接提取）
@@ -123,7 +123,7 @@
 # ==========================================================
 #
 # proxy-groups:
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Rocket.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Rocket.png
 #   include-all: true
 #   name: 手动选择
 #   proxies:
@@ -161,14 +161,13 @@
 #   type: select
 # - filter: (?i)(?=.*(家宽))
 #   hidden: false
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Hong_Kong.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 家宽选择
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Global.png
+#   url: http://www.gstatic.com/generate_204
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Global.png
 #   include-all: true
 #   name: GLOBAL
 #   proxies: &id001
@@ -203,7 +202,7 @@
 #   - DIRECT
 #   - REJECT
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/claude-color.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-png/light/claude-color.png
 #   include-all: true
 #   name: Claude
 #   proxies: &id002
@@ -238,7 +237,7 @@
 #   - DIRECT
 #   - REJECT
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/gemini-color.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-png/light/gemini-color.png
 #   include-all: true
 #   name: Gemini
 #   proxies:
@@ -274,7 +273,7 @@
 #   - REJECT
 #   type: select
 #   url: https://www.google.com/generate_204
-# - icon: https://fastly.jsdelivr.net/gh/lobehub/lobe-icons@master/packages/static-png/light/openai.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/lobehub/lobe-icons/master/packages/static-png/light/openai.png
 #   include-all: true
 #   name: OpenAI
 #   proxies:
@@ -309,55 +308,55 @@
 #   - DIRECT
 #   - REJECT
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Apple.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Apple.png
 #   include-all: true
 #   name: Apple
 #   proxies: *id001
 #   type: select
 #   url: https://www.apple.com/library/test/success.html
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Disney.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Disney.png
 #   include-all: true
 #   name: Disney
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Netflix.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Netflix.png
 #   include-all: true
 #   name: Netflix
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Spotify.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Spotify.png
 #   include-all: true
 #   name: Spotify
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/TikTok.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/TikTok.png
 #   include-all: true
 #   name: TikTok
 #   proxies: *id002
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/YouTube.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/YouTube.png
 #   include-all: true
 #   name: YouTube
 #   proxies: *id001
 #   type: select
 #   url: https://www.youtube.com/generate_204
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Emby.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Emby.png
 #   include-all: true
 #   name: Emby
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/GitHub.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/GitHub.png
 #   include-all: true
 #   name: Github
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Google_Search.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Google_Search.png
 #   include-all: true
 #   name: Google
 #   proxies: *id001
 #   type: select
 #   url: https://www.google.com/generate_204
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Microsoft.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Microsoft.png
 #   include-all: true
 #   name: Microsoft
 #   proxies:
@@ -393,301 +392,273 @@
 #   - REJECT
 #   type: select
 #   url: http://www.msftconnecttest.com/connecttest.txt
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/OneDrive.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/OneDrive.png
 #   include-all: true
 #   name: OneDrive
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Twitter(X).png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Twitter(X).png
 #   include-all: true
 #   name: Twitter(X)
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Telegram.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Telegram.png
 #   include-all: true
 #   name: Telegram
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/WhatsApp.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/WhatsApp.png
 #   include-all: true
 #   name: WhatsApp
 #   proxies: *id001
 #   type: select
-# - icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Steam.png
+# - icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Steam.png
 #   include-all: true
 #   name: Steam
 #   proxies: *id001
 #   type: select
 # - filter: (?i)(?=.*(🇭🇰|香港|港|hk|hkg|hong ?kong))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Hong_Kong.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 香港自动
 #   type: url-test
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇹🇼|台湾|台|TW|TWN|taiwan|taipei))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Taiwan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Taiwan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 台湾自动
 #   type: url-test
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇸🇬|新加坡|狮城|新|SG|SGP|singapore))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Singapore.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Singapore.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 狮城自动
 #   type: url-test
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇯🇵|日本|日|JP|JPN|japan|tokyo|osaka))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Japan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Japan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 日本自动
 #   type: url-test
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇰🇷|韩国|韩|KR|KOR|korea|seoul))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Korea.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Korea.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 韩国自动
 #   type: url-test
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇺🇸|美国|美|US|USA|united ?states|america|los angeles|san jose|silicon
 #     valley))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_States.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_States.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 美国自动
 #   type: url-test
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇬🇧|英国|英|GBR|UK|united ?kingdom|london))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_Kingdom.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_Kingdom.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 英国自动
 #   type: url-test
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇭🇰|香港|港|hk|hkg|hong ?kong))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Hong_Kong.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 香港-回退
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇹🇼|台湾|台|TW|TWN|taiwan|taipei))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Taiwan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Taiwan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 台湾-回退
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇸🇬|新加坡|狮城|新|SG|SGP|singapore))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Singapore.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Singapore.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 狮城-回退
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇯🇵|日本|日|JP|JPN|japan|tokyo|osaka))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Japan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Japan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 日本-回退
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇰🇷|韩国|韩|KR|KOR|korea|seoul))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Korea.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Korea.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 韩国-回退
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇺🇸|美国|美|US|USA|united ?states|america|los angeles|san jose|silicon
 #     valley))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_States.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_States.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 美国-回退
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇬🇧|英国|英|GBR|UK|united ?kingdom|london))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_Kingdom.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_Kingdom.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 英国-回退
 #   type: fallback
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇭🇰|香港|港|hk|hkg|hong ?kong))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Hong_Kong.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 香港均衡-散列
 #   strategy: consistent-hashing
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇹🇼|台湾|台|TW|TWN|taiwan|taipei))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Taiwan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Taiwan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 台湾均衡-散列
 #   strategy: consistent-hashing
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇸🇬|新加坡|狮城|新|SG|SGP|singapore))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Singapore.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Singapore.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 狮城均衡-散列
 #   strategy: consistent-hashing
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇯🇵|日本|日|JP|JPN|japan|tokyo|osaka))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Japan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Japan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 日本均衡-散列
 #   strategy: consistent-hashing
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇰🇷|韩国|韩|KR|KOR|korea|seoul))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Korea.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Korea.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 韩国均衡-散列
 #   strategy: consistent-hashing
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇺🇸|美国|美|US|USA|united ?states|america|los angeles|san jose|silicon
 #     valley))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_States.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_States.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 美国均衡-散列
 #   strategy: consistent-hashing
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇬🇧|英国|英|GBR|UK|united ?kingdom|london))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_Kingdom.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_Kingdom.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 英国均衡-散列
 #   strategy: consistent-hashing
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇭🇰|香港|港|hk|hkg|hong ?kong))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Hong_Kong.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Hong_Kong.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 香港均衡-轮询
 #   strategy: round-robin
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇹🇼|台湾|台|TW|TWN|taiwan|taipei))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Taiwan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Taiwan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 台湾均衡-轮询
 #   strategy: round-robin
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇸🇬|新加坡|狮城|新|SG|SGP|singapore))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Singapore.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Singapore.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 狮城均衡-轮询
 #   strategy: round-robin
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇯🇵|日本|日|JP|JPN|japan|tokyo|osaka))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Japan.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Japan.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 日本均衡-轮询
 #   strategy: round-robin
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇰🇷|韩国|韩|KR|KOR|korea|seoul))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/Korea.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/Korea.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 韩国均衡-轮询
 #   strategy: round-robin
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇺🇸|美国|美|US|USA|united ?states|america|los angeles|san jose|silicon
 #     valley))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_States.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_States.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 美国均衡-轮询
 #   strategy: round-robin
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 # - filter: (?i)(?=.*(🇬🇧|英国|英|GBR|UK|united ?kingdom|london))
 #   hidden: true
-#   icon: https://fastly.jsdelivr.net/gh/0xWans/Qure@master/IconSet/Color/United_Kingdom.png
+#   icon: https://gh-proxy.org/https://raw.githubusercontent.com/0xWans/Qure/master/IconSet/Color/United_Kingdom.png
 #   include-all: true
-#   interval: 300
-#   lazy: true
+#   interval: 600
 #   name: 英国均衡-轮询
 #   strategy: round-robin
 #   type: load-balance
-#   url: https://www.gstatic.com/generate_204
+#   url: http://www.gstatic.com/generate_204
 
 # ==========================================================
 # rule-providers（从源文件直接提取）
@@ -703,210 +674,210 @@
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/apple@cn.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/apple@cn.mrs
 #   China:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/cn.mrs
 #   ChinaAPP:
 #     behavior: classical
 #     format: yaml
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/0xWans/my-backup@main/clash/rules/Process/ChinaAPP.yaml
+#     url: https://cdn.jsdelivr.net/gh/0xWans/my-backup@main/clash/rules/Process/ChinaAPP.yaml
 #   ChinaIP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/cn.mrs
 #   Claude:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/anthropic.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/anthropic.mrs
 #   DNSLeak:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/0xWans/my-backup@main/clash/rules/DNSLeak.mrs
+#     url: https://cdn.jsdelivr.net/gh/0xWans/my-backup@main/clash/rules/DNSLeak.mrs
 #   Direct:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/0xWans/my-backup@main/clash/rules/Direct.mrs
+#     url: https://cdn.jsdelivr.net/gh/0xWans/my-backup@main/clash/rules/Direct.mrs
 #   Disney:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/disney.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/disney.mrs
 #   Emby:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-emby.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-emby.mrs
 #   Gemini:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google-gemini.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google-gemini.mrs
 #   Github:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/github.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/github.mrs
 #   Google:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/google.mrs
 #   GoogleIP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/google.mrs
 #   Lan:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/private.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/private.mrs
 #   LanIP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/private.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/private.mrs
 #   Microsoft:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/microsoft.mrs
 #   Netflix:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/netflix.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/netflix.mrs
 #   NetflixIP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/netflix.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/netflix.mrs
 #   OneDrive:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/onedrive.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/onedrive.mrs
 #   OpenAI:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/openai.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/openai.mrs
 #   Spotify:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/spotify.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/spotify.mrs
 #   Steam:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/steam.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/steam.mrs
 #   Telegram:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/telegram.mrs
 #   TelegramIP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/telegram.mrs
 #   TikTok:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/tiktok.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/tiktok.mrs
 #   Twitter:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/x.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/x.mrs
 #   TwitterIP:
 #     behavior: ipcidr
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/twitter.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geoip/twitter.mrs
 #   WhatsApp:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/whatsapp.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/whatsapp.mrs
 #   YouTube:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/youtube.mrs
 #   category-ads-all:
 #     behavior: domain
 #     format: mrs
 #     interval: 86400
 #     proxy: DIRECT
 #     type: http
-#     url: https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ads-all.mrs
+#     url: https://cdn.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@meta/geo/geosite/category-ads-all.mrs
 
 # ==========================================================
 # rules（从源文件直接提取）
@@ -923,6 +894,9 @@
 # - RULE-SET,Direct,DIRECT
 # - AND,((DST-PORT,443),(NETWORK,UDP),(NOT,((RULE-SET,ChinaIP))),(NOT,((RULE-SET,China)))),REJECT
 # - RULE-SET,ChinaAPP,DIRECT
+# - DOMAIN-SUFFIX,hybgzs.com,DIRECT
+# - DOMAIN-SUFFIX,air-outer.com,DIRECT
+# - DOMAIN-SUFFIX,zzzcoding.org,DIRECT
 # - RULE-SET,category-ads-all,REJECT
 # - RULE-SET,YouTube,YouTube
 # - RULE-SET,Github,Github
@@ -945,7 +919,7 @@
 # - RULE-SET,Lan,DIRECT
 # - RULE-SET,China,DIRECT
 # - RULE-SET,LanIP,DIRECT,no-resolve
-# - RULE-SET,ChinaIP,DIRECT,no-resolve
+# - RULE-SET,ChinaIP,DIRECT
 # - RULE-SET,GoogleIP,Google,no-resolve
 # - RULE-SET,TelegramIP,Telegram,no-resolve
 # - RULE-SET,TwitterIP,Twitter(X),no-resolve
@@ -963,37 +937,40 @@
 #   default-nameserver:
 #   - tls://223.5.5.5
 #   - tls://119.29.29.29
+#   direct-nameserver:
+#   - system
 #   direct-nameserver-follow-policy: true
 #   enable: true
 #   enhanced-mode: fake-ip
 #   fake-ip-filter:
 #   - RULE-SET:Lan
-#   - RULE-SET:China
+#   fake-ip-filter-mode: blacklist
 #   fake-ip-range: 198.18.0.1/16
 #   fake-ip-range6: fdfe:dcba:9876::/64
+#   fake-ip-ttl: 1
 #   fallback:
-#   - https://dns.adguard-dns.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
-#   - https://dns.cloudflare.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
-#   - https://dns.google/dns-query#ecs=1.1.1.1/24&ecs-override=true
-#   ipv6: true
-#   listen: 0.0.0.0:1053
+#   - https://dns.cloudflare.com/dns-query
+#   - https://dns.google/dns-query
+#   fallback-filter:
+#     geoip: false
+#     geoip-code: CN
+#     ipcidr:
+#     - 240.0.0.0/4
+#   ipv6: false
 #   nameserver:
-#   - https://dns.adguard-dns.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
-#   - https://dns.cloudflare.com/dns-query#ecs=1.1.1.1/24&ecs-override=true
-#   - https://dns.google/dns-query#ecs=1.1.1.1/24&ecs-override=true
+#   - https://dns.cloudflare.com/dns-query
+#   - https://dns.google/dns-query
 #   nameserver-policy:
-#     RULE-SET:China,Lan:
-#     - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
-#     - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-#   prefer-h3: false
+#     +.qinyues4.cc:
+#     - https://dns.alidns.com/dns-query
+#     RULE-SET:China:
+#     - https://dns.alidns.com/dns-query
+#     - https://doh.pub/dns-query
+#   prefer-h3: true
 #   proxy-server-nameserver:
-#   - https://dns.alidns.com/dns-query#ecs=223.5.5.5/24&ecs-override=true
-#   - https://doh.pub/dns-query#ecs=223.5.5.5/24&ecs-override=true
-#   proxy-server-nameserver-policy:
-#     '*.digital-nvme.com':
-#     - 8.138.94.132:8053
-#     '*.yunsmartdns.com':
-#     - 8.138.94.132:8053
-#   respect-rules: true
+#   - https://dns.alidns.com/dns-query
+#   - https://doh.pub/dns-query
+#   proxy-server-nameserver-policy: null
+#   respect-rules: false
 #   use-hosts: true
 #   use-system-hosts: true

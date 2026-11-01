@@ -1,0 +1,918 @@
+# OpenClash 覆写模块 - mihomo.yaml
+# 生成日期：2026-11-01
+# 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/XVSVTSAMA/mihomo.yaml
+# 格式：新版 OpenClash [YAML] 块覆写
+#
+# 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
+# 所有内容默认注释，不影响现有配置；取消注释对应段落即可启用该覆写。
+# ==========================================================
+# [YAML] 是新版 OpenClash 覆写模块的识别标记
+# 此行本身不可注释，内容写在此标记之后
+# 注释状态不生效；取消注释后重载覆写模块即可生效
+# ==========================================================
+[YAML]
+
+# ==========================================================
+# 操作符速查
+# ----------------------------------------------------------
+#  key       默认合并：Hash 递归合并，其他类型直接覆盖原值
+#  key!      强制覆盖：整个值全部替换，不做任何合并
+#  key+      数组后置追加：在数组末尾加入新元素
+#  +key      数组前置插入：在数组开头插入（规则越靠前越优先匹配）
+#  key-      数组差集删除：从数组移除指定元素；非数组则删除该键
+#  key*      批量条件更新：配合 where/set，按条件匹配后批量修改
+# ==========================================================
+
+# ==========================================================
+# 示例：追加自定义 rule-provider 并在规则末尾加入对应规则
+# 取消注释后，Steam 流量将走 Proxy 策略组
+# ----------------------------------------------------------
+# +rule-providers:
+#   Steam:
+#     type: http
+#     behavior: domain
+#     format: mrs
+#     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"
+#     interval: 86400
+# +rules:
+#   - RULE-SET,Steam,Proxy
+# ==========================================================
+
+# ==========================================================
+# 示例：在规则列表最前面插入高优先级规则（最先匹配）
+# ----------------------------------------------------------
+# +rules:
+#   - DOMAIN-SUFFIX,example.com,DIRECT
+#   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+# ==========================================================
+
+# ==========================================================
+# 示例：强制替换整个 rules 数组（原有规则全部丢弃）
+# ----------------------------------------------------------
+# rules!:
+#   - DOMAIN-SUFFIX,example.com,DIRECT
+#   - MATCH,PROXY
+# ==========================================================
+
+# ==========================================================
+# 示例：修改 dns 配置中的部分字段，其余字段保持不变
+# ----------------------------------------------------------
+# dns:
+#   enable: true
+#   cache-algorithm: lru
+# ==========================================================
+
+# ==========================================================
+# 示例：给所有 url-test 类型的策略组在 proxies 末尾追加节点
+# ----------------------------------------------------------
+# proxy-groups*:
+#   where:
+#     type: url-test
+#   set:
+#     proxies+:
+#       - '节点名称'
+# ==========================================================
+
+# ==========================================================
+# proxy-providers（从源文件直接提取）
+# ----------------------------------------------------------
+# 以下内容原样复制自源 YAML 的 proxy-providers 块。
+# 使用方法：
+#   1. 将需要替换的 provider 的 url: 改为你自己的订阅链接
+#   2. 删除这整块前面的 # 号，保存后重载覆写模块即可
+# ==========================================================
+#
+# proxy-providers:
+#   subscription:
+#     health-check:
+#       enable: true
+#       interval: 300
+#       lazy: true
+#       url: https://g.cn/generate_204
+#     interval: 3600
+#     path: ./proxy-providers/subscription.yaml
+#     proxy: DIRECT
+#     type: http
+#     url: https://example.invalid/REPLACE_WITH_YOUR_SUBSCRIPTION_URL
+
+# ==========================================================
+# proxy-groups（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始策略组配置，默认注释不启用。
+# 如需覆写策略组，可取消注释后修改，或参考上方示例使用 proxy-groups* 条件更新。
+# 直接取消注释将强制替换整个 proxy-groups（等同于 proxy-groups! 操作）。
+# ==========================================================
+#
+# proxy-groups:
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-DustinWin-ruleset_geodata-proxy.png
+#   name: 🌍 PROXY
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-clash-verge-rev-balance.svg
+#   name: 🔄 负载均衡
+#   proxies:
+#   - consistent-hashing
+#   - sticky-sessions
+#   - round-robin
+#   type: select
+# - hidden: true
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   max-failed-times: 1
+#   name: sticky-sessions
+#   strategy: sticky-sessions
+#   type: load-balance
+#   url: https://g.cn/generate_204
+# - hidden: true
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   max-failed-times: 1
+#   name: round-robin
+#   strategy: round-robin
+#   type: load-balance
+#   url: https://g.cn/generate_204
+# - hidden: true
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   max-failed-times: 1
+#   name: consistent-hashing
+#   strategy: consistent-hashing
+#   type: load-balance
+#   url: https://g.cn/generate_204
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-DustinWin-ruleset_geodata-select.png
+#   include-all: true
+#   name: 👉 手动切换
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-DustinWin-ruleset_geodata-auto.png
+#   include-all: true
+#   interval: 300
+#   lazy: true
+#   max-failed-times: 1
+#   name: ♻️ 自动选择
+#   tolerance: 10
+#   type: url-test
+#   url: https://g.cn/generate_204
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-AIsouler-MyClash-Apple.svg
+#   include-all: true
+#   name: 🍎 海外苹果
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/self-Microsoft.svg
+#   include-all: true
+#   name: 💠 海外微软
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - default-selected: DIRECT
+#   icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-AIsouler-MyClash-Steam.svg
+#   include-all: true
+#   name: 🎮 Steam平台（非下载/CDN）
+#   proxies:
+#   - DIRECT
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-DustinWin-ruleset_geodata-telegram.png
+#   include-all: true
+#   name: 📲 Telegram
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - default-selected: 🎮 Steam平台（非下载/CDN）
+#   icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-DustinWin-ruleset_geodata-games-cn.png
+#   include-all: true
+#   name: 🎮 Games-Global
+#   proxies:
+#   - 🎮 Steam平台（非下载/CDN）
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-clash-verge-rev-twitter.svg
+#   include-all: true
+#   name: ✖️ Twitter
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-DustinWin-ruleset_geodata-ai.png
+#   include-all: true
+#   name: 🤖 AI大模型
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-DustinWin-ruleset_geodata-tiktok.png
+#   include-all: true
+#   name: 🎵 TikTok
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-bitcoin.svg
+#   include-all: true
+#   name: 💳 金融支付
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-google.svg
+#   include-all: true
+#   name: 🔎 Google
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-meta.svg
+#   include-all: true
+#   name: ♾️ Meta
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-spotify.svg
+#   include-all: true
+#   name: 🎧 Spotify
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-emby.svg
+#   include-all: true
+#   name: 🎬 Emby
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-discord.svg
+#   include-all: true
+#   name: 💬 Discord
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-reddit.svg
+#   include-all: true
+#   name: 👽 Reddit
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-netflix.svg
+#   include-all: true
+#   name: 🎥 Netflix
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-patreon.svg
+#   include-all: true
+#   name: 💝 Patreon
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/self-EHentai.svg
+#   include-all: true
+#   name: 📚 EHentai
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/self-PikPak.svg
+#   include-all: true
+#   name: ☁️ PikPak
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-simple-icons-line.svg
+#   include-all: true
+#   name: 💬 LINE
+#   proxies:
+#   - 👉 手动切换
+#   - ♻️ 自动选择
+#   - 🔄 负载均衡
+#   - DIRECT
+#   type: select
+# - icon: https://gh-proxy.com/https://raw.githubusercontent.com/XVSVTsama/XVSVT-Clash-Config/main/assets/icons/upstream-MiToverG422-Qure-fcm.png
+#   name: FCM
+#   proxies:
+#   - 👉 手动切换
+#   - DIRECT
+#   type: select
+
+# ==========================================================
+# rule-providers（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始规则集配置，默认注释不启用。
+# 如需追加新的 rule-provider，参考上方示例一使用 +rule-providers: 操作符。
+# ==========================================================
+#
+# rule-providers:
+#   Gemini_Domain:
+#     behavior: domain
+#     interval: 86400
+#     path: ./ruleset/Gemini_Domain.yaml
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/master/Gemini/Gemini_Domain.yaml
+#   Grok_Domain:
+#     behavior: domain
+#     interval: 86400
+#     path: ./ruleset/Grok_Domain.yaml
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/Grok/Grok_Domain.yaml
+#   HijackingPlus:
+#     behavior: classical
+#     interval: 86400
+#     path: ./ruleset/HijackingPlus.yaml
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/Accademia/Additional_Rule_For_Clash/refs/heads/main/HijackingPlus/HijackingPlus_No_Resolve.yaml
+#   TikTok:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/tiktok.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/tiktok.mrs
+#   ai-1:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/ai-1.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/ai.mrs
+#   ai-2:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/ai-2.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-ai-!cn.mrs
+#   apple:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/apple.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/apple.mrs
+#   apple_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/apple_ip.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/apple.mrs
+#   category-cryptocurrency:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/category-cryptocurrency.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/category-cryptocurrency.mrs
+#   cn:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/cn.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/cn.mrs
+#   cncidr:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/cncidr.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/cnip.mrs
+#   discord:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/discord.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/discord.mrs
+#   douyin:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/douyin.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/douyin.mrs
+#   echs_direct:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/echs_direct.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/echs-top/proxy/main/mrs/domain/direct.mrs
+#   echs_direct_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/echs_direct_ip.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/echs-top/proxy/main/mrs/ip/direct.mrs
+#   ehentai:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/ehentai.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/ehentai.mrs
+#   fakeip-filter_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/fakeip-filter_domain.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/fakeip-filter.mrs
+#   games:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/games.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/games.mrs
+#   gfw:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/gfw.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/gfw.mrs
+#   google:
+#     behavior: domain
+#     interval: 86400
+#     path: ./ruleset/google.yaml
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/google.txt
+#   google-cn:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/google-cn.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/google-cn.mrs
+#   googlefcm:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/googlefcm.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/googlefcm.mrs
+#   lancidr:
+#     behavior: ipcidr
+#     interval: 86400
+#     path: ./ruleset/lancidr.yaml
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/lancidr.txt
+#   line:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/line.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/line.mrs
+#   mastercard:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/mastercard.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/mastercard.mrs
+#   meta:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/meta.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/meta.mrs
+#   microsoft:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/microsoft.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/microsoft.mrs
+#   microsoft_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/microsoft_ip.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/microsoft.mrs
+#   netflix:
+#     behavior: classical
+#     format: text
+#     interval: 86400
+#     path: ./ruleset/netflix.list
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/DustinWin/domain-list-custom/domains/netflix.list
+#   patreon:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/patreon.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/patreon.mrs
+#   paypal:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/paypal.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/paypal.mrs
+#   pikpak:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/pikpak.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pikpak.mrs
+#   pixiv:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/pixiv.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/pixiv.mrs
+#   private:
+#     behavior: domain
+#     interval: 86400
+#     path: ./ruleset/private.yaml
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/Loyalsoldier/clash-rules/release/private.txt
+#   proxy:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/proxy.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://github.com/DustinWin/ruleset_geodata/releases/download/mihomo-ruleset/proxy.mrs
+#   proxy@direct:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/proxy@direct.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/echs-top/proxy/main/mrs/domain/proxy@direct.mrs
+#   reddit:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/reddit.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/reddit.mrs
+#   spotify:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/spotify.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/spotify.mrs
+#   steam:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/steam.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geosite/steam.mrs
+#   steam_ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/steam_ip.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/appshubcc/bett-rules/meta/geo/geoip/steam.mrs
+#   stripe:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/stripe.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/stripe.mrs
+#   telegram_domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/telegram_domain.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/telegram.mrs
+#   telegramcidr:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/telegramcidr.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/reddishJade/private_proxy/main/Mihomo/Provider/telegram%40ip.mrs
+#   twitter-x-aggregate:
+#     behavior: classical
+#     format: yaml
+#     interval: 86400
+#     path: ./ruleset/twitter-x-aggregate.yaml
+#     type: http
+#     url: https://magicrule.pages.dev/data/_shared/artifacts/Twitter_classical_d405159ccf6c8682.yaml
+#   twitter-x-domain:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/twitter/x-domain.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/twitter.mrs
+#   twitter-x-ip:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/twitter/x-ip.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geoip/twitter.mrs
+#   visa:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/visa.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/visa.mrs
+#   wise:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./ruleset/wise.mrs
+#     type: http
+#     url: https://gh-proxy.com/https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/wise.mrs
+
+# ==========================================================
+# rules（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始规则列表，默认注释不启用。
+# 常用操作：
+#   +rules: [...]   在规则列表开头插入（优先匹配）
+#   rules+: [...]   在规则列表末尾追加
+#   rules!: [...]   强制替换整个规则列表（丢弃原有规则）
+# 参考上方示例，通常不需要取消注释整个 rules，而是用 +rules/rules+ 追加即可。
+# ==========================================================
+#
+# rules:
+# - AND,((NETWORK,UDP),(DST-PORT,3478-3479/5349-5350/19302-19309),(NOT,((RULE-SET,cncidr))),(NOT,((RULE-SET,cn))),(NOT,((RULE-SET,games))),(NOT,((RULE-SET,echs_direct)))),REJECT
+# - RULE-SET,HijackingPlus,REJECT
+# - SUB-RULE,(PROCESS-NAME,com.dragon.read.oversea.gp),fanqie
+# - DOMAIN,mirrors.tuna.tsinghua.edu.cn,DIRECT
+# - DOMAIN,mirrors.ustc.edu.cn,DIRECT
+# - DOMAIN,mirrors.bfsu.edu.cn,DIRECT
+# - DOMAIN,mirror.nju.edu.cn,DIRECT
+# - DOMAIN,mirrors.hit.edu.cn,DIRECT
+# - DOMAIN,mirror.lzu.edu.cn,DIRECT
+# - DOMAIN,mirrors.aliyun.com,DIRECT
+# - DOMAIN,mirrors.cloud.tencent.com,DIRECT
+# - DOMAIN,mirrors.tencent.com,DIRECT
+# - DOMAIN,mirrors.huaweicloud.com,DIRECT
+# - DOMAIN,repo.huaweicloud.com,DIRECT
+# - DOMAIN,mirrors.163.com,DIRECT
+# - DOMAIN,gh-proxy.com,DIRECT
+# - DOMAIN-SUFFIX,alipayeshop.com,DIRECT
+# - RULE-SET,echs_direct_ip,DIRECT,no-resolve
+# - RULE-SET,echs_direct,DIRECT
+# - RULE-SET,cncidr,DIRECT,no-resolve
+# - RULE-SET,cn,DIRECT
+# - DOMAIN,clash.razord.top,DIRECT
+# - DOMAIN,yacd.haishan.me,DIRECT
+# - PROCESS-NAME,svchost.exe,DIRECT
+# - RULE-SET,private,DIRECT,no-resolve
+# - RULE-SET,lancidr,DIRECT,no-resolve
+# - DOMAIN-WILDCARD,*.deepseek.com,DIRECT
+# - DOMAIN-WILDCARD,*.portal101.cn,DIRECT
+# - DOMAIN-SUFFIX,cdnhwcqwg14.com,DIRECT
+# - DOMAIN-SUFFIX,cdnhwcxcy07.com,DIRECT
+# - DOMAIN-SUFFIX,cdngslb.com,DIRECT
+# - DOMAIN-SUFFIX,edgekey.net,DIRECT
+# - DOMAIN-KEYWORD,ikuuu,🌍 PROXY
+# - DOMAIN,lumina.lumina00001.com,DIRECT
+# - DOMAIN,gfwsb.yiku.xyz,DIRECT
+# - DOMAIN,bsub.douyincdns.com,DIRECT
+# - PROCESS-NAME,com.mountains.hills,🎬 Emby
+# - PROCESS-NAME,com.hamhub.app,🎬 Emby
+# - PROCESS-NAME,com.oumi.utility.media.hub,🎬 Emby
+# - PROCESS-NAME,com.feifeiduck.capyplayer,🎬 Emby
+# - PROCESS-NAME,com.attempt.afusekt,🎬 Emby
+# - PROCESS-NAME,com.hush.yamby,🎬 Emby
+# - PROCESS-NAME,com.railux.mobile,🎬 Emby
+# - DOMAIN,d3r7nsslvs6aaf.cloudfront.net,💳 金融支付
+# - DOMAIN-SUFFIX,cloudfront.net,DIRECT
+# - RULE-SET,googlefcm,FCM
+# - DOMAIN,bybit-exchange.github.io,💳 金融支付
+# - RULE-SET,microsoft_ip,💠 海外微软,no-resolve
+# - RULE-SET,microsoft,💠 海外微软
+# - RULE-SET,apple_ip,🍎 海外苹果,no-resolve
+# - RULE-SET,apple,🍎 海外苹果
+# - RULE-SET,proxy@direct,🌍 PROXY
+# - PROCESS-NAME-REGEX,.*nagram.*,📲 Telegram
+# - PROCESS-NAME-REGEX,.*telegram.*,📲 Telegram
+# - RULE-SET,telegramcidr,📲 Telegram,no-resolve
+# - RULE-SET,telegram_domain,📲 Telegram
+# - PROCESS-NAME-REGEX,(?i).*(manus|tech\.butterfly\.app).*,🤖 AI大模型
+# - DOMAIN-SUFFIX,muse.ai,🤖 AI大模型
+# - DOMAIN,hatch-api.meta.ai,🤖 AI大模型
+# - DOMAIN,api.meta.ai,🤖 AI大模型
+# - DOMAIN,agent.meta.ai,🤖 AI大模型
+# - DOMAIN-SUFFIX,metaaivm.com,🤖 AI大模型
+# - DOMAIN,auth.meta.com,🤖 AI大模型
+# - DOMAIN,meta.graph.meta.com,🤖 AI大模型
+# - DOMAIN,edge-metaclaw-http.c10r.facebook.com,🤖 AI大模型
+# - DOMAIN,shortwave.facebook.com,🤖 AI大模型
+# - DOMAIN,node.hatch.one,🤖 AI大模型
+# - PROCESS-NAME,com.facebook.aura,🤖 AI大模型
+# - PROCESS-NAME-REGEX,(?i).*claude.*,🤖 AI大模型
+# - PROCESS-NAME-REGEX,(?i).*anthropic.*,🤖 AI大模型
+# - DOMAIN,api.anthropic.com,🤖 AI大模型
+# - DOMAIN,console.anthropic.com,🤖 AI大模型
+# - DOMAIN,statsig.anthropic.com,🤖 AI大模型
+# - DOMAIN,status.anthropic.com,🤖 AI大模型
+# - DOMAIN,sentry.anthropic.com,🤖 AI大模型
+# - DOMAIN,support.anthropic.com,🤖 AI大模型
+# - DOMAIN,mcp-proxy.anthropic.com,🤖 AI大模型
+# - DOMAIN,platform.claude.com,🤖 AI大模型
+# - DOMAIN,code.claude.com,🤖 AI大模型
+# - DOMAIN,downloads.claude.ai,🤖 AI大模型
+# - DOMAIN,bridge.claudeusercontent.com,🤖 AI大模型
+# - DOMAIN,cdn.growthbook.io,🤖 AI大模型
+# - DOMAIN,cdn.usefathom.com,🤖 AI大模型
+# - DOMAIN,registry.npmjs.org,🤖 AI大模型
+# - DOMAIN,storage.googleapis.com,🤖 AI大模型
+# - DOMAIN,formulae.brew.sh,🤖 AI大模型
+# - DOMAIN,http-intake.logs.us5.datadoghq.com,🤖 AI大模型
+# - DOMAIN,browser-intake-us5-datadoghq.com,🤖 AI大模型
+# - DOMAIN,servd-anthropic-website.b-cdn.net,🤖 AI大模型
+# - DOMAIN,claudemcpclient.com,🤖 AI大模型
+# - DOMAIN,claudemcpcontent.com,🤖 AI大模型
+# - DOMAIN-SUFFIX,anthropic.com,🤖 AI大模型
+# - DOMAIN-SUFFIX,claude.ai,🤖 AI大模型
+# - DOMAIN-SUFFIX,claude.com,🤖 AI大模型
+# - DOMAIN-SUFFIX,claudeusercontent.com,🤖 AI大模型
+# - DOMAIN-SUFFIX,clau.de,🤖 AI大模型
+# - DOMAIN-SUFFIX,frame.claudeusercontent.com,🤖 AI大模型
+# - DOMAIN-SUFFIX,modelcontextprotocol.io,🤖 AI大模型
+# - IP-CIDR,160.79.104.0/21,🤖 AI大模型,no-resolve
+# - IP-CIDR6,2607:6bc0::/48,🤖 AI大模型,no-resolve
+# - IP-CIDR,17.253.4.0/23,🤖 AI大模型,no-resolve
+# - RULE-SET,Gemini_Domain,🤖 AI大模型
+# - RULE-SET,Grok_Domain,🤖 AI大模型
+# - DOMAIN,anthropic.com.cdn.cloudflare.net,🤖 AI大模型
+# - DOMAIN,anthropic-com.ghost.io,🤖 AI大模型
+# - DOMAIN-SUFFIX,sentry.io,🤖 AI大模型
+# - DOMAIN-SUFFIX,statsigapi.net,🤖 AI大模型
+# - DOMAIN,browser-intake-us5-datadoghq.com,🤖 AI大模型
+# - DOMAIN-KEYWORD,datadog,🤖 AI大模型
+# - DOMAIN-KEYWORD,sift,🤖 AI大模型
+# - RULE-SET,ai-1,🤖 AI大模型
+# - RULE-SET,ai-2,🤖 AI大模型
+# - RULE-SET,google,🔎 Google
+# - RULE-SET,google-cn,🔎 Google
+# - RULE-SET,meta,♾️ Meta
+# - RULE-SET,spotify,🎧 Spotify
+# - RULE-SET,discord,💬 Discord
+# - RULE-SET,reddit,👽 Reddit
+# - RULE-SET,netflix,🎥 Netflix
+# - RULE-SET,patreon,💝 Patreon
+# - RULE-SET,ehentai,📚 EHentai
+# - RULE-SET,pikpak,☁️ PikPak
+# - RULE-SET,line,💬 LINE
+# - RULE-SET,category-cryptocurrency,💳 金融支付
+# - RULE-SET,paypal,💳 金融支付
+# - RULE-SET,stripe,💳 金融支付
+# - RULE-SET,visa,💳 金融支付
+# - RULE-SET,mastercard,💳 金融支付
+# - RULE-SET,wise,💳 金融支付
+# - PROCESS-NAME,com.bitget.exchange,💳 金融支付
+# - PROCESS-NAME,pro.huobi,💳 金融支付
+# - PROCESS-NAME,com.bitkeep.wallet,💳 金融支付
+# - PROCESS-NAME,com.bybit.app,💳 金融支付
+# - PROCESS-NAME,com.ton_keeper,💳 金融支付
+# - PROCESS-NAME,io.gramwallet.app,💳 金融支付
+# - PROCESS-NAME,com.coinbase.android,💳 金融支付
+# - PROCESS-NAME,com.okinc.okex.gp,💳 金融支付
+# - PROCESS-NAME,com.kraken.invest.app,💳 金融支付
+# - PROCESS-NAME,co.mona.android,💳 金融支付
+# - PROCESS-NAME,app.phantom,💳 金融支付
+# - PROCESS-NAME,com.paypal.android.p2pmobile,💳 金融支付
+# - PROCESS-NAME,com.binance.dev,💳 金融支付
+# - PROCESS-NAME,com.binance.us,💳 金融支付
+# - PROCESS-NAME,com.gateio.gateio,💳 金融支付
+# - PROCESS-NAME,com.kubi.kucoin,💳 金融支付
+# - PROCESS-NAME,com.mexcpro.client,💳 金融支付
+# - PROCESS-NAME,com.wallet.crypto.trustapp,💳 金融支付
+# - PROCESS-NAME,io.metamask,💳 金融支付
+# - PROCESS-NAME,im.token.app,💳 金融支付
+# - PROCESS-NAME,vip.mytokenpocket,💳 金融支付
+# - PROCESS-NAME,io.safepal.wallet,💳 金融支付
+# - PROCESS-NAME,exodusmovement.exodus,💳 金融支付
+# - PROCESS-NAME,org.toshi,💳 金融支付
+# - PROCESS-NAME-REGEX,.*twitter.*,✖️ Twitter
+# - RULE-SET,twitter-x-ip,✖️ Twitter,no-resolve
+# - RULE-SET,twitter-x-domain,✖️ Twitter
+# - RULE-SET,twitter-x-aggregate,✖️ Twitter
+# - RULE-SET,steam_ip,🎮 Steam平台（非下载/CDN）,no-resolve
+# - RULE-SET,steam,🎮 Steam平台（非下载/CDN）
+# - PROCESS-NAME,bf6.exe,🎮 Games-Global
+# - RULE-SET,games,🎮 Games-Global
+# - RULE-SET,TikTok,🎵 TikTok
+# - RULE-SET,proxy,🌍 PROXY
+# - RULE-SET,gfw,🌍 PROXY
+# - MATCH,🌍 PROXY
+
+# ==========================================================
+# dns（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始 DNS 配置，默认注释不启用。
+# 如只需修改部分字段，直接写需要修改的键值即可（默认合并，不影响其他字段）。
+# 如需完整替换 DNS 配置，使用 dns!: 操作符。
+# ==========================================================
+#
+# dns:
+#   cache-algorithm: arc
+#   default-nameserver:
+#   - tls://223.5.5.5#DIRECT
+#   - 114.114.114.114#DIRECT
+#   - https://1.12.12.12/dns-query#DIRECT
+#   direct-nameserver:
+#   - https://dns.alidns.com/dns-query#DIRECT
+#   - https://doh.pub/dns-query#DIRECT
+#   direct-nameserver-follow-policy: true
+#   enable: true
+#   enhanced-mode: fake-ip
+#   fake-ip-filter:
+#   - rule-set:fakeip-filter_domain
+#   - rule-set:private
+#   - rule-set:cn
+#   - rule-set:echs_direct
+#   - rule-set:googlefcm
+#   - yacd.haishan.me
+#   - +.alipayeshop.com
+#   - rule-set:pixiv
+#   - pixshaft.com
+#   - gh-proxy.com
+#   fake-ip-filter-mode: blacklist
+#   fake-ip-range: 198.18.0.1/16
+#   fake-ip-range6: fdfe:dcba:9876::1/64
+#   ipv6: true
+#   listen: 0.0.0.0:1053
+#   nameserver:
+#   - https://cloudflare-dns.com/dns-query#👉 手动切换
+#   nameserver-policy:
+#     rule-set:douyin:
+#     - system
+#     - 180.184.1.1
+#     - 180.184.2.2
+#     rule-set:private:
+#     - system
+#     rule-set:proxy@direct,cn,echs_direct:
+#     - https://dns.alidns.com/dns-query#DIRECT
+#     - https://doh.pub/dns-query#DIRECT
+#   prefer-h3: false
+#   proxy-server-nameserver:
+#   - https://hrbgyitz34.cloudflare-gateway.com/dns-query#DIRECT
+#   respect-rules: false
+#   use-hosts: true
+#   use-system-hosts: false

@@ -1,5 +1,5 @@
 # OpenClash 覆写模块 - mihomo.yaml
-# 生成日期：2026-09-16
+# 生成日期：2026-11-01
 # 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/YiXuanZX/mihomo.yaml
 # 格式：新版 OpenClash [YAML] 块覆写
 #
@@ -86,7 +86,7 @@
 #   provider1:
 #     header:
 #       User-Agent:
-#       - clash-verge/v2.5.2
+#       - clash-verge/v2.5.8
 #     health-check:
 #       enable: true
 #       interval: 600
@@ -351,7 +351,7 @@
 #   fake-ip-range: 28.0.0.0/8
 #   ipv6: true
 #   nameserver:
-#   - 223.5.5.5
+#   - https://dns.alidns.com/dns-query
 #   nameserver-policy:
 #     '*':
 #     - system

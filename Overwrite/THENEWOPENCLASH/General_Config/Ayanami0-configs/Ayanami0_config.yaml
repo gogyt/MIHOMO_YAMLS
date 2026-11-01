@@ -1,0 +1,604 @@
+# OpenClash 覆写模块 - Ayanami0_config.yaml
+# 生成日期：2026-11-01
+# 源文件：https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/THEYAMLS/General_Config/Ayanami0-configs/Ayanami0_config.yaml
+# 格式：新版 OpenClash [YAML] 块覆写
+#
+# 本文件仅包含 [YAML] 块覆写内容，不含任何 [General] 插件设置。
+# 所有内容默认注释，不影响现有配置；取消注释对应段落即可启用该覆写。
+# ==========================================================
+# [YAML] 是新版 OpenClash 覆写模块的识别标记
+# 此行本身不可注释，内容写在此标记之后
+# 注释状态不生效；取消注释后重载覆写模块即可生效
+# ==========================================================
+[YAML]
+
+# ==========================================================
+# 操作符速查
+# ----------------------------------------------------------
+#  key       默认合并：Hash 递归合并，其他类型直接覆盖原值
+#  key!      强制覆盖：整个值全部替换，不做任何合并
+#  key+      数组后置追加：在数组末尾加入新元素
+#  +key      数组前置插入：在数组开头插入（规则越靠前越优先匹配）
+#  key-      数组差集删除：从数组移除指定元素；非数组则删除该键
+#  key*      批量条件更新：配合 where/set，按条件匹配后批量修改
+# ==========================================================
+
+# ==========================================================
+# 示例：追加自定义 rule-provider 并在规则末尾加入对应规则
+# 取消注释后，Steam 流量将走 Proxy 策略组
+# ----------------------------------------------------------
+# +rule-providers:
+#   Steam:
+#     type: http
+#     behavior: domain
+#     format: mrs
+#     url: "https://raw.githubusercontent.com/MetaCubeX/meta-rules-dat/meta/geo/geosite/steam.mrs"
+#     interval: 86400
+# +rules:
+#   - RULE-SET,Steam,Proxy
+# ==========================================================
+
+# ==========================================================
+# 示例：在规则列表最前面插入高优先级规则（最先匹配）
+# ----------------------------------------------------------
+# +rules:
+#   - DOMAIN-SUFFIX,example.com,DIRECT
+#   - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+# ==========================================================
+
+# ==========================================================
+# 示例：强制替换整个 rules 数组（原有规则全部丢弃）
+# ----------------------------------------------------------
+# rules!:
+#   - DOMAIN-SUFFIX,example.com,DIRECT
+#   - MATCH,PROXY
+# ==========================================================
+
+# ==========================================================
+# 示例：修改 dns 配置中的部分字段，其余字段保持不变
+# ----------------------------------------------------------
+# dns:
+#   enable: true
+#   cache-algorithm: lru
+# ==========================================================
+
+# ==========================================================
+# 示例：给所有 url-test 类型的策略组在 proxies 末尾追加节点
+# ----------------------------------------------------------
+# proxy-groups*:
+#   where:
+#     type: url-test
+#   set:
+#     proxies+:
+#       - '节点名称'
+# ==========================================================
+
+# ==========================================================
+# proxy-providers（从源文件直接提取）
+# ----------------------------------------------------------
+# 以下内容原样复制自源 YAML 的 proxy-providers 块。
+# 使用方法：
+#   1. 将需要替换的 provider 的 url: 改为你自己的订阅链接
+#   2. 删除这整块前面的 # 号，保存后重载覆写模块即可
+# ==========================================================
+#
+# proxy-providers:
+#   α:
+#     header: &id001
+#       User-Agent:
+#       - ClashMetaForAndroid
+#     health-check: &id002
+#       enable: true
+#       interval: 300
+#       url: https://cp.cloudflare.com/generate_204
+#     interval: 7200
+#     override:
+#       additional-prefix: α-
+#     path: ./proxies/α.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+#   β:
+#     header: *id001
+#     health-check: *id002
+#     interval: 7200
+#     override:
+#       additional-prefix: β-
+#     path: ./proxies/β.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+#   γ:
+#     header: *id001
+#     health-check: *id002
+#     interval: 7200
+#     override:
+#       additional-prefix: γ-
+#     path: ./proxies/γ.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+#   δ:
+#     header: *id001
+#     health-check: *id002
+#     interval: 7200
+#     override:
+#       additional-prefix: δ-
+#     path: ./proxies/δ.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+#   ε:
+#     header: *id001
+#     health-check: *id002
+#     interval: 7200
+#     override:
+#       additional-prefix: ε-
+#     path: ./proxies/ε.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+#   ζ:
+#     header: *id001
+#     health-check: *id002
+#     interval: 7200
+#     override:
+#       additional-prefix: ζ-
+#     path: ./proxies/ζ.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+#   η:
+#     header: *id001
+#     health-check: *id002
+#     interval: 7200
+#     override:
+#       additional-prefix: η-
+#     path: ./proxies/η.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+#   θ:
+#     header: *id001
+#     health-check: *id002
+#     interval: 7200
+#     override:
+#       additional-prefix: θ-
+#     path: ./proxies/θ.yaml
+#     proxy: UPDATA
+#     type: http
+#     url: null
+
+# ==========================================================
+# proxy-groups（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始策略组配置，默认注释不启用。
+# 如需覆写策略组，可取消注释后修改，或参考上方示例使用 proxy-groups* 条件更新。
+# 直接取消注释将强制替换整个 proxy-groups（等同于 proxy-groups! 操作）。
+# ==========================================================
+#
+# proxy-groups:
+# - icon: https://raw.githubusercontent.com/GitMetaio/Surfing/refs/heads/rm/Home/icon/All.svg
+#   include-all: true
+#   interval: 300
+#   name: PROXY
+#   proxies:
+#   - HK
+#   - SG
+#   - JP
+#   - TW
+#   - US
+#   - WD
+#   - DIRECT
+#   type: select
+#   url: https://cp.cloudflare.com/generate_204
+# - filter: ^(?=.*(?:港|HK|hk|Hong ?Kong)).+
+#   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Hong_Kong.png
+#   include-all: true
+#   lazy: true
+#   name: HK
+#   type: select
+# - filter: ^(?=.*(?:新加坡|坡|狮城|SG|Singapore)).+
+#   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Singapore.png
+#   include-all: true
+#   lazy: true
+#   name: SG
+#   type: select
+# - filter: ^(?=.*(?:日本|川日|东京|大阪|泉日|埼玉|沪日|深日|JP|Japan)).+
+#   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Japan.png
+#   include-all: true
+#   lazy: true
+#   name: JP
+#   type: select
+# - filter: ^(?=.*(?:台|新北|彰化|TW|Taiwan)).+
+#   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Taiwan.png
+#   include-all: true
+#   lazy: true
+#   name: TW
+#   type: select
+# - filter: ^(?=.*(?:美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|USA|United
+#     ?States)).+
+#   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/United_States.png
+#   include-all: true
+#   lazy: true
+#   name: US
+#   type: select
+# - filter: ^(?i)(?!.*(?:港|hk|hong ?kong|日本|川日|东京|大阪|泉日|埼玉|沪日|深日|jp|japan|美|波特兰|达拉斯|俄勒冈|凤凰城|费利蒙|硅谷|拉斯维加斯|洛杉矶|圣何塞|圣克拉拉|西雅图|芝加哥|us|united
+#     ?states|台|新北|彰化|tw|taiwan|新加坡|坡|狮城|sg|singapore|traffic|expire|灾|网易|netease|套餐|重置|剩余|到期|订阅|群|账户|流量|有效期|时间|官网|防走失|建议)).+
+#   icon: https://raw.githubusercontent.com/GitMetaio/Surfing/refs/heads/rm/Home/icon/Globe.svg
+#   include-all: true
+#   lazy: true
+#   name: WD
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Steam.png
+#   name: Steam
+#   proxies: &id003
+#   - DIRECT
+#   - HK
+#   - SG
+#   - JP
+#   - TW
+#   - US
+#   - WD
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Google.png
+#   name: Google
+#   proxies: &id001
+#   - HK
+#   - SG
+#   - JP
+#   - TW
+#   - US
+#   - WD
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Telegram.png
+#   name: Telegram
+#   proxies: *id001
+#   type: select
+# - filter: (?<![0-9])0\.(?:0[0-9]{1,2}|[1-9])(?![0-9])
+#   icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Download.png
+#   include-all: true
+#   lazy: true
+#   name: LowRate
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Media.png
+#   include-all: true
+#   lazy: true
+#   name: Media
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Emby.png
+#   name: Emby
+#   proxies: &id002
+#   - Media
+#   - LowRate
+#   - HK
+#   - SG
+#   - JP
+#   - TW
+#   - US
+#   - WD
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/YouTube.png
+#   name: YouTube
+#   proxies: *id002
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/TikTok.png
+#   name: TikTok
+#   proxies: *id002
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/Apple.png
+#   name: Apple
+#   proxies: *id003
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/AI.png
+#   name: AI
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/Koolson/Qure/master/IconSet/Color/PayPal.png
+#   name: PayPal
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/lige47/lige_icon/blob/main/icon/04ProxySoft/exhentai.png
+#   name: EH
+#   proxies: *id001
+#   type: select
+# - icon: https://raw.githubusercontent.com/GitMetaio/Surfing/refs/heads/rm/Home/icon/Update.svg
+#   name: UPDATA
+#   proxies: *id003
+#   type: select
+# - icon: https://raw.githubusercontent.com/GitMetaio/Surfing/refs/heads/rm/Home/icon/No-ads-all.svg
+#   name: ADS
+#   proxies:
+#   - REJECT-DROP
+#   - REJECT
+#   - PROXY
+#   type: select
+
+# ==========================================================
+# rule-providers（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始规则集配置，默认注释不启用。
+# 如需追加新的 rule-provider，参考上方示例一使用 +rule-providers: 操作符。
+# ==========================================================
+#
+# rule-providers:
+#   AI:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/ai.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/DustinWin/ruleset_geodata/refs/heads/mihomo-ruleset/ai.mrs
+#   Anti-AD:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Anti-AD.mrs
+#     type: http
+#     url: https://anti-ad.net/mihomo.mrs
+#   Apple:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Apple.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Apple/Apple_OCD_Domain.mrs
+#   Apple_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Apple_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Apple/Apple_OCD_IP.mrs
+#   ChinaMax:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/ChinaMax.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/ChinaMax/ChinaMax_OCD_Domain.mrs
+#   ChinaMax_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/ChinaMax_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/ChinaMax/ChinaMax_OCD_IP.mrs
+#   Direct:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/direct.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Direct/Direct_OCD_Domain.mrs
+#   EH:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/EH.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/EHGallery/EHGallery_OCD_Domain.mrs
+#   Game:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Game.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Game/Game_OCD_Domain.mrs
+#   GameDownload:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/GameDownload.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Game/GameDownload/GameDownload_OCD_Domain.mrs
+#   Game_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Game_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Game/Game_OCD_IP.mrs
+#   Global:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Global.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Global/Global_OCD_Domain.mrs
+#   Global_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Global_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Global/Global_OCD_IP.mrs
+#   Google:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Google.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Google/Google_OCD_Domain.mrs
+#   GoogleFCM:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/GoogleFCM.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/GoogleFCM/GoogleFCM_OCD_Domain.mrs
+#   GoogleFCM_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/GoogleFCM_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/GoogleFCM/GoogleFCM_OCD_IP.mrs
+#   Google_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Google_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Google/Google_OCD_IP.mrs
+#   Lan:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Lan.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Lan/Lan_OCD_Domain.mrs
+#   Lan_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Lan_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Lan/Lan_OCD_IP.mrs
+#   Microsoft:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Microsoft.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Microsoft/Microsoft_OCD_Domain.mrs
+#   PayPal:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/PayPal.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/PayPal/PayPal_OCD_Domain.mrs
+#   Steam:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Steam.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Steam/Steam_OCD_Domain.mrs
+#   Telegram:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Telegram.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Telegram/Telegram_OCD_Domain.mrs
+#   Telegram_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/Telegram_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/Telegram/Telegram_OCD_IP.mrs
+#   TikTok:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/TikTok.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/TikTok/TikTok_OCD_Domain.mrs
+#   YouTube:
+#     behavior: domain
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/YouTube.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/YouTube/YouTube_OCD_Domain.mrs
+#   YouTube_IP:
+#     behavior: ipcidr
+#     format: mrs
+#     interval: 86400
+#     path: ./rules/YouTube_IP.mrs
+#     type: http
+#     url: https://raw.githubusercontent.com/peiyingyao/Rule-for-OCD/master/rule/Clash/YouTube/YouTube_OCD_IP.mrs
+
+# ==========================================================
+# rules（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始规则列表，默认注释不启用。
+# 常用操作：
+#   +rules: [...]   在规则列表开头插入（优先匹配）
+#   rules+: [...]   在规则列表末尾追加
+#   rules!: [...]   强制替换整个规则列表（丢弃原有规则）
+# 参考上方示例，通常不需要取消注释整个 rules，而是用 +rules/rules+ 追加即可。
+# ==========================================================
+#
+# rules:
+# - RULE-SET,Lan,DIRECT
+# - RULE-SET,Lan_IP,DIRECT,no-resolve
+# - RULE-SET,Direct,DIRECT
+# - RULE-SET,Anti-AD,ADS
+# - RULE-SET,Steam,Steam
+# - RULE-SET,Game,DIRECT
+# - RULE-SET,Game_IP,DIRECT
+# - RULE-SET,GameDownload,DIRECT
+# - PROCESS-NAME-REGEX,(?i).*steam.*,Steam
+# - RULE-SET,GoogleFCM,DIRECT
+# - RULE-SET,GoogleFCM_IP,DIRECT
+# - RULE-SET,Microsoft,DIRECT
+# - PROCESS-NAME,tor.exe,PROXY
+# - RULE-SET,AI,AI
+# - RULE-SET,Apple,Apple
+# - RULE-SET,PayPal,PayPal
+# - RULE-SET,TikTok,TikTok
+# - RULE-SET,EH,EH
+# - IP-CIDR,178.175.128.0/21,EH
+# - RULE-SET,ChinaMax,DIRECT
+# - RULE-SET,ChinaMax_IP,DIRECT
+# - RULE-SET,Google,Google
+# - RULE-SET,Google_IP,Google
+# - RULE-SET,YouTube,YouTube
+# - RULE-SET,YouTube_IP,YouTube
+# - RULE-SET,Telegram,Telegram
+# - RULE-SET,Telegram_IP,Telegram,no-resolve
+# - RULE-SET,Global,PROXY
+# - RULE-SET,Global_IP,PROXY
+# - MATCH,PROXY
+
+# ==========================================================
+# dns（从源文件直接提取）
+# ----------------------------------------------------------
+# 原始 DNS 配置，默认注释不启用。
+# 如只需修改部分字段，直接写需要修改的键值即可（默认合并，不影响其他字段）。
+# 如需完整替换 DNS 配置，使用 dns!: 操作符。
+# ==========================================================
+#
+# dns:
+#   cache-algorithm: arc
+#   cache-size: 4096
+#   default-nameserver:
+#   - 223.5.5.5
+#   - 119.29.29.29
+#   - 223.6.6.6
+#   direct-nameserver:
+#   - https://dns.alidns.com/dns-query
+#   - https://doh.pub/dns-query
+#   enable: true
+#   enhanced-mode: fake-ip
+#   fake-ip-filter:
+#   - '*.lan'
+#   - '*.local'
+#   - time.*.com
+#   - time.*.gov
+#   - ntp.*.com
+#   - pool.ntp.org
+#   - '*.msftconnecttest.com'
+#   - '*.msftncsi.com'
+#   - RULE-SET:Lan
+#   - RULE-SET:GoogleFCM
+#   fake-ip-filter-mode: blacklist
+#   fake-ip-range: 198.18.0.1/16
+#   ipv6: false
+#   listen: 0.0.0.0:1053
+#   nameserver:
+#   - https://cloudflare-dns.com/dns-query
+#   - https://dns.google/dns-query
+#   nameserver-policy:
+#     RULE-SET:ChinaMax,Microsoft,Apple:
+#     - https://dns.alidns.com/dns-query
+#     - https://doh.pub/dns-query
+#   prefer-h3: false
+#   proxy-server-nameserver:
+#   - https://dns.alidns.com/dns-query
+#   - https://doh.pub/dns-query
+#   respect-rules: true

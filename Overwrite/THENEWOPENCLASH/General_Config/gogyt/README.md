@@ -5,6 +5,7 @@
 | 文件名 | proxy-providers | Raw 链接 |
 | :--- | :--- | :--- |
 | **Geo.yaml** | Airport1 | [下载/查看](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THENEWOPENCLASH/General_Config/gogyt/Geo.yaml) |
+| **GeoBeta.yaml** | Airport1、Airport2 | [下载/查看](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THENEWOPENCLASH/General_Config/gogyt/GeoBeta.yaml) |
 | **GeoLite.yaml** | Airport1 | [下载/查看](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THENEWOPENCLASH/General_Config/gogyt/GeoLite.yaml) |
 | **GeoLitePro.yaml** | Airport1、Airport2 | [下载/查看](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THENEWOPENCLASH/General_Config/gogyt/GeoLitePro.yaml) |
 | **GeoPro.yaml** | Airport1、Airport2 | [下载/查看](https://raw.githubusercontent.com/gogyt/MIHOMO_YAMLS/main/Overwrite/THENEWOPENCLASH/General_Config/gogyt/GeoPro.yaml) |
