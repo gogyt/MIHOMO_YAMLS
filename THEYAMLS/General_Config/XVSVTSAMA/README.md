@@ -7,15 +7,18 @@
 ## 📄 配置详情
 
 #### 📝 mihomo.yaml
-- **路径**: `mihomo.yaml` | **大小**: 37.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/XVSVTSAMA/mihomo.yaml)
+- **路径**: `mihomo.yaml` | **大小**: 38.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/XVSVTSAMA/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (25个)</summary>
+<summary>🔍 策略组 (28个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
 | 👆 🌍 PROXY | `select` |
-| ⚖️ 🔄 负载均衡 | `load-balance` |
+| 👆 🔄 负载均衡 | `select` |
+| ⚖️ sticky-sessions | `load-balance` |
+| ⚖️ round-robin | `load-balance` |
+| ⚖️ consistent-hashing | `load-balance` |
 | 👆 👉 手动切换 | `select` |
 | ♻️ ♻️ 自动选择 | `url-test` |
 | 👆 🍎 海外苹果 | `select` |
@@ -31,8 +34,5 @@
 | 👆 ♾️ Meta | `select` |
 | 👆 🎧 Spotify | `select` |
 | 👆 🎬 Emby | `select` |
-| 👆 💬 Discord | `select` |
-| 👆 👽 Reddit | `select` |
-| 👆 🎥 Netflix | `select` |
-| ... | 还有 5 个 |
+| ... | 还有 8 个 |
 </details>

@@ -6,15 +6,15 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `Geo_Clashmi_Overwrite.yaml` | `Geo.yaml` | `Rule-Set.yaml` |
+| 特性 | `Geo_Clashmi_Overwrite.yaml` | `Rule-Set.yaml` | `Geo.yaml` |
 | :--- | :--- | :--- | :--- |
-| **大小** | 18.6 KB | 19.0 KB | 21.0 KB |
+| **大小** | 18.6 KB | 21.0 KB | 19.0 KB |
 | **混合端口** | 7893 | 7893 | 7893 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule | rule |
 | **TUN** | ✅ | ✅ | ✅ |
 | **策略组** | **40** | **40** | **40** |
-| **规则数** | **26** | **26** | **27** |
+| **规则数** | **26** | **27** | **26** |
 
 ## 📄 配置详情
 
@@ -49,8 +49,8 @@
 | ... | 还有 20 个 |
 </details>
 
-#### 📝 Geo.yaml
-- **路径**: `Geo.yaml` | **大小**: 19.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/huohuczq/Geo.yaml)
+#### 📝 Rule-Set.yaml
+- **路径**: `Rule-Set.yaml` | **大小**: 21.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/huohuczq/Rule-Set.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (40个)</summary>
@@ -80,8 +80,8 @@
 | ... | 还有 20 个 |
 </details>
 
-#### 📝 Rule-Set.yaml
-- **路径**: `Rule-Set.yaml` | **大小**: 21.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/huohuczq/Rule-Set.yaml)
+#### 📝 Geo.yaml
+- **路径**: `Geo.yaml` | **大小**: 19.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/huohuczq/Geo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (40个)</summary>
