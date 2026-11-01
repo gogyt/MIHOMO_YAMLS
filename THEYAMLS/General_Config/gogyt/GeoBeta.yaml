@@ -243,7 +243,7 @@ proxy-groups:
   - {name: 全球手动¹,       <<: *SelectHS, icon: https://cdn.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Select.png}
   - {name: 全球手动²,       <<: *SelectHS, icon: https://cdn.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Find_My.png}
 
-  # 4.5 地理策略组 (如果喜欢策略组更整洁,去掉各个具体的节点,可删除掉本小节的include-all和filte参数)
+  # 4.5 地理策略组
   - {name: 狮城策略,        <<: *StrategyHS, proxies: ['[全] 狮城自动', '[主] 狮城自动', '[备] 狮城自动'], icon: https://cdn.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Singapore.png}
   - {name: 香港策略,        <<: *StrategyHS, proxies: ['[全] 香港自动', '[主] 香港自动', '[备] 香港自动'], icon: https://cdn.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Hong_Kong.png}
   - {name: 日本策略,        <<: *StrategyHS, proxies: ['[全] 日本自动', '[主] 日本自动', '[备] 日本自动'], icon: https://cdn.jsdelivr.net/gh/gogyt/Qure@master/IconSet/Color/Japan.png}
