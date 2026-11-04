@@ -8,21 +8,21 @@
 
 | 特性 | `GeoSmart.yaml` | `RuleSmart.yaml` |
 | :--- | :--- | :--- |
-| **大小** | 45.4 KB | 53.0 KB |
+| **大小** | 44.7 KB | 53.5 KB |
 | **混合端口** | 7893 | 7893 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule |
 | **TUN** | ✅ | ✅ |
-| **策略组** | **88** | **88** |
+| **策略组** | **80** | **88** |
 | **规则数** | **61** | **62** |
 
 ## 📄 配置详情
 
 #### 📝 GeoSmart.yaml
-- **路径**: `GeoSmart.yaml` | **大小**: 45.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
+- **路径**: `GeoSmart.yaml` | **大小**: 44.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (88个)</summary>
+<summary>🔍 策略组 (80个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -46,11 +46,11 @@
 | 👆 奈飞视频 | `select` |
 | 👆 迪士尼+ | `select` |
 | 👆 HBO | `select` |
-| ... | 还有 68 个 |
+| ... | 还有 60 个 |
 </details>
 
 #### 📝 RuleSmart.yaml
-- **路径**: `RuleSmart.yaml` | **大小**: 53.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
+- **路径**: `RuleSmart.yaml` | **大小**: 53.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (88个)</summary>

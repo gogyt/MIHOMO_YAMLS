@@ -8,12 +8,12 @@
 
 | 特性 | `RulePro.yaml` | `RuleLite.yaml` | `Rule.yaml` | `RuleBeta.yaml` | `GeoPro.yaml` | `Geo.yaml` | `GeoLitePro.yaml` | `GeoLite.yaml` | `GeoBeta.yaml` | `RuleLitePro.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 61.4 KB | 38.5 KB | 48.2 KB | 67.0 KB | 53.9 KB | 42.1 KB | 39.4 KB | 34.9 KB | 45.8 KB | 43.0 KB |
+| **大小** | 61.4 KB | 38.5 KB | 48.2 KB | 67.0 KB | 53.9 KB | 42.1 KB | 39.4 KB | 34.9 KB | 57.7 KB | 43.0 KB |
 | **混合端口** | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
 | **TUN** | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ |
-| **策略组** | **128** | **48** | **68** | **169** | **128** | **68** | **64** | **48** | **90** | **64** |
+| **策略组** | **128** | **48** | **68** | **169** | **128** | **68** | **64** | **48** | **162** | **64** |
 | **规则数** | **62** | **31** | **51** | **64** | **61** | **50** | **30** | **30** | **61** | **31** |
 
 ## 📄 配置详情
@@ -267,10 +267,10 @@
 </details>
 
 #### 📝 GeoBeta.yaml
-- **路径**: `GeoBeta.yaml` | **大小**: 45.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoBeta.yaml)
+- **路径**: `GeoBeta.yaml` | **大小**: 57.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoBeta.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (90个)</summary>
+<summary>🔍 策略组 (162个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
@@ -294,7 +294,7 @@
 | 👆 奈飞视频 | `select` |
 | 👆 迪士尼+ | `select` |
 | 👆 HBO | `select` |
-| ... | 还有 70 个 |
+| ... | 还有 142 个 |
 </details>
 
 #### 📝 RuleLitePro.yaml
