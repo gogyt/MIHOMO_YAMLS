@@ -6,38 +6,34 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `clash-standard-noicon.yaml` | `clash-lite.yaml` | `clash-advanced.yaml` | `Clash-Fallback.yaml` |
+| 特性 | `Clash-Fallback.yaml` | `clash-lite.yaml` | `clash-advanced.yaml` | `clash-standard-noicon.yaml` |
 | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 13.4 KB | 16.7 KB | 37.3 KB | 23.2 KB |
+| **大小** | 23.2 KB | 16.7 KB | 37.3 KB | 13.4 KB |
 | **混合端口** | 7893 | 7893 | 7890 | 7893 |
-| **面板地址** | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 |
+| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 |
 | **运行模式** | rule | rule | rule | rule |
 | **TUN** | ✅ | ✅ | ✅ | ✅ |
-| **策略组** | **36** | **33** | **65** | **49** |
-| **规则数** | **43** | **55** | **98** | **46** |
+| **策略组** | **49** | **33** | **65** | **36** |
+| **规则数** | **46** | **55** | **98** | **43** |
 
 ## 📄 配置详情
 
-#### 📝 clash-standard-noicon.yaml
-- **路径**: `clash-standard-noicon.yaml` | **大小**: 13.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/clash-standard-noicon.yaml)
+#### 📝 Clash-Fallback.yaml
+- **路径**: `Clash-Fallback.yaml` | **大小**: 23.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/Clash-Fallback.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (36个)</summary>
+<summary>🔍 策略组 (49个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
-| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 所有-手动 | `select` |
+| ♻️ 所有-自动 | `url-test` |
 | 👆 ChatGPT | `select` |
-| 👆 Claude | `select` |
-| 👆 Meta AI | `select` |
-| 👆 Perplexity | `select` |
 | 👆 GitHub | `select` |
 | 👆 Telegram | `select` |
 | 👆 Twitter(X) | `select` |
 | 👆 WhatsApp | `select` |
 | 👆 Facebook | `select` |
-| 👆 Steam | `select` |
-| 👆 Game | `select` |
 | 👆 YouTube | `select` |
 | 👆 TikTok | `select` |
 | 👆 Disney | `select` |
@@ -46,7 +42,11 @@
 | 👆 Spotify | `select` |
 | 👆 Crypto | `select` |
 | 👆 Amazon | `select` |
-| ... | 还有 16 个 |
+| 👆 Apple | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Google | `select` |
+| 👆 Check | `select` |
+| ... | 还有 29 个 |
 </details>
 
 #### 📝 clash-lite.yaml
@@ -111,22 +111,26 @@
 | ... | 还有 45 个 |
 </details>
 
-#### 📝 Clash-Fallback.yaml
-- **路径**: `Clash-Fallback.yaml` | **大小**: 23.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/Clash-Fallback.yaml)
+#### 📝 clash-standard-noicon.yaml
+- **路径**: `clash-standard-noicon.yaml` | **大小**: 13.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/clash-standard-noicon.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
-<summary>🔍 策略组 (49个)</summary>
+<summary>🔍 策略组 (36个)</summary>
 
 | 名称 | 类型 |
 | :--- | :--- |
-| 👆 所有-手动 | `select` |
-| ♻️ 所有-自动 | `url-test` |
+| ♻️ ♻️ 自动选择 | `url-test` |
 | 👆 ChatGPT | `select` |
+| 👆 Claude | `select` |
+| 👆 Meta AI | `select` |
+| 👆 Perplexity | `select` |
 | 👆 GitHub | `select` |
 | 👆 Telegram | `select` |
 | 👆 Twitter(X) | `select` |
 | 👆 WhatsApp | `select` |
 | 👆 Facebook | `select` |
+| 👆 Steam | `select` |
+| 👆 Game | `select` |
 | 👆 YouTube | `select` |
 | 👆 TikTok | `select` |
 | 👆 Disney | `select` |
@@ -135,9 +139,5 @@
 | 👆 Spotify | `select` |
 | 👆 Crypto | `select` |
 | 👆 Amazon | `select` |
-| 👆 Apple | `select` |
-| 👆 Microsoft | `select` |
-| 👆 Google | `select` |
-| 👆 Check | `select` |
-| ... | 还有 29 个 |
+| ... | 还有 16 个 |
 </details>

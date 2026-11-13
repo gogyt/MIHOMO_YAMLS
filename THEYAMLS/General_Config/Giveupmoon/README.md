@@ -6,21 +6,21 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `Overwrite-Clash-Bypass.yaml` | `Start-json.yaml` | `Start.yaml` | `My-config.yaml` | `Overwrite-Clash.yaml` |
+| 特性 | `My-config.yaml` | `Start-json.yaml` | `Start.yaml` | `Overwrite-Clash-Bypass.yaml` | `Overwrite-Clash.yaml` |
 | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 17.2 KB | 28.0 KB | 22.7 KB | 23.1 KB | 17.1 KB |
-| **混合端口** | - | 10801 | 10801 | 10801 | - |
-| **面板地址** | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - |
+| **大小** | 23.1 KB | 28.0 KB | 22.7 KB | 17.2 KB | 17.1 KB |
+| **混合端口** | 10801 | 10801 | 10801 | - | - |
+| **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - |
 | **运行模式** | rule | rule | rule | rule | rule |
-| **TUN** | 🚫 | ✅ | ✅ | ✅ | 🚫 |
+| **TUN** | ✅ | ✅ | ✅ | 🚫 | 🚫 |
 | **策略组** | **33** | **33** | **33** | **33** | **33** |
 | **规则数** | **47** | **45** | **45** | **47** | **47** |
 
 ## 📄 配置详情
 
-#### 📝 Overwrite-Clash-Bypass.yaml
-- **路径**: `Overwrite-Clash-Bypass.yaml` | **大小**: 17.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/Overwrite-Clash-Bypass.yaml)
-- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+#### 📝 My-config.yaml
+- **路径**: `My-config.yaml` | **大小**: 23.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/My-config.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (33个)</summary>
 
@@ -111,9 +111,9 @@
 | ... | 还有 13 个 |
 </details>
 
-#### 📝 My-config.yaml
-- **路径**: `My-config.yaml` | **大小**: 23.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/My-config.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+#### 📝 Overwrite-Clash-Bypass.yaml
+- **路径**: `Overwrite-Clash-Bypass.yaml` | **大小**: 17.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/Overwrite-Clash-Bypass.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (33个)</summary>
 

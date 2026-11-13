@@ -6,17 +6,48 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `mihomoConfigLite.yaml` | `mihomoconfig.yaml` |
+| 特性 | `mihomoconfig.yaml` | `mihomoConfigLite.yaml` |
 | :--- | :--- | :--- |
-| **大小** | 18.5 KB | 27.9 KB |
+| **大小** | 27.8 KB | 18.5 KB |
 | **混合端口** | 7890 | 7890 |
 | **面板地址** | 127.0.0.1:9090 | 127.0.0.1:9090 |
 | **运行模式** | rule | rule |
 | **TUN** | ✅ | ✅ |
-| **策略组** | **28** | **46** |
-| **规则数** | **24** | **52** |
+| **策略组** | **46** | **28** |
+| **规则数** | **52** | **24** |
 
 ## 📄 配置详情
+
+#### 📝 mihomoconfig.yaml
+- **路径**: `mihomoconfig.yaml` | **大小**: 27.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (46个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 手动选择 | `select` |
+| ♻️ 自动选择 | `url-test` |
+| ⚖️ 负载均衡 | `load-balance` |
+| 👆 FCM | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 AI | `select` |
+| 👆 GitHub | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Apple | `select` |
+| 👆 Telegram | `select` |
+| 👆 Steam | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter | `select` |
+| 👆 Meta | `select` |
+| 👆 Line | `select` |
+| 👆 Netflix | `select` |
+| 👆 Emby | `select` |
+| 👆 PikPak | `select` |
+| ... | 还有 26 个 |
+</details>
 
 #### 📝 mihomoConfigLite.yaml
 - **路径**: `mihomoConfigLite.yaml` | **大小**: 18.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoConfigLite.yaml)
@@ -47,35 +78,4 @@
 | 👆 台湾 | `select` |
 | ♻️ 台湾-自动选择 | `url-test` |
 | ... | 还有 8 个 |
-</details>
-
-#### 📝 mihomoconfig.yaml
-- **路径**: `mihomoconfig.yaml` | **大小**: 27.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml)
-- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
-<details>
-<summary>🔍 策略组 (46个)</summary>
-
-| 名称 | 类型 |
-| :--- | :--- |
-| 👆 默认代理 | `select` |
-| 👆 手动选择 | `select` |
-| ♻️ 自动选择 | `url-test` |
-| ⚖️ 负载均衡 | `load-balance` |
-| 👆 FCM | `select` |
-| 👆 YouTube | `select` |
-| 👆 Google | `select` |
-| 👆 AI | `select` |
-| 👆 GitHub | `select` |
-| 👆 Microsoft | `select` |
-| 👆 Apple | `select` |
-| 👆 Telegram | `select` |
-| 👆 Steam | `select` |
-| 👆 TikTok | `select` |
-| 👆 Twitter | `select` |
-| 👆 Meta | `select` |
-| 👆 Line | `select` |
-| 👆 Netflix | `select` |
-| 👆 Emby | `select` |
-| 👆 PikPak | `select` |
-| ... | 还有 26 个 |
 </details>

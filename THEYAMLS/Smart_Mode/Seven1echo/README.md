@@ -6,9 +6,9 @@
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `Seven1_fallback_Geo_Smart.yaml` | `Seven1_fallback_Rule-Set_Smart.yaml` |
+| 特性 | `Seven1_fallback_Rule-Set_Smart.yaml` | `Seven1_fallback_Geo_Smart.yaml` |
 | :--- | :--- | :--- |
-| **大小** | 22.4 KB | 25.0 KB |
+| **大小** | 25.0 KB | 22.4 KB |
 | **混合端口** | 7893 | 7893 |
 | **面板地址** | 0.0.0.0:9090 | 0.0.0.0:9090 |
 | **运行模式** | rule | rule |
@@ -18,8 +18,8 @@
 
 ## 📄 配置详情
 
-#### 📝 Seven1_fallback_Geo_Smart.yaml
-- **路径**: `Seven1_fallback_Geo_Smart.yaml` | **大小**: 22.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Geo_Smart.yaml)
+#### 📝 Seven1_fallback_Rule-Set_Smart.yaml
+- **路径**: `Seven1_fallback_Rule-Set_Smart.yaml` | **大小**: 25.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (41个)</summary>
@@ -49,8 +49,8 @@
 | ... | 还有 21 个 |
 </details>
 
-#### 📝 Seven1_fallback_Rule-Set_Smart.yaml
-- **路径**: `Seven1_fallback_Rule-Set_Smart.yaml` | **大小**: 25.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml)
+#### 📝 Seven1_fallback_Geo_Smart.yaml
+- **路径**: `Seven1_fallback_Geo_Smart.yaml` | **大小**: 22.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Geo_Smart.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (41个)</summary>
