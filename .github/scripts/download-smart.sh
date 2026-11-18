@@ -4,6 +4,12 @@ source "$(dirname "$0")/lib_fetch.sh"
 echo "📦 Processing Smart Mode Configs..."
 
 TASKS=$(cat <<'EOF'
+https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/GeoSmart.yaml|THEYAMLS/Smart_Mode/gogyt/GeoSmart.yaml
+https://raw.githubusercontent.com/gogyt/Mihomo/refs/heads/main/yaml/RuleSmart.yaml|THEYAMLS/Smart_Mode/gogyt/RuleSmart.yaml
+
+https://github.com/Seven1echo/Yaml/raw/main/smart/Seven1_fallback_Geo_Smart.yaml|THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Geo_Smart.yaml
+https://github.com/Seven1echo/Yaml/raw/main/smart/Seven1_fallback_Rule-Set_Smart.yaml|THEYAMLS/Smart_Mode/Seven1echo/Seven1_fallback_Rule-Set_Smart.yaml
+
 https://raw.githubusercontent.com/666OS/YYDS/refs/heads/main/mihomo/config/legacy/OneSmartPro.yaml|THEYAMLS/Smart_Mode/666OS/OneSmart_Config.yaml
 https://raw.githubusercontent.com/666OS/YYDS/main/mihomo/config/legacy/OneSmart.yaml|THEYAMLS/Smart_Mode/666OS/OneSmart_Lite_Config.yaml
 https://raw.githubusercontent.com/HenryChiao/MIHOMO_AIO/refs/heads/main/CONFIG/SMART/MihomoSmartProPlus.yaml|THEYAMLS/Smart_Mode/HenryChiao/MihomoSmartProPlus.yaml
