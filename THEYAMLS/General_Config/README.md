@@ -2,26 +2,39 @@
 
 [🔙 返回主页](../../README.md)
 
-> 🤖 自动技术分析 | 71 个配置文件
+> 🤖 自动技术分析 | 111 个配置文件
 
 ## ⚔️ 配置横向对比
 
-| 特性 | `config.yaml` | `Clash.yaml` | `mihomo.yaml` | `clash-fallback-std.yaml` | `clash-all-fallback.yaml` | `clash-fallback-dialer.yaml` | `clash-fallback-all.yaml` | `clash-fallback.yaml` | `ConfigForClash.yaml` | `AIB.yaml` | `AIO.yaml` | `MihomoPro_Config.yaml` | `Mini_en.yaml` | `OneTouch_Config.yaml` | `Pro_en.yaml` | `Lite_en.yaml` | `mihomo.yaml` | `config.yaml` | `config_lite.yaml` | `2-subscription-clash-rule-set.yaml` | `base-clash-ruleset.yaml` | `3-subscription-clash-rule-set.yaml` | `[Mobile]-WhiteList-03-Non.AntiAD.yaml` | `[通用模版]-WhiteList-03-Non.AntiAD.yaml` | `BlackList-03-Non.AntiAD.yaml` | `[Desktop]-WhiteList-03-Non.AntiAD.yaml` | `BlackList-02-Min.AntiAD.yaml` | `[通用模版]-WhiteList-01.yaml` | `[Mobile]-WhiteList-01.yaml` | `[Mobile]-WhiteList-02-Min.AntiAD.yaml` | `BlackList-01.yaml` | `[Desktop]-WhiteList-01.yaml` | `[通用模版]-WhiteList-02-Min.AntiAD.yaml` | `[Desktop]-WhiteList-02-Min.AntiAD.yaml` | `mihomo.yaml` | `Ayanami0_config_geo-lite.yaml` | `Ayanami0_config.yaml` | `mihomoconfig.yaml` | `mihomoConfigLite.yaml` | `config.yaml` | `mihomo.yaml` | `Seven1_fallback_Geo.yaml` | `Seven1_fallback_Rule-Set.yaml` | `configfull_lite.yaml` | `configfull.yaml` | `configfull_NoAd.yaml` | `config.yaml` | `proxychain.yaml` | `fuxie.yaml` | `config.yaml` | `config.yaml` | `mihomo.yaml` | `Clashmi.yaml` | `Clashmi-fx.yaml` | `mihomo_multi.yaml` | `mihomo_single.yaml` | `mihomo.yaml` | `us_la.yaml` | `Clash-Airport.yaml` | `mihomo.yaml` | `Clash_Sample.yaml` | `backup.yaml` | `mihomo.yaml` | `mihomo.yaml` | `region-single-provider.yaml` | `service-single-provider.yaml` | `region-dual-provider.yaml` | `MihomoProPlus.yaml` | `MihomoAIO.yaml` | `MihomoProMax.yaml` | `Proxy-override.yaml` |
-| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| **大小** | 26.3 KB | 27.3 KB | 14.6 KB | 17.3 KB | 17.2 KB | 16.3 KB | 18.6 KB | 15.9 KB | 49.3 KB | 11.0 KB | 10.8 KB | 22.2 KB | 4.7 KB | 12.1 KB | 15.4 KB | 11.0 KB | 3.1 KB | 8.0 KB | 2.9 KB | 24.1 KB | 23.5 KB | 24.6 KB | 697.4 KB | 2054.2 KB | 697.2 KB | 697.4 KB | 697.2 KB | 2054.2 KB | 697.4 KB | 697.4 KB | 697.2 KB | 697.4 KB | 2054.2 KB | 697.4 KB | 15.7 KB | 3.9 KB | 12.6 KB | 27.5 KB | 18.2 KB | 18.7 KB | 55.0 KB | 22.1 KB | 24.7 KB | 18.6 KB | 35.4 KB | 34.9 KB | 13.9 KB | 14.9 KB | 13.2 KB | 13.8 KB | 28.5 KB | 6.4 KB | 20.3 KB | 19.6 KB | 12.7 KB | 12.4 KB | 30.4 KB | 18.5 KB | 17.5 KB | 44.6 KB | 8.4 KB | 12.5 KB | 23.1 KB | 6.2 KB | 15.1 KB | 25.9 KB | 20.9 KB | 26.2 KB | 28.3 KB | 25.7 KB | 32.6 KB |
-| **混合端口** | 7890 | 7890 | 0 | 7893 | 7893 | 7893 | 7893 | 7893 | 7892 | 7890 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | - | - | - | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7892 | 7254 | 7893 | 7893 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7893 | 8899 | 7893 | 7893 | 7897 | 7897 | 7890 | - | - | 7890 | 7892 | 7892 | 1080 | 7890 | 7890 | 7890 | 7890 | 7893 | 7893 | 7893 | 7890 |
-| **面板地址** | 0.0.0.0:9090 | :9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | - | - | - | - | - | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - | :9090 | 127.0.0.1:9090 | - | 127.0.0.1:9092 | 127.0.0.1:9092 | - | - | 0.0.0.0:7891 | 127.0.0.1:9092 | 127.0.0.1:9092 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 |
-| **运行模式** | rule | Rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | Rule | Rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
-| **TUN** | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | ✅ | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 |
-| **策略组** | **51** | **27** | **35** | **36** | **53** | **35** | **61** | **34** | **62** | **24** | **23** | **51** | **3** | **14** | **37** | **18** | **5** | **17** | **1** | **40** | **31** | **41** | **153** | **175** | **143** | **154** | **144** | **177** | **155** | **154** | **145** | **156** | **176** | **155** | **19** | **1** | **21** | **46** | **28** | **13** | **29** | **41** | **41** | **47** | **62** | **59** | **28** | **28** | **28** | **29** | **25** | **10** | **31** | **31** | **33** | **33** | **80** | **15** | **23** | **96** | **15** | **22** | **59** | **8** | **14** | **33** | **33** | **54** | **61** | **54** | **16** |
-| **规则数** | **42** | **68** | **17** | **43** | **42** | **43** | **53** | **43** | **62** | **34** | **34** | **39** | **7** | **22** | **29** | **20** | **12** | **24** | **16** | **53** | **53** | **53** | **226** | **226** | **181** | **228** | **182** | **233** | **233** | **227** | **188** | **235** | **227** | **229** | **27** | **11** | **30** | **49** | **24** | **37** | **157** | **28** | **28** | **38** | **96** | **95** | **28** | **28** | **28** | **33** | **35** | **13** | **34** | **34** | **22** | **22** | **59** | **34** | **36** | **1** | **11** | **25** | **35** | **17** | **74** | **192** | **74** | **44** | **52** | **45** | **173** |
+| 特性 | `config.yaml` | `Clash.yaml` | `mihomo.yaml` | `clash-fallback-std.yaml` | `clash-all-fallback.yaml` | `clash-fallback-dialer.yaml` | `clash-fallback-all.yaml` | `clash-fallback.yaml` | `ConfigForClash.yaml` | `AIB.yaml` | `AIO.yaml` | `Mini_cn.yaml` | `MihomoPro_Config.yaml` | `MihomoPro.yaml` | `Pro_cn.yaml` | `Mini_en.yaml` | `Lite_cn.yaml` | `OneTouch.yaml` | `OneTouch_Config.yaml` | `Pro_en.yaml` | `Lite_en.yaml` | `mihomo.yaml` | `config.yaml` | `config_lite.yaml` | `Geo_Clashmi_Overwrite.yaml` | `Rule-Set.yaml` | `Geo.yaml` | `2-subscription-clash-rule-set.yaml` | `base-clash-ruleset.yaml` | `3-subscription-clash-rule-set.yaml` | `[Mobile]-WhiteList-03-Non.AntiAD.yaml` | `[通用模版]-WhiteList-03-Non.AntiAD.yaml` | `BlackList-03-Non.AntiAD.yaml` | `[Desktop]-WhiteList-03-Non.AntiAD.yaml` | `BlackList-02-Min.AntiAD.yaml` | `[通用模版]-WhiteList-01.yaml` | `[Mobile]-WhiteList-01.yaml` | `[Mobile]-WhiteList-02-Min.AntiAD.yaml` | `BlackList-01.yaml` | `[Desktop]-WhiteList-01.yaml` | `[通用模版]-WhiteList-02-Min.AntiAD.yaml` | `[Desktop]-WhiteList-02-Min.AntiAD.yaml` | `mihomo.yaml` | `Ayanami0_config_geo-lite.yaml` | `Ayanami0_config.yaml` | `Custom_Clash_Selfhosted_Provider_Fallback.yaml` | `Custom_Clash_Full.yaml` | `Custom_Clash_Lite_Fallback.yaml` | `Custom_Clash_Fallback.yaml` | `Custom_Clash.yaml` | `Custom_Clash_Full_Fallback.yaml` | `Custom_Clash_Lite.yaml` | `Complete_YAML_Configuration_Template.yaml` | `Custom_Clash_Selfhosted_Manual_Fallback.yaml` | `Custom_Clash_GFW.yaml` | `Custom_Clash_GFW_Fallback.yaml` | `mihomoconfig.yaml` | `mihomoConfigLite.yaml` | `config.yaml` | `mihomo.yaml` | `Seven1_fallback_Geo.yaml` | `Seven1_fallback_Rule-Set_Clashmi_Overwrite.yaml` | `Seven1_fallback_Rule-Set.yaml` | `configfull_lite.yaml` | `configfull.yaml` | `configfull_NoAd.yaml` | `mihomo.yaml` | `config.yaml` | `proxychain.yaml` | `fuxie.yaml` | `config.yaml` | `GeoLite.yaml` | `RuleLitePro.yaml` | `GeoBeta.yaml` | `RulePro.yaml` | `RuleBeta.yaml` | `GeoLitePro.yaml` | `RuleLite.yaml` | `Geo.yaml` | `GeoPro.yaml` | `Rule.yaml` | `My-config.yaml` | `Start-json.yaml` | `Start.yaml` | `Overwrite-Clash-Bypass.yaml` | `Overwrite-Clash.yaml` | `config.yaml` | `mihomo.yaml` | `Clashmi.yaml` | `Clashmi-fx.yaml` | `mihomo_multi.yaml` | `mihomo_single.yaml` | `mihomo.yaml` | `us_la.yaml` | `Clash-Airport.yaml` | `mihomo.yaml` | `Clash_Sample.yaml` | `backup.yaml` | `mihomo.yaml` | `mihomo.yaml` | `region-single-provider.yaml` | `service-single-provider.yaml` | `region-dual-provider.yaml` | `MihomoProPlus.yaml` | `MihomoAIO.yaml` | `MihomoProMax.yaml` | `Proxy-override.yaml` | `Clash-Fallback.yaml` | `clash-lite.yaml` | `clash-advanced.yaml` | `clash-standard-noicon.yaml` |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **大小** | 26.3 KB | 27.3 KB | 14.6 KB | 17.3 KB | 17.2 KB | 16.3 KB | 18.6 KB | 15.9 KB | 49.3 KB | 11.0 KB | 10.8 KB | 4.9 KB | 22.2 KB | 22.2 KB | 16.4 KB | 4.7 KB | 11.8 KB | 12.1 KB | 12.1 KB | 15.4 KB | 11.0 KB | 3.1 KB | 8.0 KB | 2.9 KB | 18.6 KB | 21.0 KB | 19.0 KB | 24.1 KB | 23.5 KB | 24.6 KB | 697.4 KB | 2054.2 KB | 697.2 KB | 697.4 KB | 697.2 KB | 2054.2 KB | 697.4 KB | 697.4 KB | 697.2 KB | 697.4 KB | 2054.2 KB | 697.4 KB | 15.7 KB | 3.9 KB | 12.6 KB | 44.4 KB | 47.2 KB | 20.5 KB | 42.3 KB | 19.0 KB | 43.5 KB | 11.8 KB | 45.5 KB | 44.8 KB | 3.1 KB | 3.0 KB | 27.5 KB | 18.2 KB | 18.7 KB | 55.0 KB | 22.1 KB | 24.0 KB | 24.7 KB | 18.6 KB | 35.4 KB | 34.9 KB | 14.0 KB | 13.9 KB | 14.9 KB | 13.2 KB | 13.8 KB | 35.0 KB | 43.0 KB | 59.4 KB | 61.1 KB | 70.3 KB | 39.4 KB | 38.5 KB | 42.1 KB | 53.6 KB | 48.2 KB | 23.1 KB | 28.0 KB | 22.7 KB | 17.2 KB | 17.1 KB | 28.5 KB | 6.4 KB | 20.3 KB | 19.6 KB | 12.7 KB | 12.4 KB | 30.4 KB | 18.5 KB | 17.5 KB | 44.6 KB | 8.4 KB | 12.5 KB | 23.1 KB | 6.2 KB | 15.1 KB | 25.9 KB | 20.9 KB | 26.2 KB | 28.3 KB | 25.7 KB | 32.6 KB | 23.2 KB | 16.7 KB | 37.3 KB | 13.4 KB |
+| **混合端口** | 7890 | 7890 | 0 | 7893 | 7893 | 7893 | 7893 | 7893 | 7892 | 7890 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | - | - | - | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | - | - | - | - | - | - | - | 7893 | - | - | - | 7890 | 7890 | 7892 | 7254 | 7893 | 7893 | 7893 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7890 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 7893 | 10801 | 10801 | 10801 | - | - | 7893 | 8899 | 7893 | 7893 | 7897 | 7897 | 7890 | - | - | 7890 | 7892 | 7892 | 1080 | 7890 | 7890 | 7890 | 7890 | 7893 | 7893 | 7893 | 7890 | 7893 | 7893 | 7890 | 7893 |
+| **面板地址** | 0.0.0.0:9090 | :9090 | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | - | - | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - | - | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | - | - | - | - | - | - | - | 0.0.0.0:9090 | - | - | - | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - | :9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | - | - | 127.0.0.1:9090 | - | 127.0.0.1:9092 | 127.0.0.1:9092 | - | - | 0.0.0.0:7891 | 127.0.0.1:9092 | 127.0.0.1:9092 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 127.0.0.1:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 0.0.0.0:9090 | 127.0.0.1:9090 |
+| **运行模式** | rule | Rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | Rule | Rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule | rule |
+| **TUN** | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | 🚫 | 🚫 | 🚫 | ✅ | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | ✅ | 🚫 | ✅ | ✅ | ✅ | ✅ | 🚫 | 🚫 | 🚫 | 🚫 | ✅ | ✅ | ✅ | ✅ |
+| **策略组** | **51** | **27** | **35** | **36** | **53** | **35** | **61** | **34** | **62** | **24** | **23** | **3** | **51** | **51** | **37** | **3** | **18** | **14** | **14** | **37** | **18** | **5** | **17** | **1** | **40** | **40** | **40** | **40** | **31** | **41** | **153** | **175** | **143** | **154** | **144** | **177** | **155** | **154** | **145** | **156** | **176** | **155** | **19** | **1** | **21** | **36** | **63** | **19** | **35** | **35** | **63** | **19** | **35** | **36** | **3** | **2** | **46** | **28** | **13** | **29** | **41** | **41** | **41** | **47** | **62** | **59** | **33** | **28** | **28** | **28** | **29** | **48** | **64** | **160** | **130** | **177** | **64** | **48** | **68** | **130** | **68** | **33** | **33** | **33** | **33** | **33** | **25** | **10** | **31** | **31** | **33** | **33** | **80** | **15** | **23** | **96** | **15** | **22** | **59** | **8** | **14** | **33** | **33** | **54** | **61** | **54** | **16** | **49** | **33** | **65** | **36** |
+| **规则数** | **42** | **68** | **17** | **43** | **42** | **43** | **53** | **43** | **62** | **34** | **34** | **7** | **39** | **39** | **29** | **7** | **21** | **22** | **22** | **29** | **20** | **12** | **24** | **16** | **26** | **27** | **26** | **53** | **53** | **53** | **226** | **226** | **181** | **228** | **182** | **233** | **233** | **227** | **188** | **235** | **227** | **229** | **27** | **11** | **30** | **46** | **65** | **25** | **46** | **46** | **65** | **25** | **46** | **46** | **5** | **5** | **49** | **24** | **37** | **157** | **28** | **28** | **28** | **38** | **96** | **95** | **28** | **28** | **28** | **28** | **33** | **30** | **31** | **61** | **62** | **64** | **30** | **31** | **50** | **61** | **51** | **47** | **45** | **45** | **47** | **47** | **35** | **13** | **34** | **34** | **22** | **22** | **59** | **34** | **36** | **1** | **11** | **25** | **35** | **17** | **74** | **192** | **74** | **44** | **52** | **45** | **173** | **46** | **55** | **98** | **43** |
 
 ## 📄 配置详情
 
 ### 👤 666OS
 
+#### 📝 Mini_cn.yaml
+- **路径**: `666OS/Mini_cn.yaml` | **大小**: 4.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Mini_cn.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (3个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 国外流量 | `select` |
+| 👆 国内流量 | `select` |
+| 👆 漏网之鱼 | `select` |
+</details>
+
 #### 📝 MihomoPro_Config.yaml
-- **路径**: `666OS/MihomoPro_Config.yaml` | **大小**: 22.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/MihomoPro_Config.yaml)
+- **路径**: `666OS/MihomoPro_Config.yaml` | **大小**: 22.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/MihomoPro_Config.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (51个)</summary>
@@ -51,8 +64,70 @@
 | ... | 还有 31 个 |
 </details>
 
+#### 📝 MihomoPro.yaml
+- **路径**: `666OS/MihomoPro.yaml` | **大小**: 22.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/MihomoPro.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (51个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 国外流量 | `select` |
+| 👆 国内流量 | `select` |
+| 👆 兜底流量 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 抖快书定位 | `select` |
+| 👆 Emby服 | `select` |
+| 👆 油管视频 | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 国际媒体 | `select` |
+| 👆 新闻媒体 | `select` |
+| 👆 电报消息 | `select` |
+| 👆 推特社交 | `select` |
+| 👆 社交平台 | `select` |
+| 👆 人工智能 | `select` |
+| 👆 货币平台 | `select` |
+| 👆 游戏平台 | `select` |
+| 👆 微软服务 | `select` |
+| 👆 谷歌服务 | `select` |
+| ... | 还有 31 个 |
+</details>
+
+#### 📝 Pro_cn.yaml
+- **路径**: `666OS/Pro_cn.yaml` | **大小**: 16.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Pro_cn.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (37个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 广告拦截 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 社交平台 | `select` |
+| 👆 人工智能 | `select` |
+| 👆 开发服务 | `select` |
+| 👆 EMBY | `select` |
+| 👆 国际媒体 | `select` |
+| 👆 游戏平台 | `select` |
+| 👆 货币平台 | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 脸书服务 | `select` |
+| 👆 微软服务 | `select` |
+| 👆 苹果服务 | `select` |
+| 👆 国外流量 | `select` |
+| 👆 国内流量 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 🔧 故障转移 | `fallback` |
+| 👆 全球手动 | `select` |
+| 👆 香港策略 | `select` |
+| ... | 还有 17 个 |
+</details>
+
 #### 📝 Mini_en.yaml
-- **路径**: `666OS/Mini_en.yaml` | **大小**: 4.7 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Mini_en.yaml)
+- **路径**: `666OS/Mini_en.yaml` | **大小**: 4.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Mini_en.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (3个)</summary>
@@ -64,8 +139,60 @@
 | 👆 MATCH | `select` |
 </details>
 
+#### 📝 Lite_cn.yaml
+- **路径**: `666OS/Lite_cn.yaml` | **大小**: 11.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Lite_cn.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (18个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 即时通讯 | `select` |
+| 👆 社交平台 | `select` |
+| 👆 人工智能 | `select` |
+| 👆 开发服务 | `select` |
+| 👆 国际媒体 | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 苹果服务 | `select` |
+| 👆 国外流量 | `select` |
+| 👆 国内流量 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 🔧 故障转移 | `fallback` |
+| 👆 全球手动 | `select` |
+| ♻️ 香港策略 | `url-test` |
+| ♻️ 台湾策略 | `url-test` |
+| ♻️ 日本策略 | `url-test` |
+| ♻️ 狮城策略 | `url-test` |
+| ♻️ 韩国策略 | `url-test` |
+| ♻️ 美国策略 | `url-test` |
+</details>
+
+#### 📝 OneTouch.yaml
+- **路径**: `666OS/OneTouch.yaml` | **大小**: 12.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/OneTouch.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (14个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键连 | `select` |
+| 👆 人工智能 | `select` |
+| 👆 社交平台 | `select` |
+| 👆 国际媒体 | `select` |
+| 👆 国内流量 | `select` |
+| 👆 手动选择 | `select` |
+| 👆 直接连接 | `select` |
+| ♻️ 香港自动 | `url-test` |
+| ♻️ 台湾自动 | `url-test` |
+| ♻️ 日本自动 | `url-test` |
+| ♻️ 狮城自动 | `url-test` |
+| ♻️ 韩国自动 | `url-test` |
+| ♻️ 美国自动 | `url-test` |
+| ♻️ 欧洲自动 | `url-test` |
+</details>
+
 #### 📝 OneTouch_Config.yaml
-- **路径**: `666OS/OneTouch_Config.yaml` | **大小**: 12.1 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/OneTouch_Config.yaml)
+- **路径**: `666OS/OneTouch_Config.yaml` | **大小**: 12.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/OneTouch_Config.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (14个)</summary>
@@ -89,7 +216,7 @@
 </details>
 
 #### 📝 Pro_en.yaml
-- **路径**: `666OS/Pro_en.yaml` | **大小**: 15.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Pro_en.yaml)
+- **路径**: `666OS/Pro_en.yaml` | **大小**: 15.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Pro_en.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (37个)</summary>
@@ -120,7 +247,7 @@
 </details>
 
 #### 📝 Lite_en.yaml
-- **路径**: `666OS/Lite_en.yaml` | **大小**: 11.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Lite_en.yaml)
+- **路径**: `666OS/Lite_en.yaml` | **大小**: 11.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/666OS/Lite_en.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (18个)</summary>
@@ -151,7 +278,7 @@
 ### 👤 AIsouler
 
 #### 📝 mihomoconfig.yaml
-- **路径**: `AIsouler/mihomoconfig.yaml` | **大小**: 27.5 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml)
+- **路径**: `AIsouler/mihomoconfig.yaml` | **大小**: 27.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoconfig.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (46个)</summary>
@@ -182,7 +309,7 @@
 </details>
 
 #### 📝 mihomoConfigLite.yaml
-- **路径**: `AIsouler/mihomoConfigLite.yaml` | **大小**: 18.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoConfigLite.yaml)
+- **路径**: `AIsouler/mihomoConfigLite.yaml` | **大小**: 18.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/AIsouler/mihomoConfigLite.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (28个)</summary>
@@ -216,7 +343,7 @@
 ### 👤 Accademia
 
 #### 📝 [Mobile]-WhiteList-03-Non.AntiAD.yaml
-- **路径**: `Accademia/[Mobile]-WhiteList-03-Non.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BMobile%5D-WhiteList-03-Non.AntiAD.yaml)
+- **路径**: `Accademia/[Mobile]-WhiteList-03-Non.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BMobile%5D-WhiteList-03-Non.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (153个)</summary>
@@ -247,7 +374,7 @@
 </details>
 
 #### 📝 [通用模版]-WhiteList-03-Non.AntiAD.yaml
-- **路径**: `Accademia/[通用模版]-WhiteList-03-Non.AntiAD.yaml` | **大小**: 2054.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5B%E9%80%9A%E7%94%A8%E6%A8%A1%E7%89%88%5D-WhiteList-03-Non.AntiAD.yaml)
+- **路径**: `Accademia/[通用模版]-WhiteList-03-Non.AntiAD.yaml` | **大小**: 2054.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5B%E9%80%9A%E7%94%A8%E6%A8%A1%E7%89%88%5D-WhiteList-03-Non.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (175个)</summary>
@@ -278,7 +405,7 @@
 </details>
 
 #### 📝 BlackList-03-Non.AntiAD.yaml
-- **路径**: `Accademia/BlackList-03-Non.AntiAD.yaml` | **大小**: 697.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/BlackList-03-Non.AntiAD.yaml)
+- **路径**: `Accademia/BlackList-03-Non.AntiAD.yaml` | **大小**: 697.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/BlackList-03-Non.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (143个)</summary>
@@ -309,7 +436,7 @@
 </details>
 
 #### 📝 [Desktop]-WhiteList-03-Non.AntiAD.yaml
-- **路径**: `Accademia/[Desktop]-WhiteList-03-Non.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BDesktop%5D-WhiteList-03-Non.AntiAD.yaml)
+- **路径**: `Accademia/[Desktop]-WhiteList-03-Non.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BDesktop%5D-WhiteList-03-Non.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (154个)</summary>
@@ -340,7 +467,7 @@
 </details>
 
 #### 📝 BlackList-02-Min.AntiAD.yaml
-- **路径**: `Accademia/BlackList-02-Min.AntiAD.yaml` | **大小**: 697.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/BlackList-02-Min.AntiAD.yaml)
+- **路径**: `Accademia/BlackList-02-Min.AntiAD.yaml` | **大小**: 697.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/BlackList-02-Min.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (144个)</summary>
@@ -371,7 +498,7 @@
 </details>
 
 #### 📝 [通用模版]-WhiteList-01.yaml
-- **路径**: `Accademia/[通用模版]-WhiteList-01.yaml` | **大小**: 2054.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5B%E9%80%9A%E7%94%A8%E6%A8%A1%E7%89%88%5D-WhiteList-01.yaml)
+- **路径**: `Accademia/[通用模版]-WhiteList-01.yaml` | **大小**: 2054.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5B%E9%80%9A%E7%94%A8%E6%A8%A1%E7%89%88%5D-WhiteList-01.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (177个)</summary>
@@ -402,7 +529,7 @@
 </details>
 
 #### 📝 [Mobile]-WhiteList-01.yaml
-- **路径**: `Accademia/[Mobile]-WhiteList-01.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BMobile%5D-WhiteList-01.yaml)
+- **路径**: `Accademia/[Mobile]-WhiteList-01.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BMobile%5D-WhiteList-01.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (155个)</summary>
@@ -433,7 +560,7 @@
 </details>
 
 #### 📝 [Mobile]-WhiteList-02-Min.AntiAD.yaml
-- **路径**: `Accademia/[Mobile]-WhiteList-02-Min.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BMobile%5D-WhiteList-02-Min.AntiAD.yaml)
+- **路径**: `Accademia/[Mobile]-WhiteList-02-Min.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BMobile%5D-WhiteList-02-Min.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (154个)</summary>
@@ -464,7 +591,7 @@
 </details>
 
 #### 📝 BlackList-01.yaml
-- **路径**: `Accademia/BlackList-01.yaml` | **大小**: 697.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/BlackList-01.yaml)
+- **路径**: `Accademia/BlackList-01.yaml` | **大小**: 697.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/BlackList-01.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (145个)</summary>
@@ -495,7 +622,7 @@
 </details>
 
 #### 📝 [Desktop]-WhiteList-01.yaml
-- **路径**: `Accademia/[Desktop]-WhiteList-01.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BDesktop%5D-WhiteList-01.yaml)
+- **路径**: `Accademia/[Desktop]-WhiteList-01.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BDesktop%5D-WhiteList-01.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (156个)</summary>
@@ -526,7 +653,7 @@
 </details>
 
 #### 📝 [通用模版]-WhiteList-02-Min.AntiAD.yaml
-- **路径**: `Accademia/[通用模版]-WhiteList-02-Min.AntiAD.yaml` | **大小**: 2054.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5B%E9%80%9A%E7%94%A8%E6%A8%A1%E7%89%88%5D-WhiteList-02-Min.AntiAD.yaml)
+- **路径**: `Accademia/[通用模版]-WhiteList-02-Min.AntiAD.yaml` | **大小**: 2054.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5B%E9%80%9A%E7%94%A8%E6%A8%A1%E7%89%88%5D-WhiteList-02-Min.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (176个)</summary>
@@ -557,7 +684,7 @@
 </details>
 
 #### 📝 [Desktop]-WhiteList-02-Min.AntiAD.yaml
-- **路径**: `Accademia/[Desktop]-WhiteList-02-Min.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BDesktop%5D-WhiteList-02-Min.AntiAD.yaml)
+- **路径**: `Accademia/[Desktop]-WhiteList-02-Min.AntiAD.yaml` | **大小**: 697.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Accademia/%5BDesktop%5D-WhiteList-02-Min.AntiAD.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (155个)</summary>
@@ -588,10 +715,313 @@
 </details>
 
 ---
+### 👤 Aethersailor
+
+#### 📝 Custom_Clash_Selfhosted_Provider_Fallback.yaml
+- **路径**: `Aethersailor/Custom_Clash_Selfhosted_Provider_Fallback.yaml` | **大小**: 44.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Selfhosted_Provider_Fallback.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (36个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 🔧 🚀 故障转移 | `fallback` |
+| ♻️ 🏴‍☠️ 自建节点 | `url-test` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 🔧 💬 即时通讯 | `fallback` |
+| 🔧 🌐 社交媒体 | `fallback` |
+| 🔧 🚀 GitHub | `fallback` |
+| 🔧 🤖 ChatGPT | `fallback` |
+| 🔧 🤖 AI服务 | `fallback` |
+| 🔧 🎶 TikTok | `fallback` |
+| 🔧 📹 YouTube | `fallback` |
+| 🔧 🎥 Netflix | `fallback` |
+| 🔧 🎥 DisneyPlus | `fallback` |
+| 🔧 🎥 HBO | `fallback` |
+| 🔧 🎥 PrimeVideo | `fallback` |
+| 🔧 🎥 AppleTV+ | `fallback` |
+| 🔧 🎥 Emby | `fallback` |
+| 🔧 🎻 Spotify | `fallback` |
+| 🔧 📺 Bahamut | `fallback` |
+| 🔧 🌎 国外媒体 | `fallback` |
+| 🔧 🛒 国外电商 | `fallback` |
+| ... | 还有 16 个 |
+</details>
+
+#### 📝 Custom_Clash_Full.yaml
+- **路径**: `Aethersailor/Custom_Clash_Full.yaml` | **大小**: 47.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Full.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (63个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 🚀 手动选择 | `select` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 📨 Telegram | `select` |
+| 👆 🎧 Discord | `select` |
+| 👆 📞 Talkatone | `select` |
+| 👆 📹 Zoom | `select` |
+| 👆 💬 即时通讯 | `select` |
+| 👆 🌐 社交媒体 | `select` |
+| 👆 🚀 GitHub | `select` |
+| 👆 📦 容器服务 | `select` |
+| 👆 💻 开发者服务 | `select` |
+| 👆 📚 学术资源 | `select` |
+| 👆 🤖 ChatGPT | `select` |
+| 👆 🤖 Copilot | `select` |
+| 👆 🤖 Claude | `select` |
+| 👆 🤖 Gemini | `select` |
+| 👆 🤖 Grok | `select` |
+| 👆 🤖 国外AI服务 | `select` |
+| 👆 🤖 国内AI服务 | `select` |
+| 👆 🎶 TikTok | `select` |
+| ... | 还有 43 个 |
+</details>
+
+#### 📝 Custom_Clash_Lite_Fallback.yaml
+- **路径**: `Aethersailor/Custom_Clash_Lite_Fallback.yaml` | **大小**: 20.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Lite_Fallback.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (19个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 🔧 🚀 故障转移 | `fallback` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 🔧 🚀 GitHub | `fallback` |
+| 🔧 📢 谷歌FCM | `fallback` |
+| 🔧 🇬 谷歌服务 | `fallback` |
+| 👆 🍎 苹果服务 | `select` |
+| 👆 Ⓜ️ 微软服务 | `select` |
+| 👆 🎮 游戏平台 | `select` |
+| 👆 🎮 Steam | `select` |
+| 👆 🚀 测速工具 | `select` |
+| 🔧 🐟 漏网之鱼 | `fallback` |
+| 👆 🔀 非标端口 | `select` |
+| ♻️ 🇭🇰 香港节点 | `url-test` |
+| ♻️ 🇺🇸 美国节点 | `url-test` |
+| ♻️ 🇯🇵 日本节点 | `url-test` |
+| ♻️ 🇸🇬 新加坡节点 | `url-test` |
+| ♻️ 🇼🇸 台湾节点 | `url-test` |
+| ♻️ 🇰🇷 韩国节点 | `url-test` |
+| 👆 🎯 全球直连 | `select` |
+</details>
+
+#### 📝 Custom_Clash_Fallback.yaml
+- **路径**: `Aethersailor/Custom_Clash_Fallback.yaml` | **大小**: 42.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Fallback.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (35个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 🔧 🚀 故障转移 | `fallback` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 🔧 💬 即时通讯 | `fallback` |
+| 🔧 🌐 社交媒体 | `fallback` |
+| 🔧 🚀 GitHub | `fallback` |
+| 🔧 🤖 ChatGPT | `fallback` |
+| 🔧 🤖 AI服务 | `fallback` |
+| 🔧 🎶 TikTok | `fallback` |
+| 🔧 📹 YouTube | `fallback` |
+| 🔧 🎥 Netflix | `fallback` |
+| 🔧 🎥 DisneyPlus | `fallback` |
+| 🔧 🎥 HBO | `fallback` |
+| 🔧 🎥 PrimeVideo | `fallback` |
+| 🔧 🎥 AppleTV+ | `fallback` |
+| 🔧 🎥 Emby | `fallback` |
+| 🔧 🎻 Spotify | `fallback` |
+| 🔧 📺 Bahamut | `fallback` |
+| 🔧 🌎 国外媒体 | `fallback` |
+| 🔧 🛒 国外电商 | `fallback` |
+| 🔧 📢 谷歌FCM | `fallback` |
+| ... | 还有 15 个 |
+</details>
+
+#### 📝 Custom_Clash.yaml
+- **路径**: `Aethersailor/Custom_Clash.yaml` | **大小**: 19.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (35个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 🚀 手动选择 | `select` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 💬 即时通讯 | `select` |
+| 👆 🌐 社交媒体 | `select` |
+| 👆 🚀 GitHub | `select` |
+| 👆 🤖 ChatGPT | `select` |
+| 👆 🤖 AI服务 | `select` |
+| 👆 🎶 TikTok | `select` |
+| 👆 📹 YouTube | `select` |
+| 👆 🎥 Netflix | `select` |
+| 👆 🎥 DisneyPlus | `select` |
+| 👆 🎥 HBO | `select` |
+| 👆 🎥 PrimeVideo | `select` |
+| 👆 🎥 AppleTV+ | `select` |
+| 👆 🎥 Emby | `select` |
+| 👆 🎻 Spotify | `select` |
+| 👆 📺 Bahamut | `select` |
+| 👆 🌎 国外媒体 | `select` |
+| 👆 🛒 国外电商 | `select` |
+| 👆 📢 谷歌FCM | `select` |
+| ... | 还有 15 个 |
+</details>
+
+#### 📝 Custom_Clash_Full_Fallback.yaml
+- **路径**: `Aethersailor/Custom_Clash_Full_Fallback.yaml` | **大小**: 43.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Full_Fallback.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (63个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 🔧 🚀 故障转移 | `fallback` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 🔧 📨 Telegram | `fallback` |
+| 🔧 🎧 Discord | `fallback` |
+| 🔧 📞 Talkatone | `fallback` |
+| 🔧 📹 Zoom | `fallback` |
+| 🔧 💬 即时通讯 | `fallback` |
+| 🔧 🌐 社交媒体 | `fallback` |
+| 🔧 🚀 GitHub | `fallback` |
+| 🔧 📦 容器服务 | `fallback` |
+| 🔧 💻 开发者服务 | `fallback` |
+| 🔧 📚 学术资源 | `fallback` |
+| 🔧 🤖 ChatGPT | `fallback` |
+| 🔧 🤖 Copilot | `fallback` |
+| 🔧 🤖 Claude | `fallback` |
+| 🔧 🤖 Gemini | `fallback` |
+| 🔧 🤖 Grok | `fallback` |
+| 🔧 🤖 国外AI服务 | `fallback` |
+| 👆 🤖 国内AI服务 | `select` |
+| 🔧 🎶 TikTok | `fallback` |
+| ... | 还有 43 个 |
+</details>
+
+#### 📝 Custom_Clash_Lite.yaml
+- **路径**: `Aethersailor/Custom_Clash_Lite.yaml` | **大小**: 11.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Lite.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (19个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 🚀 手动选择 | `select` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 🚀 GitHub | `select` |
+| 👆 📢 谷歌FCM | `select` |
+| 👆 🇬 谷歌服务 | `select` |
+| 👆 🍎 苹果服务 | `select` |
+| 👆 Ⓜ️ 微软服务 | `select` |
+| 👆 🎮 游戏平台 | `select` |
+| 👆 🎮 Steam | `select` |
+| 👆 🚀 测速工具 | `select` |
+| 👆 🐟 漏网之鱼 | `select` |
+| 👆 🔀 非标端口 | `select` |
+| ♻️ 🇭🇰 香港节点 | `url-test` |
+| ♻️ 🇺🇸 美国节点 | `url-test` |
+| ♻️ 🇯🇵 日本节点 | `url-test` |
+| ♻️ 🇸🇬 新加坡节点 | `url-test` |
+| ♻️ 🇼🇸 台湾节点 | `url-test` |
+| ♻️ 🇰🇷 韩国节点 | `url-test` |
+| 👆 🎯 全球直连 | `select` |
+</details>
+
+#### 📝 Complete_YAML_Configuration_Template.yaml
+- **路径**: `Aethersailor/Complete_YAML_Configuration_Template.yaml` | **大小**: 45.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Complete_YAML_Configuration_Template.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (35个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 🚀 手动选择 | `select` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 💬 即时通讯 | `select` |
+| 👆 🌐 社交媒体 | `select` |
+| 👆 🚀 GitHub | `select` |
+| 👆 🤖 ChatGPT | `select` |
+| 👆 🤖 AI服务 | `select` |
+| 👆 🎶 TikTok | `select` |
+| 👆 📹 YouTube | `select` |
+| 👆 🎥 Netflix | `select` |
+| 👆 🎥 DisneyPlus | `select` |
+| 👆 🎥 HBO | `select` |
+| 👆 🎥 PrimeVideo | `select` |
+| 👆 🎥 AppleTV+ | `select` |
+| 👆 🎥 Emby | `select` |
+| 👆 🎻 Spotify | `select` |
+| 👆 📺 Bahamut | `select` |
+| 👆 🌎 国外媒体 | `select` |
+| 👆 🛒 国外电商 | `select` |
+| 👆 📢 谷歌FCM | `select` |
+| ... | 还有 15 个 |
+</details>
+
+#### 📝 Custom_Clash_Selfhosted_Manual_Fallback.yaml
+- **路径**: `Aethersailor/Custom_Clash_Selfhosted_Manual_Fallback.yaml` | **大小**: 44.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_Selfhosted_Manual_Fallback.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (36个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 🔧 🚀 故障转移 | `fallback` |
+| ♻️ 🏴‍☠️ 自建节点 | `url-test` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 🔧 💬 即时通讯 | `fallback` |
+| 🔧 🌐 社交媒体 | `fallback` |
+| 🔧 🚀 GitHub | `fallback` |
+| 🔧 🤖 ChatGPT | `fallback` |
+| 🔧 🤖 AI服务 | `fallback` |
+| 🔧 🎶 TikTok | `fallback` |
+| 🔧 📹 YouTube | `fallback` |
+| 🔧 🎥 Netflix | `fallback` |
+| 🔧 🎥 DisneyPlus | `fallback` |
+| 🔧 🎥 HBO | `fallback` |
+| 🔧 🎥 PrimeVideo | `fallback` |
+| 🔧 🎥 AppleTV+ | `fallback` |
+| 🔧 🎥 Emby | `fallback` |
+| 🔧 🎻 Spotify | `fallback` |
+| 🔧 📺 Bahamut | `fallback` |
+| 🔧 🌎 国外媒体 | `fallback` |
+| 🔧 🛒 国外电商 | `fallback` |
+| ... | 还有 16 个 |
+</details>
+
+#### 📝 Custom_Clash_GFW.yaml
+- **路径**: `Aethersailor/Custom_Clash_GFW.yaml` | **大小**: 3.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_GFW.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (3个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 🚀 手动选择 | `select` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 🎯 全球直连 | `select` |
+</details>
+
+#### 📝 Custom_Clash_GFW_Fallback.yaml
+- **路径**: `Aethersailor/Custom_Clash_GFW_Fallback.yaml` | **大小**: 3.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Aethersailor/Custom_Clash_GFW_Fallback.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (2个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 🔧 🚀 故障转移 | `fallback` |
+| 👆 🎯 全球直连 | `select` |
+</details>
+
+---
 ### 👤 Ayanami0-configs
 
 #### 📝 Ayanami0_config_geo-lite.yaml
-- **路径**: `Ayanami0-configs/Ayanami0_config_geo-lite.yaml` | **大小**: 3.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Ayanami0-configs/Ayanami0_config_geo-lite.yaml)
+- **路径**: `Ayanami0-configs/Ayanami0_config_geo-lite.yaml` | **大小**: 3.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Ayanami0-configs/Ayanami0_config_geo-lite.yaml)
 - **模式**: Rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (1个)</summary>
@@ -602,7 +1032,7 @@
 </details>
 
 #### 📝 Ayanami0_config.yaml
-- **路径**: `Ayanami0-configs/Ayanami0_config.yaml` | **大小**: 12.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Ayanami0-configs/Ayanami0_config.yaml)
+- **路径**: `Ayanami0-configs/Ayanami0_config.yaml` | **大小**: 12.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Ayanami0-configs/Ayanami0_config.yaml)
 - **模式**: Rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (21个)</summary>
@@ -636,7 +1066,7 @@
 ### 👤 ClashConnectRules
 
 #### 📝 Clash.yaml
-- **路径**: `ClashConnectRules/Clash.yaml` | **大小**: 27.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/ClashConnectRules/Clash.yaml)
+- **路径**: `ClashConnectRules/Clash.yaml` | **大小**: 27.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/ClashConnectRules/Clash.yaml)
 - **模式**: Rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (27个)</summary>
@@ -670,7 +1100,7 @@
 ### 👤 From_clash_by_hako
 
 #### 📝 region-single-provider.yaml
-- **路径**: `From_clash_by_hako/region-single-provider.yaml` | **大小**: 15.1 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/From_clash_by_hako/region-single-provider.yaml)
+- **路径**: `From_clash_by_hako/region-single-provider.yaml` | **大小**: 15.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/From_clash_by_hako/region-single-provider.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (14个)</summary>
@@ -694,7 +1124,7 @@
 </details>
 
 #### 📝 service-single-provider.yaml
-- **路径**: `From_clash_by_hako/service-single-provider.yaml` | **大小**: 25.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/From_clash_by_hako/service-single-provider.yaml)
+- **路径**: `From_clash_by_hako/service-single-provider.yaml` | **大小**: 25.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/From_clash_by_hako/service-single-provider.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (33个)</summary>
@@ -725,7 +1155,7 @@
 </details>
 
 #### 📝 region-dual-provider.yaml
-- **路径**: `From_clash_by_hako/region-dual-provider.yaml` | **大小**: 20.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/From_clash_by_hako/region-dual-provider.yaml)
+- **路径**: `From_clash_by_hako/region-dual-provider.yaml` | **大小**: 20.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/From_clash_by_hako/region-dual-provider.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (33个)</summary>
@@ -756,10 +1186,168 @@
 </details>
 
 ---
+### 👤 Giveupmoon
+
+#### 📝 My-config.yaml
+- **路径**: `Giveupmoon/My-config.yaml` | **大小**: 23.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/My-config.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (33个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 手动选择 | `select` |
+| ♻️ 自动选择 | `url-test` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 GitHub | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Gemini | `select` |
+| 👆 AI服务 | `select` |
+| 👆 TikTok | `select` |
+| 👆 AppleTV+ | `select` |
+| 👆 YouTube | `select` |
+| 👆 Netflix | `select` |
+| 👆 DisneyPlus | `select` |
+| 👆 HBO | `select` |
+| 👆 PrimeVideo | `select` |
+| 👆 Emby | `select` |
+| 👆 Spotify | `select` |
+| 👆 Bahamut | `select` |
+| 👆 国外媒体 | `select` |
+| 👆 PayPal | `select` |
+| ... | 还有 13 个 |
+</details>
+
+#### 📝 Start-json.yaml
+- **路径**: `Giveupmoon/Start-json.yaml` | **大小**: 28.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/Start-json.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (33个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 手动选择 | `select` |
+| ♻️ 自动选择 | `url-test` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 GitHub | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Gemini | `select` |
+| 👆 AI服务 | `select` |
+| 👆 TikTok | `select` |
+| 👆 AppleTV+ | `select` |
+| 👆 YouTube | `select` |
+| 👆 Netflix | `select` |
+| 👆 DisneyPlus | `select` |
+| 👆 HBO | `select` |
+| 👆 PrimeVideo | `select` |
+| 👆 Emby | `select` |
+| 👆 Spotify | `select` |
+| 👆 Bahamut | `select` |
+| 👆 国外媒体 | `select` |
+| 👆 PayPal | `select` |
+| ... | 还有 13 个 |
+</details>
+
+#### 📝 Start.yaml
+- **路径**: `Giveupmoon/Start.yaml` | **大小**: 22.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/Start.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (33个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 手动选择 | `select` |
+| ♻️ 自动选择 | `url-test` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 GitHub | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Gemini | `select` |
+| 👆 AI服务 | `select` |
+| 👆 TikTok | `select` |
+| 👆 AppleTV+ | `select` |
+| 👆 YouTube | `select` |
+| 👆 Netflix | `select` |
+| 👆 DisneyPlus | `select` |
+| 👆 HBO | `select` |
+| 👆 PrimeVideo | `select` |
+| 👆 Emby | `select` |
+| 👆 Spotify | `select` |
+| 👆 Bahamut | `select` |
+| 👆 国外媒体 | `select` |
+| 👆 PayPal | `select` |
+| ... | 还有 13 个 |
+</details>
+
+#### 📝 Overwrite-Clash-Bypass.yaml
+- **路径**: `Giveupmoon/Overwrite-Clash-Bypass.yaml` | **大小**: 17.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/Overwrite-Clash-Bypass.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (33个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 手动选择 | `select` |
+| ♻️ 自动选择 | `url-test` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 GitHub | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Gemini | `select` |
+| 👆 AI服务 | `select` |
+| 👆 TikTok | `select` |
+| 👆 AppleTV+ | `select` |
+| 👆 YouTube | `select` |
+| 👆 Netflix | `select` |
+| 👆 DisneyPlus | `select` |
+| 👆 HBO | `select` |
+| 👆 PrimeVideo | `select` |
+| 👆 Emby | `select` |
+| 👆 Spotify | `select` |
+| 👆 Bahamut | `select` |
+| 👆 国外媒体 | `select` |
+| 👆 PayPal | `select` |
+| ... | 还有 13 个 |
+</details>
+
+#### 📝 Overwrite-Clash.yaml
+- **路径**: `Giveupmoon/Overwrite-Clash.yaml` | **大小**: 17.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Giveupmoon/Overwrite-Clash.yaml)
+- **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (33个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 手动选择 | `select` |
+| ♻️ 自动选择 | `url-test` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 GitHub | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Gemini | `select` |
+| 👆 AI服务 | `select` |
+| 👆 TikTok | `select` |
+| 👆 AppleTV+ | `select` |
+| 👆 YouTube | `select` |
+| 👆 Netflix | `select` |
+| 👆 DisneyPlus | `select` |
+| 👆 HBO | `select` |
+| 👆 PrimeVideo | `select` |
+| 👆 Emby | `select` |
+| 👆 Spotify | `select` |
+| 👆 Bahamut | `select` |
+| 👆 国外媒体 | `select` |
+| 👆 PayPal | `select` |
+| ... | 还有 13 个 |
+</details>
+
+---
 ### 👤 HenryChiao
 
 #### 📝 MihomoProPlus.yaml
-- **路径**: `HenryChiao/MihomoProPlus.yaml` | **大小**: 26.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/HenryChiao/MihomoProPlus.yaml)
+- **路径**: `HenryChiao/MihomoProPlus.yaml` | **大小**: 26.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/HenryChiao/MihomoProPlus.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (54个)</summary>
@@ -790,7 +1378,7 @@
 </details>
 
 #### 📝 MihomoAIO.yaml
-- **路径**: `HenryChiao/MihomoAIO.yaml` | **大小**: 28.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/HenryChiao/MihomoAIO.yaml)
+- **路径**: `HenryChiao/MihomoAIO.yaml` | **大小**: 28.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/HenryChiao/MihomoAIO.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (61个)</summary>
@@ -821,7 +1409,7 @@
 </details>
 
 #### 📝 MihomoProMax.yaml
-- **路径**: `HenryChiao/MihomoProMax.yaml` | **大小**: 25.7 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/HenryChiao/MihomoProMax.yaml)
+- **路径**: `HenryChiao/MihomoProMax.yaml` | **大小**: 25.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/HenryChiao/MihomoProMax.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (54个)</summary>
@@ -855,7 +1443,7 @@
 ### 👤 JohnsonRan
 
 #### 📝 AIB.yaml
-- **路径**: `JohnsonRan/AIB.yaml` | **大小**: 11.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/JohnsonRan/AIB.yaml)
+- **路径**: `JohnsonRan/AIB.yaml` | **大小**: 11.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/JohnsonRan/AIB.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (24个)</summary>
@@ -886,7 +1474,7 @@
 </details>
 
 #### 📝 AIO.yaml
-- **路径**: `JohnsonRan/AIO.yaml` | **大小**: 10.8 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/JohnsonRan/AIO.yaml)
+- **路径**: `JohnsonRan/AIO.yaml` | **大小**: 10.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/JohnsonRan/AIO.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (23个)</summary>
@@ -920,7 +1508,7 @@
 ### 👤 Kerronex
 
 #### 📝 config.yaml
-- **路径**: `Kerronex/config.yaml` | **大小**: 18.7 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Kerronex/config.yaml)
+- **路径**: `Kerronex/config.yaml` | **大小**: 18.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Kerronex/config.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (13个)</summary>
@@ -946,7 +1534,7 @@
 ### 👤 Lanlan13-14
 
 #### 📝 configfull_lite.yaml
-- **路径**: `Lanlan13-14/configfull_lite.yaml` | **大小**: 18.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull_lite.yaml)
+- **路径**: `Lanlan13-14/configfull_lite.yaml` | **大小**: 18.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull_lite.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (47个)</summary>
@@ -977,7 +1565,7 @@
 </details>
 
 #### 📝 configfull.yaml
-- **路径**: `Lanlan13-14/configfull.yaml` | **大小**: 35.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull.yaml)
+- **路径**: `Lanlan13-14/configfull.yaml` | **大小**: 35.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (62个)</summary>
@@ -1008,7 +1596,7 @@
 </details>
 
 #### 📝 configfull_NoAd.yaml
-- **路径**: `Lanlan13-14/configfull_NoAd.yaml` | **大小**: 34.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull_NoAd.yaml)
+- **路径**: `Lanlan13-14/configfull_NoAd.yaml` | **大小**: 34.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Lanlan13-14/configfull_NoAd.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (59个)</summary>
@@ -1042,7 +1630,7 @@
 ### 👤 Mitchell
 
 #### 📝 config.yaml
-- **路径**: `Mitchell/config.yaml` | **大小**: 28.5 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Mitchell/config.yaml)
+- **路径**: `Mitchell/config.yaml` | **大小**: 28.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Mitchell/config.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (25个)</summary>
@@ -1076,7 +1664,7 @@
 ### 👤 Pililink
 
 #### 📝 2-subscription-clash-rule-set.yaml
-- **路径**: `Pililink/2-subscription-clash-rule-set.yaml` | **大小**: 24.1 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/2-subscription-clash-rule-set.yaml)
+- **路径**: `Pililink/2-subscription-clash-rule-set.yaml` | **大小**: 24.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/2-subscription-clash-rule-set.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (40个)</summary>
@@ -1107,7 +1695,7 @@
 </details>
 
 #### 📝 base-clash-ruleset.yaml
-- **路径**: `Pililink/base-clash-ruleset.yaml` | **大小**: 23.5 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/base-clash-ruleset.yaml)
+- **路径**: `Pililink/base-clash-ruleset.yaml` | **大小**: 23.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/base-clash-ruleset.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (31个)</summary>
@@ -1138,7 +1726,7 @@
 </details>
 
 #### 📝 3-subscription-clash-rule-set.yaml
-- **路径**: `Pililink/3-subscription-clash-rule-set.yaml` | **大小**: 24.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/3-subscription-clash-rule-set.yaml)
+- **路径**: `Pililink/3-subscription-clash-rule-set.yaml` | **大小**: 24.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Pililink/3-subscription-clash-rule-set.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (41个)</summary>
@@ -1172,7 +1760,7 @@
 ### 👤 Repcz
 
 #### 📝 mihomo.yaml
-- **路径**: `Repcz/mihomo.yaml` | **大小**: 3.1 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/mihomo.yaml)
+- **路径**: `Repcz/mihomo.yaml` | **大小**: 3.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (5个)</summary>
@@ -1187,7 +1775,7 @@
 </details>
 
 #### 📝 config.yaml
-- **路径**: `Repcz/config.yaml` | **大小**: 8.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/config.yaml)
+- **路径**: `Repcz/config.yaml` | **大小**: 8.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/config.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (17个)</summary>
@@ -1214,7 +1802,7 @@
 </details>
 
 #### 📝 config_lite.yaml
-- **路径**: `Repcz/config_lite.yaml` | **大小**: 2.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/config_lite.yaml)
+- **路径**: `Repcz/config_lite.yaml` | **大小**: 2.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Repcz/config_lite.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (1个)</summary>
@@ -1228,7 +1816,7 @@
 ### 👤 SHICHUNHUI88
 
 #### 📝 us_la.yaml
-- **路径**: `SHICHUNHUI88/us_la.yaml` | **大小**: 18.5 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/us_la.yaml)
+- **路径**: `SHICHUNHUI88/us_la.yaml` | **大小**: 18.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/us_la.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (15个)</summary>
@@ -1253,7 +1841,7 @@
 </details>
 
 #### 📝 Clash-Airport.yaml
-- **路径**: `SHICHUNHUI88/Clash-Airport.yaml` | **大小**: 17.5 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/Clash-Airport.yaml)
+- **路径**: `SHICHUNHUI88/Clash-Airport.yaml` | **大小**: 17.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/SHICHUNHUI88/Clash-Airport.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (23个)</summary>
@@ -1287,7 +1875,38 @@
 ### 👤 Seven1echo
 
 #### 📝 Seven1_fallback_Geo.yaml
-- **路径**: `Seven1echo/Seven1_fallback_Geo.yaml` | **大小**: 22.1 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Geo.yaml)
+- **路径**: `Seven1echo/Seven1_fallback_Geo.yaml` | **大小**: 22.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Geo.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (41个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 AI | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Apple | `select` |
+| 👆 Steam | `select` |
+| 👆 TikTok | `select` |
+| 👆 X | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 国内直连 | `select` |
+| 🔧 香港-故转 | `fallback` |
+| ... | 还有 21 个 |
+</details>
+
+#### 📝 Seven1_fallback_Rule-Set_Clashmi_Overwrite.yaml
+- **路径**: `Seven1echo/Seven1_fallback_Rule-Set_Clashmi_Overwrite.yaml` | **大小**: 24.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Rule-Set_Clashmi_Overwrite.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (41个)</summary>
@@ -1318,7 +1937,7 @@
 </details>
 
 #### 📝 Seven1_fallback_Rule-Set.yaml
-- **路径**: `Seven1echo/Seven1_fallback_Rule-Set.yaml` | **大小**: 24.7 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Rule-Set.yaml)
+- **路径**: `Seven1echo/Seven1_fallback_Rule-Set.yaml` | **大小**: 24.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Seven1echo/Seven1_fallback_Rule-Set.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (41个)</summary>
@@ -1352,7 +1971,7 @@
 ### 👤 Sgraqwq
 
 #### 📝 Proxy-override.yaml
-- **路径**: `Sgraqwq/Proxy-override.yaml` | **大小**: 32.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Sgraqwq/Proxy-override.yaml)
+- **路径**: `Sgraqwq/Proxy-override.yaml` | **大小**: 32.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Sgraqwq/Proxy-override.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (16个)</summary>
@@ -1381,7 +2000,7 @@
 ### 👤 Tangerinell
 
 #### 📝 mihomo.yaml
-- **路径**: `Tangerinell/mihomo.yaml` | **大小**: 44.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Tangerinell/mihomo.yaml)
+- **路径**: `Tangerinell/mihomo.yaml` | **大小**: 44.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/Tangerinell/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (96个)</summary>
@@ -1415,7 +2034,7 @@
 ### 👤 XVSVTSAMA
 
 #### 📝 mihomo.yaml
-- **路径**: `XVSVTSAMA/mihomo.yaml` | **大小**: 55.0 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/XVSVTSAMA/mihomo.yaml)
+- **路径**: `XVSVTSAMA/mihomo.yaml` | **大小**: 55.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/XVSVTSAMA/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (29个)</summary>
@@ -1449,7 +2068,7 @@
 ### 👤 YiXuanZX
 
 #### 📝 mihomo.yaml
-- **路径**: `YiXuanZX/mihomo.yaml` | **大小**: 6.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/YiXuanZX/mihomo.yaml)
+- **路径**: `YiXuanZX/mihomo.yaml` | **大小**: 6.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/YiXuanZX/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (8个)</summary>
@@ -1470,7 +2089,7 @@
 ### 👤 ameyukisora
 
 #### 📝 mihomo.yaml
-- **路径**: `ameyukisora/mihomo.yaml` | **大小**: 6.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/ameyukisora/mihomo.yaml)
+- **路径**: `ameyukisora/mihomo.yaml` | **大小**: 6.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/ameyukisora/mihomo.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (10个)</summary>
@@ -1493,7 +2112,7 @@
 ### 👤 bgpeer
 
 #### 📝 Clashmi.yaml
-- **路径**: `bgpeer/Clashmi.yaml` | **大小**: 20.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/bgpeer/Clashmi.yaml)
+- **路径**: `bgpeer/Clashmi.yaml` | **大小**: 20.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/bgpeer/Clashmi.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (31个)</summary>
@@ -1524,7 +2143,7 @@
 </details>
 
 #### 📝 Clashmi-fx.yaml
-- **路径**: `bgpeer/Clashmi-fx.yaml` | **大小**: 19.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/bgpeer/Clashmi-fx.yaml)
+- **路径**: `bgpeer/Clashmi-fx.yaml` | **大小**: 19.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/bgpeer/Clashmi-fx.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (31个)</summary>
@@ -1558,7 +2177,7 @@
 ### 👤 echs-top
 
 #### 📝 mihomo.yaml
-- **路径**: `echs-top/mihomo.yaml` | **大小**: 14.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/echs-top/mihomo.yaml)
+- **路径**: `echs-top/mihomo.yaml` | **大小**: 14.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/echs-top/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (35个)</summary>
@@ -1592,7 +2211,7 @@
 ### 👤 fufu
 
 #### 📝 ConfigForClash.yaml
-- **路径**: `fufu/ConfigForClash.yaml` | **大小**: 49.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/fufu/ConfigForClash.yaml)
+- **路径**: `fufu/ConfigForClash.yaml` | **大小**: 49.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/fufu/ConfigForClash.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (62个)</summary>
@@ -1623,10 +2242,419 @@
 </details>
 
 ---
+### 👤 gogyt
+
+#### 📝 GeoLite.yaml
+- **路径**: `gogyt/GeoLite.yaml` | **大小**: 35.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoLite.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (48个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 狮城策略 | `select` |
+| 👆 香港策略 | `select` |
+| 👆 日本策略 | `select` |
+| 👆 美国策略 | `select` |
+| 👆 台湾策略 | `select` |
+| 👆 欧洲策略 | `select` |
+| 👆 韩国策略 | `select` |
+| 👆 其他策略 | `select` |
+| ⚖️ 香港散列 | `load-balance` |
+| ⚖️ 台湾散列 | `load-balance` |
+| ⚖️ 狮城散列 | `load-balance` |
+| ⚖️ 日本散列 | `load-balance` |
+| ⚖️ 韩国散列 | `load-balance` |
+| ⚖️ 美国散列 | `load-balance` |
+| ⚖️ 欧洲散列 | `load-balance` |
+| ... | 还有 28 个 |
+</details>
+
+#### 📝 RuleLitePro.yaml
+- **路径**: `gogyt/RuleLitePro.yaml` | **大小**: 43.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLitePro.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (64个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 狮城策略 | `select` |
+| 👆 香港策略 | `select` |
+| 👆 日本策略 | `select` |
+| 👆 美国策略 | `select` |
+| 👆 台湾策略 | `select` |
+| 👆 欧洲策略 | `select` |
+| 👆 韩国策略 | `select` |
+| 👆 其他策略 | `select` |
+| ⚖️ [主] 香港散列 | `load-balance` |
+| ⚖️ [主] 台湾散列 | `load-balance` |
+| ⚖️ [主] 狮城散列 | `load-balance` |
+| ⚖️ [主] 日本散列 | `load-balance` |
+| ⚖️ [主] 韩国散列 | `load-balance` |
+| ⚖️ [主] 美国散列 | `load-balance` |
+| ⚖️ [主] 欧洲散列 | `load-balance` |
+| ... | 还有 44 个 |
+</details>
+
+#### 📝 GeoBeta.yaml
+- **路径**: `gogyt/GeoBeta.yaml` | **大小**: 59.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoBeta.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (160个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 Github | `select` |
+| 👆 油管视频 | `select` |
+| 👆 谷歌FCM | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 Gemini | `select` |
+| 👆 Claude | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Grok | `select` |
+| 👆 AI服务 | `select` |
+| 👆 维基百科 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 国外电商 | `select` |
+| 👆 加密货币 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 TikTok | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
+| ... | 还有 140 个 |
+</details>
+
+#### 📝 RulePro.yaml
+- **路径**: `gogyt/RulePro.yaml` | **大小**: 61.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RulePro.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (130个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 Github | `select` |
+| 👆 油管视频 | `select` |
+| 👆 谷歌FCM | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 Gemini | `select` |
+| 👆 Claude | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Grok | `select` |
+| 👆 AI服务 | `select` |
+| 👆 维基百科 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 国外电商 | `select` |
+| 👆 加密货币 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 TikTok | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
+| ... | 还有 110 个 |
+</details>
+
+#### 📝 RuleBeta.yaml
+- **路径**: `gogyt/RuleBeta.yaml` | **大小**: 70.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleBeta.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (177个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 Github | `select` |
+| 👆 油管视频 | `select` |
+| 👆 谷歌FCM | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 Gemini | `select` |
+| 👆 Claude | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Grok | `select` |
+| 👆 AI服务 | `select` |
+| 👆 维基百科 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 国外电商 | `select` |
+| 👆 加密货币 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 TikTok | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
+| ... | 还有 157 个 |
+</details>
+
+#### 📝 GeoLitePro.yaml
+- **路径**: `gogyt/GeoLitePro.yaml` | **大小**: 39.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoLitePro.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (64个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 狮城策略 | `select` |
+| 👆 香港策略 | `select` |
+| 👆 日本策略 | `select` |
+| 👆 美国策略 | `select` |
+| 👆 台湾策略 | `select` |
+| 👆 欧洲策略 | `select` |
+| 👆 韩国策略 | `select` |
+| 👆 其他策略 | `select` |
+| ⚖️ [主] 香港散列 | `load-balance` |
+| ⚖️ [主] 台湾散列 | `load-balance` |
+| ⚖️ [主] 狮城散列 | `load-balance` |
+| ⚖️ [主] 日本散列 | `load-balance` |
+| ⚖️ [主] 韩国散列 | `load-balance` |
+| ⚖️ [主] 美国散列 | `load-balance` |
+| ⚖️ [主] 欧洲散列 | `load-balance` |
+| ... | 还有 44 个 |
+</details>
+
+#### 📝 RuleLite.yaml
+- **路径**: `gogyt/RuleLite.yaml` | **大小**: 38.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/RuleLite.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (48个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 网络测试 | `select` |
+| 👆 直接连接 | `select` |
+| 👆 狮城策略 | `select` |
+| 👆 香港策略 | `select` |
+| 👆 日本策略 | `select` |
+| 👆 美国策略 | `select` |
+| 👆 台湾策略 | `select` |
+| 👆 欧洲策略 | `select` |
+| 👆 韩国策略 | `select` |
+| 👆 其他策略 | `select` |
+| ⚖️ 香港散列 | `load-balance` |
+| ⚖️ 台湾散列 | `load-balance` |
+| ⚖️ 狮城散列 | `load-balance` |
+| ⚖️ 日本散列 | `load-balance` |
+| ⚖️ 韩国散列 | `load-balance` |
+| ⚖️ 美国散列 | `load-balance` |
+| ⚖️ 欧洲散列 | `load-balance` |
+| ... | 还有 28 个 |
+</details>
+
+#### 📝 Geo.yaml
+- **路径**: `gogyt/Geo.yaml` | **大小**: 42.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/Geo.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (68个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 Github | `select` |
+| 👆 油管视频 | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 AI服务 | `select` |
+| 👆 国外电商 | `select` |
+| 👆 加密货币 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 TikTok | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
+| 👆 Prime Video | `select` |
+| 👆 Spotify | `select` |
+| 👆 国外娱乐 | `select` |
+| 👆 Bing(Copilot) | `select` |
+| 👆 微软服务 | `select` |
+| 👆 苹果服务 | `select` |
+| ... | 还有 48 个 |
+</details>
+
+#### 📝 GeoPro.yaml
+- **路径**: `gogyt/GeoPro.yaml` | **大小**: 53.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/GeoPro.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (130个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 Github | `select` |
+| 👆 油管视频 | `select` |
+| 👆 谷歌FCM | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 Gemini | `select` |
+| 👆 Claude | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Grok | `select` |
+| 👆 AI服务 | `select` |
+| 👆 维基百科 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 国外电商 | `select` |
+| 👆 加密货币 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 TikTok | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
+| ... | 还有 110 个 |
+</details>
+
+#### 📝 Rule.yaml
+- **路径**: `gogyt/Rule.yaml` | **大小**: 48.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/gogyt/Rule.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (68个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 默认直连 | `select` |
+| 👆 Github | `select` |
+| 👆 油管视频 | `select` |
+| 👆 谷歌服务 | `select` |
+| 👆 AI服务 | `select` |
+| 👆 国外电商 | `select` |
+| 👆 加密货币 | `select` |
+| 👆 即时通讯 | `select` |
+| 👆 社交媒体 | `select` |
+| 👆 TikTok | `select` |
+| 👆 奈飞视频 | `select` |
+| 👆 迪士尼+ | `select` |
+| 👆 HBO | `select` |
+| 👆 Prime Video | `select` |
+| 👆 Spotify | `select` |
+| 👆 国外娱乐 | `select` |
+| 👆 Bing(Copilot) | `select` |
+| 👆 微软服务 | `select` |
+| 👆 苹果服务 | `select` |
+| ... | 还有 48 个 |
+</details>
+
+---
+### 👤 huohuczq
+
+#### 📝 Geo_Clashmi_Overwrite.yaml
+- **路径**: `huohuczq/Geo_Clashmi_Overwrite.yaml` | **大小**: 18.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/huohuczq/Geo_Clashmi_Overwrite.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (40个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 AppleTV | `select` |
+| 👆 Apple | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 🔧 香港故转 | `fallback` |
+| 👆 香港手动 | `select` |
+| ... | 还有 20 个 |
+</details>
+
+#### 📝 Rule-Set.yaml
+- **路径**: `huohuczq/Rule-Set.yaml` | **大小**: 21.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/huohuczq/Rule-Set.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (40个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 AppleTV | `select` |
+| 👆 Apple | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 🔧 香港故转 | `fallback` |
+| 👆 香港手动 | `select` |
+| ... | 还有 20 个 |
+</details>
+
+#### 📝 Geo.yaml
+- **路径**: `huohuczq/Geo.yaml` | **大小**: 19.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/huohuczq/Geo.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (40个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 一键代理 | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 AppleTV | `select` |
+| 👆 Apple | `select` |
+| 👆 TikTok | `select` |
+| 👆 Twitter | `select` |
+| 👆 Telegram | `select` |
+| 👆 Netflix | `select` |
+| 👆 Disney | `select` |
+| 👆 Spotify | `select` |
+| 👆 PayPal | `select` |
+| 👆 Speedtest | `select` |
+| 👆 漏网之鱼 | `select` |
+| 🔧 香港故转 | `fallback` |
+| 👆 香港手动 | `select` |
+| ... | 还有 20 个 |
+</details>
+
+---
 ### 👤 iKeLee
 
 #### 📝 Clash_Sample.yaml
-- **路径**: `iKeLee/Clash_Sample.yaml` | **大小**: 8.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/iKeLee/Clash_Sample.yaml)
+- **路径**: `iKeLee/Clash_Sample.yaml` | **大小**: 8.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/iKeLee/Clash_Sample.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (15个)</summary>
@@ -1651,7 +2679,7 @@
 </details>
 
 #### 📝 backup.yaml
-- **路径**: `iKeLee/backup.yaml` | **大小**: 12.5 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/iKeLee/backup.yaml)
+- **路径**: `iKeLee/backup.yaml` | **大小**: 12.5 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/iKeLee/backup.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (22个)</summary>
@@ -1685,7 +2713,7 @@
 ### 👤 liandu2024
 
 #### 📝 clash-fallback-std.yaml
-- **路径**: `liandu2024/clash-fallback-std.yaml` | **大小**: 17.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback-std.yaml)
+- **路径**: `liandu2024/clash-fallback-std.yaml` | **大小**: 17.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback-std.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (36个)</summary>
@@ -1716,7 +2744,7 @@
 </details>
 
 #### 📝 clash-all-fallback.yaml
-- **路径**: `liandu2024/clash-all-fallback.yaml` | **大小**: 17.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-all-fallback.yaml)
+- **路径**: `liandu2024/clash-all-fallback.yaml` | **大小**: 17.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-all-fallback.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (53个)</summary>
@@ -1747,7 +2775,7 @@
 </details>
 
 #### 📝 clash-fallback-dialer.yaml
-- **路径**: `liandu2024/clash-fallback-dialer.yaml` | **大小**: 16.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback-dialer.yaml)
+- **路径**: `liandu2024/clash-fallback-dialer.yaml` | **大小**: 16.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback-dialer.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (35个)</summary>
@@ -1778,7 +2806,7 @@
 </details>
 
 #### 📝 clash-fallback-all.yaml
-- **路径**: `liandu2024/clash-fallback-all.yaml` | **大小**: 18.6 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback-all.yaml)
+- **路径**: `liandu2024/clash-fallback-all.yaml` | **大小**: 18.6 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback-all.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (61个)</summary>
@@ -1809,7 +2837,7 @@
 </details>
 
 #### 📝 clash-fallback.yaml
-- **路径**: `liandu2024/clash-fallback.yaml` | **大小**: 15.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback.yaml)
+- **路径**: `liandu2024/clash-fallback.yaml` | **大小**: 15.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liandu2024/clash-fallback.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (34个)</summary>
@@ -1843,7 +2871,7 @@
 ### 👤 liuran001
 
 #### 📝 config.yaml
-- **路径**: `liuran001/config.yaml` | **大小**: 13.8 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liuran001/config.yaml)
+- **路径**: `liuran001/config.yaml` | **大小**: 13.8 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/liuran001/config.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (29个)</summary>
@@ -1877,7 +2905,7 @@
 ### 👤 loneshu7
 
 #### 📝 mihomo.yaml
-- **路径**: `loneshu7/mihomo.yaml` | **大小**: 30.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/loneshu7/mihomo.yaml)
+- **路径**: `loneshu7/mihomo.yaml` | **大小**: 30.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/loneshu7/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (80个)</summary>
@@ -1911,7 +2939,7 @@
 ### 👤 lvbibir
 
 #### 📝 mihomo.yaml
-- **路径**: `lvbibir/mihomo.yaml` | **大小**: 15.7 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/lvbibir/mihomo.yaml)
+- **路径**: `lvbibir/mihomo.yaml` | **大小**: 15.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/lvbibir/mihomo.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
 <details>
 <summary>🔍 策略组 (19个)</summary>
@@ -1942,8 +2970,39 @@
 ---
 ### 👤 qichiyuhub
 
+#### 📝 mihomo.yaml
+- **路径**: `qichiyuhub/mihomo.yaml` | **大小**: 14.0 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/qichiyuhub/mihomo.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (33个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 默认代理 | `select` |
+| 👆 AI | `select` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 GitHub | `select` |
+| 👆 Telegram | `select` |
+| 👆 TikTok | `select` |
+| 👆 NETFLIX | `select` |
+| 👆 Wallet | `select` |
+| 👆 Steam | `select` |
+| 👆 Microsoft | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Apple | `select` |
+| 👆 漏网之鱼 | `select` |
+| 👆 香港手动 | `select` |
+| 👆 日本手动 | `select` |
+| 👆 台湾手动 | `select` |
+| 👆 狮城手动 | `select` |
+| 👆 美国手动 | `select` |
+| 🔧 香港故转 | `fallback` |
+| ... | 还有 13 个 |
+</details>
+
 #### 📝 config.yaml
-- **路径**: `qichiyuhub/config.yaml` | **大小**: 13.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/qichiyuhub/config.yaml)
+- **路径**: `qichiyuhub/config.yaml` | **大小**: 13.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/qichiyuhub/config.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (28个)</summary>
@@ -1974,7 +3033,7 @@
 </details>
 
 #### 📝 proxychain.yaml
-- **路径**: `qichiyuhub/proxychain.yaml` | **大小**: 14.9 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/qichiyuhub/proxychain.yaml)
+- **路径**: `qichiyuhub/proxychain.yaml` | **大小**: 14.9 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/qichiyuhub/proxychain.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (28个)</summary>
@@ -2005,7 +3064,7 @@
 </details>
 
 #### 📝 fuxie.yaml
-- **路径**: `qichiyuhub/fuxie.yaml` | **大小**: 13.2 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/qichiyuhub/fuxie.yaml)
+- **路径**: `qichiyuhub/fuxie.yaml` | **大小**: 13.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/qichiyuhub/fuxie.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (28个)</summary>
@@ -2036,10 +3095,137 @@
 </details>
 
 ---
+### 👤 sev7enshare
+
+#### 📝 Clash-Fallback.yaml
+- **路径**: `sev7enshare/Clash-Fallback.yaml` | **大小**: 23.2 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/Clash-Fallback.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (49个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 所有-手动 | `select` |
+| ♻️ 所有-自动 | `url-test` |
+| 👆 ChatGPT | `select` |
+| 👆 GitHub | `select` |
+| 👆 Telegram | `select` |
+| 👆 Twitter(X) | `select` |
+| 👆 WhatsApp | `select` |
+| 👆 Facebook | `select` |
+| 👆 YouTube | `select` |
+| 👆 TikTok | `select` |
+| 👆 Disney | `select` |
+| 👆 Netflix | `select` |
+| 👆 HBO | `select` |
+| 👆 Spotify | `select` |
+| 👆 Crypto | `select` |
+| 👆 Amazon | `select` |
+| 👆 Apple | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Google | `select` |
+| 👆 Check | `select` |
+| ... | 还有 29 个 |
+</details>
+
+#### 📝 clash-lite.yaml
+- **路径**: `sev7enshare/clash-lite.yaml` | **大小**: 16.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/clash-lite.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
+<details>
+<summary>🔍 策略组 (33个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 🚀 默认代理 | `select` |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 YouTube | `select` |
+| 👆 Google | `select` |
+| 👆 ChatGPT | `select` |
+| 👆 Meta | `select` |
+| 👆 twitter | `select` |
+| 👆 数字货币 | `select` |
+| 👆 GitHub | `select` |
+| 👆 TikTok | `select` |
+| 👆 Telegram | `select` |
+| 👆 Line | `select` |
+| 👆 NETFLIX | `select` |
+| 👆 DisneyPlus | `select` |
+| 👆 AppleTV | `select` |
+| 👆 PayPal | `select` |
+| 👆 STEAM | `select` |
+| 👆 哔哩哔哩 | `select` |
+| 👆 国内媒体 | `select` |
+| 👆 微软硬盘 | `select` |
+| ... | 还有 13 个 |
+</details>
+
+#### 📝 clash-advanced.yaml
+- **路径**: `sev7enshare/clash-advanced.yaml` | **大小**: 37.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/clash-advanced.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (65个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| 👆 节点选择 | `select` |
+| 👆 🔗 代理 | `select` |
+| 👆 🚫 拒绝 | `select` |
+| 👆 ⚪ 丢弃 | `select` |
+| 👆 YouTube | `select` |
+| 👆 FCM | `select` |
+| 👆 Crypto | `select` |
+| 👆 Google | `select` |
+| 👆 Meta | `select` |
+| 👆 AI | `select` |
+| 👆 GitHub | `select` |
+| 👆 OneDrive | `select` |
+| 👆 Microsoft | `select` |
+| 👆 Telegram | `select` |
+| 👆 Discord | `select` |
+| 👆 Talkatone | `select` |
+| 👆 LINE | `select` |
+| 👆 Signal | `select` |
+| 👆 TikTok | `select` |
+| 👆 NETFLIX | `select` |
+| ... | 还有 45 个 |
+</details>
+
+#### 📝 clash-standard-noicon.yaml
+- **路径**: `sev7enshare/clash-standard-noicon.yaml` | **大小**: 13.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sev7enshare/clash-standard-noicon.yaml)
+- **模式**: rule | **TUN**: ✅ | **IPv6**: ✅
+<details>
+<summary>🔍 策略组 (36个)</summary>
+
+| 名称 | 类型 |
+| :--- | :--- |
+| ♻️ ♻️ 自动选择 | `url-test` |
+| 👆 ChatGPT | `select` |
+| 👆 Claude | `select` |
+| 👆 Meta AI | `select` |
+| 👆 Perplexity | `select` |
+| 👆 GitHub | `select` |
+| 👆 Telegram | `select` |
+| 👆 Twitter(X) | `select` |
+| 👆 WhatsApp | `select` |
+| 👆 Facebook | `select` |
+| 👆 Steam | `select` |
+| 👆 Game | `select` |
+| 👆 YouTube | `select` |
+| 👆 TikTok | `select` |
+| 👆 Disney | `select` |
+| 👆 Netflix | `select` |
+| 👆 HBO | `select` |
+| 👆 Spotify | `select` |
+| 👆 Crypto | `select` |
+| 👆 Amazon | `select` |
+| ... | 还有 16 个 |
+</details>
+
+---
 ### 👤 sfssup
 
 #### 📝 mihomo.yaml
-- **路径**: `sfssup/mihomo.yaml` | **大小**: 23.1 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sfssup/mihomo.yaml)
+- **路径**: `sfssup/mihomo.yaml` | **大小**: 23.1 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/sfssup/mihomo.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (59个)</summary>
@@ -2073,7 +3259,7 @@
 ### 👤 wanswu
 
 #### 📝 config.yaml
-- **路径**: `wanswu/config.yaml` | **大小**: 26.3 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/wanswu/config.yaml)
+- **路径**: `wanswu/config.yaml` | **大小**: 26.3 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/wanswu/config.yaml)
 - **模式**: rule | **TUN**: 🚫 | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (51个)</summary>
@@ -2107,7 +3293,7 @@
 ### 👤 yyhhyyyyyy
 
 #### 📝 mihomo_multi.yaml
-- **路径**: `yyhhyyyyyy/mihomo_multi.yaml` | **大小**: 12.7 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/yyhhyyyyyy/mihomo_multi.yaml)
+- **路径**: `yyhhyyyyyy/mihomo_multi.yaml` | **大小**: 12.7 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/yyhhyyyyyy/mihomo_multi.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (33个)</summary>
@@ -2138,7 +3324,7 @@
 </details>
 
 #### 📝 mihomo_single.yaml
-- **路径**: `yyhhyyyyyy/mihomo_single.yaml` | **大小**: 12.4 KB | [查看源码](https://github.com/HenryChiao/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/yyhhyyyyyy/mihomo_single.yaml)
+- **路径**: `yyhhyyyyyy/mihomo_single.yaml` | **大小**: 12.4 KB | [查看源码](https://github.com/gogyt/MIHOMO_YAMLS/blob/main/THEYAMLS/General_Config/yyhhyyyyyy/mihomo_single.yaml)
 - **模式**: rule | **TUN**: ✅ | **IPv6**: 🚫
 <details>
 <summary>🔍 策略组 (33个)</summary>
