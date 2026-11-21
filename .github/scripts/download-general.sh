@@ -83,7 +83,7 @@ https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/config/mihomo/
 https://raw.githubusercontent.com/qichiyuhub/rule/refs/heads/main/config/mihomo/other/proxychain.yaml|THEYAMLS/General_Config/qichiyuhub/proxychain.yaml
 
 https://raw.githubusercontent.com/luestr/ProxyResource/main/Tool/Clash/Config/Clash_Sample_Config_By_iKeLee.yaml|THEYAMLS/General_Config/iKeLee/Clash_Sample.yaml
-https://raw.githubusercontent.com/sunfing/iNg/refs/heads/main/Config/ConfigForClash|THEYAMLS/General_Config/fufu/ConfigForClash.yaml
+https://raw.githubusercontent.com/sunfing/iNg/refs/heads/main/Config/ConfigForClash|THEYAMLS/General_Config/sunfing/ConfigForClash.yaml
 https://gist.githubusercontent.com/liuran001/5ca84f7def53c70b554d3f765ff86a33/raw/9de058af0600fbbcfb480f9cbc23bd7dafe9d039/config.yaml|THEYAMLS/General_Config/liuran001/config.yaml
 https://raw.githubusercontent.com/wanswu/my-backup/refs/heads/main/clash/config.yaml|THEYAMLS/General_Config/wanswu/config.yaml
 https://raw.githubusercontent.com/Repcz/Tool/refs/heads/X/mihomo/Client/config.yaml|THEYAMLS/General_Config/Repcz/config.yaml
