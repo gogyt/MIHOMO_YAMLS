@@ -2,7 +2,7 @@ name: Generate RULE-SET
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 23 * * *"
+    - cron: "30 11 * * *"
   push:
     branches:
       - master
