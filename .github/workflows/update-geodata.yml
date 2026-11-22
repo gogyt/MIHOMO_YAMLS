@@ -3,7 +3,7 @@ name: Update All GeoData Assets
 on:
   workflow_dispatch:
   schedule:
-    - cron: '0 20 * * *' # 北京时间 04:00
+    - cron: '0 08 * * *' # 北京时间 04:00
   push:
     branches:
       - main
